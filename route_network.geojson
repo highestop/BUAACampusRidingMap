@@ -1574,6 +1574,38 @@
             40.15509316
           ],
           [
+            116.26706185,
+            40.15506523
+          ],
+          [
+            116.26699367,
+            40.1550512
+          ],
+          [
+            116.26687808,
+            40.15503315
+          ],
+          [
+            116.26681002,
+            40.15501871
+          ],
+          [
+            116.26611781,
+            40.15484088
+          ],
+          [
+            116.26607399,
+            40.15482803
+          ],
+          [
+            116.26596591,
+            40.15479256
+          ],
+          [
+            116.2659219,
+            40.15478004
+          ],
+          [
             116.26581027,
             40.15475211
           ]
@@ -1584,12 +1616,12 @@
         "point_a": "P001",
         "point_b": "P002",
         "directed": false,
-        "length_m": 122.16,
-        "coordinate_count": 2,
-        "geometry_method": "user_annotated_straight_road_axis",
+        "length_m": 122.29,
+        "coordinate_count": 10,
+        "geometry_method": "route_supported_curvature_with_straight_junction_approaches",
         "length_method": "WGS84_geodesic_sum_along_map_corrected_polyline",
         "supporting_gps_sample_count": 49,
-        "median_support_offset_m": 2.05,
+        "median_support_offset_m": 2.33,
         "max_support_offset_m": 5.22,
         "is_user_corrected": true,
         "connection_confirmed": true,
@@ -1599,39 +1631,19 @@
         "source_segment_ids": [
           "S001"
         ],
-        "correction_notes": "straighten_northern_dormitory_and_canteen_roads",
+        "correction_notes": "restore_natural_mid_segment_shapes",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
-          "geometry_basis": "user_annotated_straight_road_axis",
+          "geometry_basis": "route_supported_curvature_with_straight_junction_approaches",
           "registration": {
-            "method": "Screenshot scale and translation from four unchanged point markers; shared junctions derived from straight road intersections.",
-            "control_point_ids": [
-              "P001",
-              "P007",
-              "P065",
-              "P024"
-            ],
-            "control_pixel_xy": [
-              [
-                245.2,
-                72.5
-              ],
-              [
-                104,
-                309
-              ],
-              [
-                458.3,
-                264.05
-              ],
-              [
-                544.9,
-                583.05
-              ]
-            ],
-            "scale_px_per_m": 1.684012471707224,
-            "source_image": "codex-clipboard-bc7ecb2e-fbfa-4537-b160-5fa9e73ec784.png",
-            "preserved_route": "S101 remains the distinct eastern canteen loop; S102 is the direct route."
+            "method": "Restore previously map-aligned route geometry between current fixed junctions, reconnect endpoints locally, and retain short straight approaches.",
+            "fixed_straight_approach_limit_m": 10,
+            "fixed_straight_approach_maximum_segment_fraction": 0.15,
+            "curvature_transition_limit_m": 32,
+            "junction_topology_preserved": true,
+            "building_and_crossing_constraints_enforced": true,
+            "maximum_offset_from_current_road_m": 4,
+            "maximum_offset_for_established_curved_routes_m": 15
           },
           "source_segment_ids": [
             "S001"
@@ -1656,6 +1668,18 @@
             40.15509316
           ],
           [
+            116.26721,
+            40.15500754
+          ],
+          [
+            116.26728545,
+            40.15481712
+          ],
+          [
+            116.26770096,
+            40.15385648
+          ],
+          [
             116.26773748,
             40.15377086
           ]
@@ -1667,12 +1691,12 @@
         "point_b": "P009",
         "directed": false,
         "length_m": 154.49,
-        "coordinate_count": 2,
-        "geometry_method": "user_annotated_straight_road_axis",
+        "coordinate_count": 5,
+        "geometry_method": "route_supported_curvature_with_straight_junction_approaches",
         "length_method": "WGS84_geodesic_sum_along_map_corrected_polyline",
         "supporting_gps_sample_count": 33,
-        "median_support_offset_m": 4.2,
-        "max_support_offset_m": 6.49,
+        "median_support_offset_m": 4.54,
+        "max_support_offset_m": 6.57,
         "is_user_corrected": true,
         "connection_confirmed": true,
         "connection_source": "user_map_annotation",
@@ -1681,39 +1705,19 @@
         "source_segment_ids": [
           "S002"
         ],
-        "correction_notes": "straighten_northern_dormitory_and_canteen_roads",
+        "correction_notes": "restore_natural_mid_segment_shapes",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
-          "geometry_basis": "user_annotated_straight_road_axis",
+          "geometry_basis": "route_supported_curvature_with_straight_junction_approaches",
           "registration": {
-            "method": "Screenshot scale and translation from four unchanged point markers; shared junctions derived from straight road intersections.",
-            "control_point_ids": [
-              "P001",
-              "P007",
-              "P065",
-              "P024"
-            ],
-            "control_pixel_xy": [
-              [
-                245.2,
-                72.5
-              ],
-              [
-                104,
-                309
-              ],
-              [
-                458.3,
-                264.05
-              ],
-              [
-                544.9,
-                583.05
-              ]
-            ],
-            "scale_px_per_m": 1.684012471707224,
-            "source_image": "codex-clipboard-bc7ecb2e-fbfa-4537-b160-5fa9e73ec784.png",
-            "preserved_route": "S101 remains the distinct eastern canteen loop; S102 is the direct route."
+            "method": "Restore previously map-aligned route geometry between current fixed junctions, reconnect endpoints locally, and retain short straight approaches.",
+            "fixed_straight_approach_limit_m": 10,
+            "fixed_straight_approach_maximum_segment_fraction": 0.15,
+            "curvature_transition_limit_m": 32,
+            "junction_topology_preserved": true,
+            "building_and_crossing_constraints_enforced": true,
+            "maximum_offset_from_current_road_m": 4,
+            "maximum_offset_for_established_curved_routes_m": 15
           },
           "source_segment_ids": [
             "S002"
@@ -1738,52 +1742,160 @@
             40.15509316
           ],
           [
-            116.268168,
-            40.15535889
+            116.26728436,
+            40.15512279
           ],
           [
-            116.26823631,
-            40.15537439
+            116.26733078,
+            40.15513398
           ],
           [
-            116.26826069,
-            40.1553768
+            116.26744212,
+            40.15515446
           ],
           [
-            116.26828457,
-            40.15537133
+            116.26750852,
+            40.15516919
           ],
           [
-            116.26829397,
-            40.15535546
+            116.26779857,
+            40.15525141
           ],
           [
-            116.26829654,
-            40.15533754
+            116.26802125,
+            40.15530988
           ],
           [
-            116.26829197,
-            40.15522945
+            116.26815144,
+            40.15535173
           ],
           [
-            116.26826337,
-            40.15520082
+            116.26819559,
+            40.15536369
           ],
           [
-            116.26820816,
-            40.15516573
+            116.26821794,
+            40.15536788
           ],
           [
-            116.26819869,
-            40.15514891
+            116.26823983,
+            40.15536965
           ],
           [
-            116.26819564,
-            40.15511203
+            116.26825983,
+            40.15536746
           ],
           [
-            116.26820203,
-            40.15505787
+            116.26827599,
+            40.15536016
+          ],
+          [
+            116.26828678,
+            40.15534798
+          ],
+          [
+            116.26829238,
+            40.15533241
+          ],
+          [
+            116.26829439,
+            40.15531515
+          ],
+          [
+            116.26829369,
+            40.15527932
+          ],
+          [
+            116.268288,
+            40.15524418
+          ],
+          [
+            116.2682808,
+            40.15522783
+          ],
+          [
+            116.26826975,
+            40.1552128
+          ],
+          [
+            116.26822513,
+            40.15517237
+          ],
+          [
+            116.2682127,
+            40.15515801
+          ],
+          [
+            116.26820426,
+            40.15514227
+          ],
+          [
+            116.26819993,
+            40.15512532
+          ],
+          [
+            116.26819885,
+            40.15510768
+          ],
+          [
+            116.26820001,
+            40.15508983
+          ],
+          [
+            116.2682075,
+            40.1550545
+          ],
+          [
+            116.26822133,
+            40.15502021
+          ],
+          [
+            116.26828882,
+            40.15488534
+          ],
+          [
+            116.26836117,
+            40.15475195
+          ],
+          [
+            116.26839172,
+            40.15470313
+          ],
+          [
+            116.26849948,
+            40.15454256
+          ],
+          [
+            116.26851866,
+            40.15450974
+          ],
+          [
+            116.26853964,
+            40.1544582
+          ],
+          [
+            116.2685894,
+            40.15431596
+          ],
+          [
+            116.26859908,
+            40.15428103
+          ],
+          [
+            116.26861009,
+            40.15422807
+          ],
+          [
+            116.26861904,
+            40.15419302
+          ],
+          [
+            116.26863091,
+            40.15415843
+          ],
+          [
+            116.26864586,
+            40.15412413
           ],
           [
             116.2686861,
@@ -1796,13 +1908,13 @@
         "point_a": "P001",
         "point_b": "P065",
         "directed": false,
-        "length_m": 258.61,
-        "coordinate_count": 14,
-        "geometry_method": "user_annotated_straight_road_axis",
+        "length_m": 256.34,
+        "coordinate_count": 41,
+        "geometry_method": "route_supported_curvature_with_straight_junction_approaches",
         "length_method": "WGS84_geodesic_sum_along_map_corrected_polyline",
         "supporting_gps_sample_count": 73,
-        "median_support_offset_m": 1.72,
-        "max_support_offset_m": 16.23,
+        "median_support_offset_m": 0.6,
+        "max_support_offset_m": 17.2,
         "is_user_corrected": true,
         "connection_confirmed": true,
         "connection_source": "user_map_annotation",
@@ -1811,39 +1923,19 @@
         "source_segment_ids": [
           "S003"
         ],
-        "correction_notes": "straighten_northern_dormitory_and_canteen_roads",
+        "correction_notes": "restore_natural_mid_segment_shapes",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
-          "geometry_basis": "user_annotated_straight_road_axis",
+          "geometry_basis": "route_supported_curvature_with_straight_junction_approaches",
           "registration": {
-            "method": "Screenshot scale and translation from four unchanged point markers; shared junctions derived from straight road intersections.",
-            "control_point_ids": [
-              "P001",
-              "P007",
-              "P065",
-              "P024"
-            ],
-            "control_pixel_xy": [
-              [
-                245.2,
-                72.5
-              ],
-              [
-                104,
-                309
-              ],
-              [
-                458.3,
-                264.05
-              ],
-              [
-                544.9,
-                583.05
-              ]
-            ],
-            "scale_px_per_m": 1.684012471707224,
-            "source_image": "codex-clipboard-bc7ecb2e-fbfa-4537-b160-5fa9e73ec784.png",
-            "preserved_route": "S101 remains the distinct eastern canteen loop; S102 is the direct route."
+            "method": "Restore previously map-aligned route geometry between current fixed junctions, reconnect endpoints locally, and retain short straight approaches.",
+            "fixed_straight_approach_limit_m": 10,
+            "fixed_straight_approach_maximum_segment_fraction": 0.15,
+            "curvature_transition_limit_m": 32,
+            "junction_topology_preserved": true,
+            "building_and_crossing_constraints_enforced": true,
+            "maximum_offset_from_current_road_m": 4,
+            "maximum_offset_for_established_curved_routes_m": 15
           },
           "source_segment_ids": [
             "S003"
@@ -1868,6 +1960,34 @@
             40.15475211
           ],
           [
+            116.26571781,
+            40.1547344
+          ],
+          [
+            116.26567293,
+            40.15472701
+          ],
+          [
+            116.26557973,
+            40.15471548
+          ],
+          [
+            116.26553379,
+            40.15470754
+          ],
+          [
+            116.26544312,
+            40.15468791
+          ],
+          [
+            116.2653306,
+            40.15466087
+          ],
+          [
+            116.26528628,
+            40.1546517
+          ],
+          [
             116.26519381,
             40.15463398
           ]
@@ -1878,12 +1998,12 @@
         "point_a": "P002",
         "point_b": "P003",
         "directed": false,
-        "length_m": 54.14,
-        "coordinate_count": 2,
-        "geometry_method": "user_annotated_straight_road_axis",
+        "length_m": 54.19,
+        "coordinate_count": 9,
+        "geometry_method": "route_supported_curvature_with_straight_junction_approaches",
         "length_method": "WGS84_geodesic_sum_along_map_corrected_polyline",
         "supporting_gps_sample_count": 10,
-        "median_support_offset_m": 2.0,
+        "median_support_offset_m": 1.38,
         "max_support_offset_m": 4.16,
         "is_user_corrected": true,
         "connection_confirmed": true,
@@ -1893,39 +2013,19 @@
         "source_segment_ids": [
           "S004"
         ],
-        "correction_notes": "straighten_northern_dormitory_and_canteen_roads",
+        "correction_notes": "restore_natural_mid_segment_shapes",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
-          "geometry_basis": "user_annotated_straight_road_axis",
+          "geometry_basis": "route_supported_curvature_with_straight_junction_approaches",
           "registration": {
-            "method": "Screenshot scale and translation from four unchanged point markers; shared junctions derived from straight road intersections.",
-            "control_point_ids": [
-              "P001",
-              "P007",
-              "P065",
-              "P024"
-            ],
-            "control_pixel_xy": [
-              [
-                245.2,
-                72.5
-              ],
-              [
-                104,
-                309
-              ],
-              [
-                458.3,
-                264.05
-              ],
-              [
-                544.9,
-                583.05
-              ]
-            ],
-            "scale_px_per_m": 1.684012471707224,
-            "source_image": "codex-clipboard-bc7ecb2e-fbfa-4537-b160-5fa9e73ec784.png",
-            "preserved_route": "S101 remains the distinct eastern canteen loop; S102 is the direct route."
+            "method": "Restore previously map-aligned route geometry between current fixed junctions, reconnect endpoints locally, and retain short straight approaches.",
+            "fixed_straight_approach_limit_m": 10,
+            "fixed_straight_approach_maximum_segment_fraction": 0.15,
+            "curvature_transition_limit_m": 32,
+            "junction_topology_preserved": true,
+            "building_and_crossing_constraints_enforced": true,
+            "maximum_offset_from_current_road_m": 4,
+            "maximum_offset_for_established_curved_routes_m": 15
           },
           "source_segment_ids": [
             "S004"
@@ -1950,6 +2050,22 @@
             40.15475211
           ],
           [
+            116.26584643,
+            40.1546664
+          ],
+          [
+            116.26592465,
+            40.15447451
+          ],
+          [
+            116.26612042,
+            40.15402588
+          ],
+          [
+            116.26618304,
+            40.1538684
+          ],
+          [
             116.2662192,
             40.15378269
           ]
@@ -1960,13 +2076,13 @@
         "point_a": "P002",
         "point_b": "P007",
         "directed": false,
-        "length_m": 113.14,
-        "coordinate_count": 2,
-        "geometry_method": "user_annotated_straight_road_axis",
+        "length_m": 113.15,
+        "coordinate_count": 6,
+        "geometry_method": "route_supported_curvature_with_straight_junction_approaches",
         "length_method": "WGS84_geodesic_sum_along_map_corrected_polyline",
         "supporting_gps_sample_count": 65,
-        "median_support_offset_m": 3.18,
-        "max_support_offset_m": 7.97,
+        "median_support_offset_m": 3.12,
+        "max_support_offset_m": 8.05,
         "is_user_corrected": true,
         "connection_confirmed": true,
         "connection_source": "user_map_annotation",
@@ -1975,39 +2091,19 @@
         "source_segment_ids": [
           "S005"
         ],
-        "correction_notes": "straighten_northern_dormitory_and_canteen_roads",
+        "correction_notes": "restore_natural_mid_segment_shapes",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
-          "geometry_basis": "user_annotated_straight_road_axis",
+          "geometry_basis": "route_supported_curvature_with_straight_junction_approaches",
           "registration": {
-            "method": "Screenshot scale and translation from four unchanged point markers; shared junctions derived from straight road intersections.",
-            "control_point_ids": [
-              "P001",
-              "P007",
-              "P065",
-              "P024"
-            ],
-            "control_pixel_xy": [
-              [
-                245.2,
-                72.5
-              ],
-              [
-                104,
-                309
-              ],
-              [
-                458.3,
-                264.05
-              ],
-              [
-                544.9,
-                583.05
-              ]
-            ],
-            "scale_px_per_m": 1.684012471707224,
-            "source_image": "codex-clipboard-bc7ecb2e-fbfa-4537-b160-5fa9e73ec784.png",
-            "preserved_route": "S101 remains the distinct eastern canteen loop; S102 is the direct route."
+            "method": "Restore previously map-aligned route geometry between current fixed junctions, reconnect endpoints locally, and retain short straight approaches.",
+            "fixed_straight_approach_limit_m": 10,
+            "fixed_straight_approach_maximum_segment_fraction": 0.15,
+            "curvature_transition_limit_m": 32,
+            "junction_topology_preserved": true,
+            "building_and_crossing_constraints_enforced": true,
+            "maximum_offset_from_current_road_m": 4,
+            "maximum_offset_for_established_curved_routes_m": 15
           },
           "source_segment_ids": [
             "S005"
@@ -3868,6 +3964,54 @@
             40.15377086
           ],
           [
+            116.26776273,
+            40.15368288
+          ],
+          [
+            116.26776692,
+            40.15366463
+          ],
+          [
+            116.26776867,
+            40.15364669
+          ],
+          [
+            116.2677638,
+            40.15355559
+          ],
+          [
+            116.26776575,
+            40.15351944
+          ],
+          [
+            116.26776912,
+            40.15350157
+          ],
+          [
+            116.26787428,
+            40.15320193
+          ],
+          [
+            116.26789054,
+            40.15316283
+          ],
+          [
+            116.26791559,
+            40.15311523
+          ],
+          [
+            116.26793167,
+            40.15308051
+          ],
+          [
+            116.26794495,
+            40.15304542
+          ],
+          [
+            116.26795599,
+            40.1530096
+          ],
+          [
             116.26798124,
             40.15292162
           ]
@@ -3878,12 +4022,12 @@
         "point_a": "P009",
         "point_b": "P017",
         "directed": false,
-        "length_m": 96.56,
-        "coordinate_count": 2,
-        "geometry_method": "user_annotated_straight_road_axis",
+        "length_m": 97.16,
+        "coordinate_count": 14,
+        "geometry_method": "route_supported_curvature_with_straight_junction_approaches",
         "length_method": "WGS84_geodesic_sum_along_map_corrected_polyline",
         "supporting_gps_sample_count": 21,
-        "median_support_offset_m": 1.36,
+        "median_support_offset_m": 1.84,
         "max_support_offset_m": 5.71,
         "is_user_corrected": true,
         "connection_confirmed": true,
@@ -3893,39 +4037,19 @@
         "source_segment_ids": [
           "S019"
         ],
-        "correction_notes": "straighten_northern_dormitory_and_canteen_roads",
+        "correction_notes": "restore_natural_mid_segment_shapes",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
-          "geometry_basis": "user_annotated_straight_road_axis",
+          "geometry_basis": "route_supported_curvature_with_straight_junction_approaches",
           "registration": {
-            "method": "Screenshot scale and translation from four unchanged point markers; shared junctions derived from straight road intersections.",
-            "control_point_ids": [
-              "P001",
-              "P007",
-              "P065",
-              "P024"
-            ],
-            "control_pixel_xy": [
-              [
-                245.2,
-                72.5
-              ],
-              [
-                104,
-                309
-              ],
-              [
-                458.3,
-                264.05
-              ],
-              [
-                544.9,
-                583.05
-              ]
-            ],
-            "scale_px_per_m": 1.684012471707224,
-            "source_image": "codex-clipboard-bc7ecb2e-fbfa-4537-b160-5fa9e73ec784.png",
-            "preserved_route": "S101 remains the distinct eastern canteen loop; S102 is the direct route."
+            "method": "Restore previously map-aligned route geometry between current fixed junctions, reconnect endpoints locally, and retain short straight approaches.",
+            "fixed_straight_approach_limit_m": 10,
+            "fixed_straight_approach_maximum_segment_fraction": 0.15,
+            "curvature_transition_limit_m": 32,
+            "junction_topology_preserved": true,
+            "building_and_crossing_constraints_enforced": true,
+            "maximum_offset_from_current_road_m": 4,
+            "maximum_offset_for_established_curved_routes_m": 15
           },
           "source_segment_ids": [
             "S019"
@@ -4175,6 +4299,34 @@
             40.15344718
           ],
           [
+            116.26639513,
+            40.15336095
+          ],
+          [
+            116.26642412,
+            40.15329032
+          ],
+          [
+            116.26647718,
+            40.1531692
+          ],
+          [
+            116.26662928,
+            40.15280432
+          ],
+          [
+            116.26663573,
+            40.15278674
+          ],
+          [
+            116.26666616,
+            40.15267965
+          ],
+          [
+            116.2666851,
+            40.1526258
+          ],
+          [
             116.26671912,
             40.15253957
           ]
@@ -4185,13 +4337,13 @@
         "point_a": "P012",
         "point_b": "P019",
         "directed": false,
-        "length_m": 105.29,
-        "coordinate_count": 2,
-        "geometry_method": "user_annotated_straight_road_axis",
+        "length_m": 105.35,
+        "coordinate_count": 9,
+        "geometry_method": "route_supported_curvature_with_straight_junction_approaches",
         "length_method": "WGS84_geodesic_sum_along_map_corrected_polyline",
         "supporting_gps_sample_count": 37,
-        "median_support_offset_m": 3.8,
-        "max_support_offset_m": 8.28,
+        "median_support_offset_m": 4.52,
+        "max_support_offset_m": 8.39,
         "is_user_corrected": true,
         "connection_confirmed": true,
         "connection_source": "user_map_annotation",
@@ -4200,39 +4352,19 @@
         "source_segment_ids": [
           "S022"
         ],
-        "correction_notes": "align_P008_P021_P030_main_axis",
+        "correction_notes": "restore_natural_mid_segment_shapes",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
-          "geometry_basis": "user_annotated_straight_road_axis",
+          "geometry_basis": "route_supported_curvature_with_straight_junction_approaches",
           "registration": {
-            "method": "Registered annotated horizontal road; north-south axis joins existing P008 and P044. P028 topology and location retained pending clarification.",
-            "control_point_ids": [
-              "P017",
-              "P019",
-              "P030",
-              "P028"
-            ],
-            "control_pixel_xy": [
-              [
-                337,
-                25
-              ],
-              [
-                170.54,
-                72.85
-              ],
-              [
-                131.23,
-                243.31
-              ],
-              [
-                231.08,
-                250.58
-              ]
-            ],
-            "scale_px_per_m": 1.686034933879161,
-            "source_image": "codex-clipboard-9f18fe22-5d79-4cd0-be70-8b20b1b8489c.png",
-            "additional_connection_basis": "Latest user annotation explicitly continues the north-south road from P008 through P021."
+            "method": "Restore previously map-aligned route geometry between current fixed junctions, reconnect endpoints locally, and retain short straight approaches.",
+            "fixed_straight_approach_limit_m": 10,
+            "fixed_straight_approach_maximum_segment_fraction": 0.15,
+            "curvature_transition_limit_m": 32,
+            "junction_topology_preserved": true,
+            "building_and_crossing_constraints_enforced": true,
+            "maximum_offset_from_current_road_m": 4,
+            "maximum_offset_for_established_curved_routes_m": 15
           },
           "source_segment_ids": [
             "S022"
@@ -4257,6 +4389,50 @@
             40.15322501
           ],
           [
+            116.26887433,
+            40.15319195
+          ],
+          [
+            116.26884972,
+            40.15318496
+          ],
+          [
+            116.26880755,
+            40.15317551
+          ],
+          [
+            116.26870833,
+            40.15316023
+          ],
+          [
+            116.26866133,
+            40.15315127
+          ],
+          [
+            116.26863832,
+            40.15314572
+          ],
+          [
+            116.26832458,
+            40.15305152
+          ],
+          [
+            116.26830233,
+            40.15304452
+          ],
+          [
+            116.26825938,
+            40.15302803
+          ],
+          [
+            116.2681357,
+            40.15297109
+          ],
+          [
+            116.26809045,
+            40.15295468
+          ],
+          [
             116.26798124,
             40.15292162
           ]
@@ -4267,13 +4443,13 @@
         "point_a": "P013",
         "point_b": "P017",
         "directed": false,
-        "length_m": 91.8,
-        "coordinate_count": 2,
-        "geometry_method": "user_annotated_straight_road_axis",
+        "length_m": 92.19,
+        "coordinate_count": 13,
+        "geometry_method": "route_supported_curvature_with_straight_junction_approaches",
         "length_method": "WGS84_geodesic_sum_along_map_corrected_polyline",
         "supporting_gps_sample_count": 21,
-        "median_support_offset_m": 0.63,
-        "max_support_offset_m": 1.28,
+        "median_support_offset_m": 1.39,
+        "max_support_offset_m": 3.32,
         "is_user_corrected": true,
         "connection_confirmed": true,
         "connection_source": "user_map_annotation",
@@ -4282,39 +4458,19 @@
         "source_segment_ids": [
           "S023"
         ],
-        "correction_notes": "straighten_northern_dormitory_and_canteen_roads",
+        "correction_notes": "restore_natural_mid_segment_shapes",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
-          "geometry_basis": "user_annotated_straight_road_axis",
+          "geometry_basis": "route_supported_curvature_with_straight_junction_approaches",
           "registration": {
-            "method": "Screenshot scale and translation from four unchanged point markers; shared junctions derived from straight road intersections.",
-            "control_point_ids": [
-              "P001",
-              "P007",
-              "P065",
-              "P024"
-            ],
-            "control_pixel_xy": [
-              [
-                245.2,
-                72.5
-              ],
-              [
-                104,
-                309
-              ],
-              [
-                458.3,
-                264.05
-              ],
-              [
-                544.9,
-                583.05
-              ]
-            ],
-            "scale_px_per_m": 1.684012471707224,
-            "source_image": "codex-clipboard-bc7ecb2e-fbfa-4537-b160-5fa9e73ec784.png",
-            "preserved_route": "S101 remains the distinct eastern canteen loop; S102 is the direct route."
+            "method": "Restore previously map-aligned route geometry between current fixed junctions, reconnect endpoints locally, and retain short straight approaches.",
+            "fixed_straight_approach_limit_m": 10,
+            "fixed_straight_approach_maximum_segment_fraction": 0.15,
+            "curvature_transition_limit_m": 32,
+            "junction_topology_preserved": true,
+            "building_and_crossing_constraints_enforced": true,
+            "maximum_offset_from_current_road_m": 4,
+            "maximum_offset_for_established_curved_routes_m": 15
           },
           "source_segment_ids": [
             "S023"
@@ -4339,6 +4495,50 @@
             40.15322501
           ],
           [
+            116.26901523,
+            40.15313826
+          ],
+          [
+            116.26902928,
+            40.15310458
+          ],
+          [
+            116.26903835,
+            40.15308661
+          ],
+          [
+            116.26908866,
+            40.15300342
+          ],
+          [
+            116.26910716,
+            40.15296965
+          ],
+          [
+            116.26925041,
+            40.15262309
+          ],
+          [
+            116.2692566,
+            40.1526056
+          ],
+          [
+            116.26926352,
+            40.15256972
+          ],
+          [
+            116.26926404,
+            40.15247735
+          ],
+          [
+            116.26926651,
+            40.15245822
+          ],
+          [
+            116.26927616,
+            40.15242373
+          ],
+          [
             116.26930784,
             40.15233698
           ]
@@ -4349,13 +4549,13 @@
         "point_a": "P013",
         "point_b": "P024",
         "directed": false,
-        "length_m": 102.4,
-        "coordinate_count": 2,
-        "geometry_method": "user_annotated_straight_road_axis",
+        "length_m": 103.04,
+        "coordinate_count": 13,
+        "geometry_method": "route_supported_curvature_with_straight_junction_approaches",
         "length_method": "WGS84_geodesic_sum_along_map_corrected_polyline",
         "supporting_gps_sample_count": 24,
-        "median_support_offset_m": 6.47,
-        "max_support_offset_m": 8.96,
+        "median_support_offset_m": 4.77,
+        "max_support_offset_m": 6.31,
         "is_user_corrected": true,
         "connection_confirmed": true,
         "connection_source": "user_map_annotation",
@@ -4364,39 +4564,19 @@
         "source_segment_ids": [
           "S024"
         ],
-        "correction_notes": "straighten_northern_dormitory_and_canteen_roads",
+        "correction_notes": "restore_natural_mid_segment_shapes",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
-          "geometry_basis": "user_annotated_straight_road_axis",
+          "geometry_basis": "route_supported_curvature_with_straight_junction_approaches",
           "registration": {
-            "method": "Screenshot scale and translation from four unchanged point markers; shared junctions derived from straight road intersections.",
-            "control_point_ids": [
-              "P001",
-              "P007",
-              "P065",
-              "P024"
-            ],
-            "control_pixel_xy": [
-              [
-                245.2,
-                72.5
-              ],
-              [
-                104,
-                309
-              ],
-              [
-                458.3,
-                264.05
-              ],
-              [
-                544.9,
-                583.05
-              ]
-            ],
-            "scale_px_per_m": 1.684012471707224,
-            "source_image": "codex-clipboard-bc7ecb2e-fbfa-4537-b160-5fa9e73ec784.png",
-            "preserved_route": "S101 remains the distinct eastern canteen loop; S102 is the direct route."
+            "method": "Restore previously map-aligned route geometry between current fixed junctions, reconnect endpoints locally, and retain short straight approaches.",
+            "fixed_straight_approach_limit_m": 10,
+            "fixed_straight_approach_maximum_segment_fraction": 0.15,
+            "curvature_transition_limit_m": 32,
+            "junction_topology_preserved": true,
+            "building_and_crossing_constraints_enforced": true,
+            "maximum_offset_from_current_road_m": 4,
+            "maximum_offset_for_established_curved_routes_m": 15
           },
           "source_segment_ids": [
             "S024"
@@ -5373,6 +5553,50 @@
             40.15292162
           ],
           [
+            116.26787202,
+            40.15288855
+          ],
+          [
+            116.2678269,
+            40.15287354
+          ],
+          [
+            116.26778478,
+            40.15285632
+          ],
+          [
+            116.2677037,
+            40.15281622
+          ],
+          [
+            116.26766204,
+            40.15279798
+          ],
+          [
+            116.26754976,
+            40.15276746
+          ],
+          [
+            116.26739409,
+            40.1527212
+          ],
+          [
+            116.26716874,
+            40.15266116
+          ],
+          [
+            116.26705698,
+            40.15262937
+          ],
+          [
+            116.26689712,
+            40.15259149
+          ],
+          [
+            116.26682833,
+            40.15257263
+          ],
+          [
             116.26671912,
             40.15253957
           ]
@@ -5383,13 +5607,13 @@
         "point_a": "P017",
         "point_b": "P019",
         "directed": false,
-        "length_m": 115.6,
-        "coordinate_count": 2,
-        "geometry_method": "user_annotated_straight_road_axis",
+        "length_m": 115.9,
+        "coordinate_count": 13,
+        "geometry_method": "route_supported_curvature_with_straight_junction_approaches",
         "length_method": "WGS84_geodesic_sum_along_map_corrected_polyline",
         "supporting_gps_sample_count": 46,
-        "median_support_offset_m": 4.6,
-        "max_support_offset_m": 7.92,
+        "median_support_offset_m": 3.85,
+        "max_support_offset_m": 8.68,
         "is_user_corrected": true,
         "connection_confirmed": true,
         "connection_source": "user_map_annotation",
@@ -5398,39 +5622,19 @@
         "source_segment_ids": [
           "S031"
         ],
-        "correction_notes": "straighten_northern_dormitory_and_canteen_roads",
+        "correction_notes": "restore_natural_mid_segment_shapes",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
-          "geometry_basis": "user_annotated_straight_road_axis",
+          "geometry_basis": "route_supported_curvature_with_straight_junction_approaches",
           "registration": {
-            "method": "Screenshot scale and translation from four unchanged point markers; shared junctions derived from straight road intersections.",
-            "control_point_ids": [
-              "P001",
-              "P007",
-              "P065",
-              "P024"
-            ],
-            "control_pixel_xy": [
-              [
-                245.2,
-                72.5
-              ],
-              [
-                104,
-                309
-              ],
-              [
-                458.3,
-                264.05
-              ],
-              [
-                544.9,
-                583.05
-              ]
-            ],
-            "scale_px_per_m": 1.684012471707224,
-            "source_image": "codex-clipboard-bc7ecb2e-fbfa-4537-b160-5fa9e73ec784.png",
-            "preserved_route": "S101 remains the distinct eastern canteen loop; S102 is the direct route."
+            "method": "Restore previously map-aligned route geometry between current fixed junctions, reconnect endpoints locally, and retain short straight approaches.",
+            "fixed_straight_approach_limit_m": 10,
+            "fixed_straight_approach_maximum_segment_fraction": 0.15,
+            "curvature_transition_limit_m": 32,
+            "junction_topology_preserved": true,
+            "building_and_crossing_constraints_enforced": true,
+            "maximum_offset_from_current_road_m": 4,
+            "maximum_offset_for_established_curved_routes_m": 15
           },
           "source_segment_ids": [
             "S031"
@@ -6029,36 +6233,52 @@
             40.15237805
           ],
           [
-            116.26573408,
-            40.15227498
+            116.26600703,
+            40.15234829
           ],
           [
-            116.26496182,
-            40.15208443
+            116.2659839,
+            40.15234247
           ],
           [
-            116.26465661,
-            40.15199072
+            116.2659382,
+            40.15233346
           ],
           [
-            116.26452402,
-            40.15195447
+            116.26584445,
+            40.15232147
           ],
           [
-            116.2640869,
-            40.1518224
+            116.26577554,
+            40.15230886
           ],
           [
-            116.26388714,
-            40.1517658
+            116.26495273,
+            40.15208123
           ],
           [
-            116.26362736,
-            40.15168068
+            116.26468909,
+            40.15200082
           ],
           [
-            116.26362209,
-            40.15167922
+            116.26448964,
+            40.15194397
+          ],
+          [
+            116.26382868,
+            40.15174659
+          ],
+          [
+            116.26363299,
+            40.15168206
+          ],
+          [
+            116.26361201,
+            40.15167392
+          ],
+          [
+            116.26355053,
+            40.15164569
           ],
           [
             116.26345033,
@@ -6071,12 +6291,12 @@
         "point_a": "P021",
         "point_b": "P029",
         "directed": false,
-        "length_m": 243.63,
-        "coordinate_count": 10,
-        "geometry_method": "user_annotated_straight_road_axis",
+        "length_m": 243.75,
+        "coordinate_count": 14,
+        "geometry_method": "route_supported_curvature_with_straight_junction_approaches",
         "length_method": "WGS84_geodesic_sum_along_map_corrected_polyline",
         "supporting_gps_sample_count": 47,
-        "median_support_offset_m": 0.21,
+        "median_support_offset_m": 0.09,
         "max_support_offset_m": 2.65,
         "is_user_corrected": true,
         "connection_confirmed": true,
@@ -6086,39 +6306,19 @@
         "source_segment_ids": [
           "S036"
         ],
-        "correction_notes": "align_P008_P021_P030_main_axis",
+        "correction_notes": "restore_natural_mid_segment_shapes",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
-          "geometry_basis": "user_annotated_straight_road_axis",
+          "geometry_basis": "route_supported_curvature_with_straight_junction_approaches",
           "registration": {
-            "method": "Registered annotated horizontal road; north-south axis joins existing P008 and P044. P028 topology and location retained pending clarification.",
-            "control_point_ids": [
-              "P017",
-              "P019",
-              "P030",
-              "P028"
-            ],
-            "control_pixel_xy": [
-              [
-                337,
-                25
-              ],
-              [
-                170.54,
-                72.85
-              ],
-              [
-                131.23,
-                243.31
-              ],
-              [
-                231.08,
-                250.58
-              ]
-            ],
-            "scale_px_per_m": 1.686034933879161,
-            "source_image": "codex-clipboard-9f18fe22-5d79-4cd0-be70-8b20b1b8489c.png",
-            "additional_connection_basis": "Latest user annotation explicitly continues the north-south road from P008 through P021."
+            "method": "Restore previously map-aligned route geometry between current fixed junctions, reconnect endpoints locally, and retain short straight approaches.",
+            "fixed_straight_approach_limit_m": 10,
+            "fixed_straight_approach_maximum_segment_fraction": 0.15,
+            "curvature_transition_limit_m": 32,
+            "junction_topology_preserved": true,
+            "building_and_crossing_constraints_enforced": true,
+            "maximum_offset_from_current_road_m": 4,
+            "maximum_offset_for_established_curved_routes_m": 15
           },
           "source_segment_ids": [
             "S036"
@@ -6143,6 +6343,62 @@
             40.15237805
           ],
           [
+            116.26615544,
+            40.1522927
+          ],
+          [
+            116.26617178,
+            40.15225962
+          ],
+          [
+            116.26618296,
+            40.1522409
+          ],
+          [
+            116.26620613,
+            40.15220851
+          ],
+          [
+            116.26624441,
+            40.15216077
+          ],
+          [
+            116.2662668,
+            40.15212795
+          ],
+          [
+            116.26627259,
+            40.1521178
+          ],
+          [
+            116.26631897,
+            40.15201558
+          ],
+          [
+            116.26634342,
+            40.15195424
+          ],
+          [
+            116.26634853,
+            40.15193626
+          ],
+          [
+            116.26635575,
+            40.15189966
+          ],
+          [
+            116.26636739,
+            40.15182615
+          ],
+          [
+            116.26637226,
+            40.15180592
+          ],
+          [
+            116.26638484,
+            40.15177193
+          ],
+          [
             116.26642244,
             40.15168659
           ]
@@ -6153,12 +6409,12 @@
         "point_a": "P021",
         "point_b": "P030",
         "directed": false,
-        "length_m": 81.05,
-        "coordinate_count": 2,
-        "geometry_method": "user_annotated_straight_road_axis",
+        "length_m": 81.62,
+        "coordinate_count": 16,
+        "geometry_method": "route_supported_curvature_with_straight_junction_approaches",
         "length_method": "WGS84_geodesic_sum_along_map_corrected_polyline",
         "supporting_gps_sample_count": 19,
-        "median_support_offset_m": 8.36,
+        "median_support_offset_m": 5.51,
         "max_support_offset_m": 14.03,
         "is_user_corrected": true,
         "connection_confirmed": true,
@@ -6168,39 +6424,19 @@
         "source_segment_ids": [
           "S037"
         ],
-        "correction_notes": "align_P008_P021_P030_main_axis",
+        "correction_notes": "restore_natural_mid_segment_shapes",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
-          "geometry_basis": "user_annotated_straight_road_axis",
+          "geometry_basis": "route_supported_curvature_with_straight_junction_approaches",
           "registration": {
-            "method": "Registered annotated horizontal road; north-south axis joins existing P008 and P044. P028 topology and location retained pending clarification.",
-            "control_point_ids": [
-              "P017",
-              "P019",
-              "P030",
-              "P028"
-            ],
-            "control_pixel_xy": [
-              [
-                337,
-                25
-              ],
-              [
-                170.54,
-                72.85
-              ],
-              [
-                131.23,
-                243.31
-              ],
-              [
-                231.08,
-                250.58
-              ]
-            ],
-            "scale_px_per_m": 1.686034933879161,
-            "source_image": "codex-clipboard-9f18fe22-5d79-4cd0-be70-8b20b1b8489c.png",
-            "additional_connection_basis": "Latest user annotation explicitly continues the north-south road from P008 through P021."
+            "method": "Restore previously map-aligned route geometry between current fixed junctions, reconnect endpoints locally, and retain short straight approaches.",
+            "fixed_straight_approach_limit_m": 10,
+            "fixed_straight_approach_maximum_segment_fraction": 0.15,
+            "curvature_transition_limit_m": 32,
+            "junction_topology_preserved": true,
+            "building_and_crossing_constraints_enforced": true,
+            "maximum_offset_from_current_road_m": 4,
+            "maximum_offset_for_established_curved_routes_m": 15
           },
           "source_segment_ids": [
             "S037"
@@ -7620,24 +7856,60 @@
             40.15159873
           ],
           [
-            116.2635947,
-            40.15148287
+            116.26353148,
+            40.15153361
           ],
           [
-            116.26359846,
-            40.15147982
+            116.26359773,
+            40.15147949
           ],
           [
-            116.26367678,
-            40.15138693
+            116.26364953,
+            40.1514189
           ],
           [
-            116.26373332,
-            40.15126749
+            116.26368272,
+            40.15137106
           ],
           [
-            116.26380467,
-            40.15121344
+            116.26373416,
+            40.1512693
+          ],
+          [
+            116.26379533,
+            40.15117079
+          ],
+          [
+            116.26384277,
+            40.15106799
+          ],
+          [
+            116.26389348,
+            40.15098596
+          ],
+          [
+            116.26392519,
+            40.15091752
+          ],
+          [
+            116.26396149,
+            40.1508504
+          ],
+          [
+            116.26400915,
+            40.15072846
+          ],
+          [
+            116.26410443,
+            40.15052274
+          ],
+          [
+            116.26413687,
+            40.15043321
+          ],
+          [
+            116.26416465,
+            40.1503643
           ],
           [
             116.26420097,
@@ -7650,12 +7922,12 @@
         "point_a": "P029",
         "point_b": "P040",
         "directed": false,
-        "length_m": 162.36,
-        "coordinate_count": 7,
-        "geometry_method": "user_annotated_straight_road_axis",
+        "length_m": 161.58,
+        "coordinate_count": 16,
+        "geometry_method": "route_supported_curvature_with_straight_junction_approaches",
         "length_method": "WGS84_geodesic_sum_along_map_corrected_polyline",
         "supporting_gps_sample_count": 67,
-        "median_support_offset_m": 2.64,
+        "median_support_offset_m": 3.15,
         "max_support_offset_m": 8.88,
         "is_user_corrected": true,
         "connection_confirmed": true,
@@ -7665,33 +7937,19 @@
         "source_segment_ids": [
           "S049"
         ],
-        "correction_notes": "straighten_laboratory_frontage_at_P040_P042",
+        "correction_notes": "restore_natural_mid_segment_shapes",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
-          "geometry_basis": "user_annotated_straight_road_axis",
+          "geometry_basis": "route_supported_curvature_with_straight_junction_approaches",
           "registration": {
-            "method": "Screenshot scale and translation from three unchanged node markers; shared intersections calculated from red road axes.",
-            "control_point_ids": [
-              "P029",
-              "P031",
-              "P047"
-            ],
-            "control_pixel_xy": [
-              [
-                133.25,
-                6.25
-              ],
-              [
-                35.7,
-                41.1
-              ],
-              [
-                84,
-                255
-              ]
-            ],
-            "scale_px_per_m": 1.3654591889287413,
-            "source_image": "codex-clipboard-af741ffa-5aa4-4bae-a518-1214377b2a92.png"
+            "method": "Restore previously map-aligned route geometry between current fixed junctions, reconnect endpoints locally, and retain short straight approaches.",
+            "fixed_straight_approach_limit_m": 10,
+            "fixed_straight_approach_maximum_segment_fraction": 0.15,
+            "curvature_transition_limit_m": 32,
+            "junction_topology_preserved": true,
+            "building_and_crossing_constraints_enforced": true,
+            "maximum_offset_from_current_road_m": 4,
+            "maximum_offset_for_established_curved_routes_m": 15
           },
           "source_segment_ids": [
             "S049"
@@ -7716,6 +7974,46 @@
             40.15168659
           ],
           [
+            116.26646004,
+            40.15160124
+          ],
+          [
+            116.26646835,
+            40.15158391
+          ],
+          [
+            116.26648848,
+            40.15155127
+          ],
+          [
+            116.26654828,
+            40.15147258
+          ],
+          [
+            116.26656805,
+            40.15143976
+          ],
+          [
+            116.26657598,
+            40.15142272
+          ],
+          [
+            116.26701875,
+            40.15037043
+          ],
+          [
+            116.26703871,
+            40.1503182
+          ],
+          [
+            116.26707423,
+            40.15021258
+          ],
+          [
+            116.26710236,
+            40.15014298
+          ],
+          [
             116.26713996,
             40.15005762
           ]
@@ -7726,12 +8024,12 @@
         "point_a": "P030",
         "point_b": "P044",
         "directed": false,
-        "length_m": 190.93,
-        "coordinate_count": 2,
-        "geometry_method": "user_annotated_straight_road_axis",
+        "length_m": 191.24,
+        "coordinate_count": 12,
+        "geometry_method": "route_supported_curvature_with_straight_junction_approaches",
         "length_method": "WGS84_geodesic_sum_along_map_corrected_polyline",
         "supporting_gps_sample_count": 89,
-        "median_support_offset_m": 3.04,
+        "median_support_offset_m": 2.35,
         "max_support_offset_m": 13.85,
         "is_user_corrected": true,
         "connection_confirmed": true,
@@ -7741,39 +8039,19 @@
         "source_segment_ids": [
           "S050"
         ],
-        "correction_notes": "align_P008_P021_P030_main_axis",
+        "correction_notes": "restore_natural_mid_segment_shapes",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
-          "geometry_basis": "user_annotated_straight_road_axis",
+          "geometry_basis": "route_supported_curvature_with_straight_junction_approaches",
           "registration": {
-            "method": "Registered annotated horizontal road; north-south axis joins existing P008 and P044. P028 topology and location retained pending clarification.",
-            "control_point_ids": [
-              "P017",
-              "P019",
-              "P030",
-              "P028"
-            ],
-            "control_pixel_xy": [
-              [
-                337,
-                25
-              ],
-              [
-                170.54,
-                72.85
-              ],
-              [
-                131.23,
-                243.31
-              ],
-              [
-                231.08,
-                250.58
-              ]
-            ],
-            "scale_px_per_m": 1.686034933879161,
-            "source_image": "codex-clipboard-9f18fe22-5d79-4cd0-be70-8b20b1b8489c.png",
-            "additional_connection_basis": "Latest user annotation explicitly continues the north-south road from P008 through P021."
+            "method": "Restore previously map-aligned route geometry between current fixed junctions, reconnect endpoints locally, and retain short straight approaches.",
+            "fixed_straight_approach_limit_m": 10,
+            "fixed_straight_approach_maximum_segment_fraction": 0.15,
+            "curvature_transition_limit_m": 32,
+            "junction_topology_preserved": true,
+            "building_and_crossing_constraints_enforced": true,
+            "maximum_offset_from_current_road_m": 4,
+            "maximum_offset_for_established_curved_routes_m": 15
           },
           "source_segment_ids": [
             "S050"
@@ -9326,32 +9604,48 @@
             40.15064326
           ],
           [
-            116.26110788,
-            40.15043672
+            116.26103365,
+            40.15056133
           ],
           [
-            116.26116145,
-            40.15031877
+            116.26106158,
+            40.15051137
           ],
           [
-            116.2612933,
-            40.15016419
+            116.26111246,
+            40.15041038
           ],
           [
-            116.26143197,
-            40.1499794
+            116.26115937,
+            40.15032772
           ],
           [
-            116.26164456,
-            40.149738
+            116.26118255,
+            40.15029646
           ],
           [
-            116.2618434,
-            40.14955101
+            116.26129617,
+            40.15015936
           ],
           [
-            116.26187627,
-            40.14952494
+            116.26145187,
+            40.14995737
+          ],
+          [
+            116.26163693,
+            40.14974827
+          ],
+          [
+            116.26169441,
+            40.14969116
+          ],
+          [
+            116.26184377,
+            40.14955172
+          ],
+          [
+            116.26194378,
+            40.14947499
           ],
           [
             116.2620283,
@@ -9364,12 +9658,12 @@
         "point_a": "P038",
         "point_b": "P050",
         "directed": false,
-        "length_m": 164.45,
-        "coordinate_count": 9,
-        "geometry_method": "user_annotated_straight_road_axis",
+        "length_m": 164.34,
+        "coordinate_count": 13,
+        "geometry_method": "route_supported_curvature_with_straight_junction_approaches",
         "length_method": "WGS84_geodesic_sum_along_map_corrected_polyline",
         "supporting_gps_sample_count": 71,
-        "median_support_offset_m": 5.03,
+        "median_support_offset_m": 5.08,
         "max_support_offset_m": 7.49,
         "is_user_corrected": true,
         "connection_confirmed": true,
@@ -9379,28 +9673,19 @@
         "source_segment_ids": [
           "S064"
         ],
-        "correction_notes": "straighten_western_park_corner_at_P038",
+        "correction_notes": "restore_natural_mid_segment_shapes",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
-          "geometry_basis": "user_annotated_straight_road_axis",
+          "geometry_basis": "route_supported_curvature_with_straight_junction_approaches",
           "registration": {
-            "method": "Screenshot scale and translation from P033 and P038 markers; preserve a single geometric corner between two straight road legs.",
-            "control_point_ids": [
-              "P033",
-              "P038"
-            ],
-            "control_pixel_xy": [
-              [
-                203.5,
-                53.8
-              ],
-              [
-                210,
-                99.5
-              ]
-            ],
-            "scale_px_per_m": 1.359936857883752,
-            "source_image": "codex-clipboard-c8f9bda4-d645-42a1-9e9f-96540fa8f720.png"
+            "method": "Restore previously map-aligned route geometry between current fixed junctions, reconnect endpoints locally, and retain short straight approaches.",
+            "fixed_straight_approach_limit_m": 10,
+            "fixed_straight_approach_maximum_segment_fraction": 0.15,
+            "curvature_transition_limit_m": 32,
+            "junction_topology_preserved": true,
+            "building_and_crossing_constraints_enforced": true,
+            "maximum_offset_from_current_road_m": 4,
+            "maximum_offset_for_established_curved_routes_m": 15
           },
           "source_segment_ids": [
             "S064"
@@ -9425,52 +9710,108 @@
             40.15064326
           ],
           [
-            116.2596332,
-            40.15030469
+            116.26087323,
+            40.15061531
           ],
           [
-            116.25996098,
-            40.14957056
+            116.26082802,
+            40.15060636
           ],
           [
-            116.25996286,
-            40.14955023
+            116.26078321,
+            40.15060253
           ],
           [
-            116.25998357,
-            40.14950785
+            116.26073858,
+            40.15060283
           ],
           [
-            116.26000424,
-            40.14946548
+            116.26067169,
+            40.15060571
           ],
           [
-            116.26002221,
-            40.14942209
+            116.26065025,
+            40.15060369
           ],
           [
-            116.26004016,
-            40.14937873
+            116.26062858,
+            40.15059986
           ],
           [
-            116.2600581,
-            40.14933536
+            116.26054094,
+            40.15058054
           ],
           [
-            116.26007605,
-            40.14929199
+            116.26047779,
+            40.15056108
           ],
           [
-            116.2601412,
-            40.14918178
+            116.26033651,
+            40.15050609
           ],
           [
-            116.26022835,
-            40.1490468
+            116.26006618,
+            40.15038105
           ],
           [
-            116.26028612,
-            40.14894285
+            116.25980693,
+            40.15027486
+          ],
+          [
+            116.25975348,
+            40.15024388
+          ],
+          [
+            116.25973188,
+            40.15021638
+          ],
+          [
+            116.2597096,
+            40.15017034
+          ],
+          [
+            116.25970294,
+            40.15013714
+          ],
+          [
+            116.25970529,
+            40.15010273
+          ],
+          [
+            116.25971573,
+            40.1500514
+          ],
+          [
+            116.25972978,
+            40.15001829
+          ],
+          [
+            116.25980932,
+            40.14987401
+          ],
+          [
+            116.25992249,
+            40.14962758
+          ],
+          [
+            116.25998812,
+            40.14949789
+          ],
+          [
+            116.2600826,
+            40.14928338
+          ],
+          [
+            116.26013799,
+            40.14918791
+          ],
+          [
+            116.26023536,
+            40.14903345
+          ],
+          [
+            116.26029784,
+            40.14892176
           ],
           [
             116.2603439,
@@ -9483,13 +9824,13 @@
         "point_a": "P038",
         "point_b": "P060",
         "directed": false,
-        "length_m": 295.1,
-        "coordinate_count": 14,
-        "geometry_method": "user_annotated_straight_road_axis",
+        "length_m": 283.14,
+        "coordinate_count": 28,
+        "geometry_method": "route_supported_curvature_with_straight_junction_approaches",
         "length_method": "WGS84_geodesic_sum_along_map_corrected_polyline",
         "supporting_gps_sample_count": 63,
-        "median_support_offset_m": 3.19,
-        "max_support_offset_m": 9.93,
+        "median_support_offset_m": 1.36,
+        "max_support_offset_m": 6.61,
         "is_user_corrected": true,
         "connection_confirmed": true,
         "connection_source": "user_map_annotation",
@@ -9498,28 +9839,19 @@
         "source_segment_ids": [
           "S065"
         ],
-        "correction_notes": "straighten_western_park_corner_at_P038",
+        "correction_notes": "restore_natural_mid_segment_shapes",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
-          "geometry_basis": "user_annotated_straight_road_axis",
+          "geometry_basis": "route_supported_curvature_with_straight_junction_approaches",
           "registration": {
-            "method": "Screenshot scale and translation from P033 and P038 markers; preserve a single geometric corner between two straight road legs.",
-            "control_point_ids": [
-              "P033",
-              "P038"
-            ],
-            "control_pixel_xy": [
-              [
-                203.5,
-                53.8
-              ],
-              [
-                210,
-                99.5
-              ]
-            ],
-            "scale_px_per_m": 1.359936857883752,
-            "source_image": "codex-clipboard-c8f9bda4-d645-42a1-9e9f-96540fa8f720.png"
+            "method": "Restore previously map-aligned route geometry between current fixed junctions, reconnect endpoints locally, and retain short straight approaches.",
+            "fixed_straight_approach_limit_m": 10,
+            "fixed_straight_approach_maximum_segment_fraction": 0.15,
+            "curvature_transition_limit_m": 32,
+            "junction_topology_preserved": true,
+            "building_and_crossing_constraints_enforced": true,
+            "maximum_offset_from_current_road_m": 4,
+            "maximum_offset_for_established_curved_routes_m": 15
           },
           "source_segment_ids": [
             "S065"
@@ -9816,6 +10148,58 @@
             40.15027863
           ],
           [
+            116.26427574,
+            40.15029955
+          ],
+          [
+            116.26429186,
+            40.15030357
+          ],
+          [
+            116.26431591,
+            40.1503076
+          ],
+          [
+            116.26433504,
+            40.15030933
+          ],
+          [
+            116.26439351,
+            40.15030989
+          ],
+          [
+            116.26441848,
+            40.150312
+          ],
+          [
+            116.26445606,
+            40.15031712
+          ],
+          [
+            116.26451453,
+            40.15032881
+          ],
+          [
+            116.26453723,
+            40.15033552
+          ],
+          [
+            116.264545,
+            40.15033947
+          ],
+          [
+            116.26459434,
+            40.15038266
+          ],
+          [
+            116.26460951,
+            40.15039171
+          ],
+          [
+            116.26462468,
+            40.1503972
+          ],
+          [
             116.26469944,
             40.15041813
           ]
@@ -9826,13 +10210,13 @@
         "point_a": "P040",
         "point_b": "P042",
         "directed": false,
-        "length_m": 45.21,
-        "coordinate_count": 2,
-        "geometry_method": "user_annotated_straight_road_axis",
+        "length_m": 46.58,
+        "coordinate_count": 15,
+        "geometry_method": "route_supported_curvature_with_straight_junction_approaches",
         "length_method": "WGS84_geodesic_sum_along_map_corrected_polyline",
         "supporting_gps_sample_count": 8,
-        "median_support_offset_m": 3.27,
-        "max_support_offset_m": 5.14,
+        "median_support_offset_m": 0.47,
+        "max_support_offset_m": 4.15,
         "is_user_corrected": true,
         "connection_confirmed": true,
         "connection_source": "user_map_annotation",
@@ -9841,33 +10225,19 @@
         "source_segment_ids": [
           "S068"
         ],
-        "correction_notes": "straighten_laboratory_frontage_at_P040_P042",
+        "correction_notes": "restore_natural_mid_segment_shapes",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
-          "geometry_basis": "user_annotated_straight_road_axis",
+          "geometry_basis": "route_supported_curvature_with_straight_junction_approaches",
           "registration": {
-            "method": "Screenshot scale and translation from three unchanged node markers; shared intersections calculated from red road axes.",
-            "control_point_ids": [
-              "P029",
-              "P031",
-              "P047"
-            ],
-            "control_pixel_xy": [
-              [
-                133.25,
-                6.25
-              ],
-              [
-                35.7,
-                41.1
-              ],
-              [
-                84,
-                255
-              ]
-            ],
-            "scale_px_per_m": 1.3654591889287413,
-            "source_image": "codex-clipboard-af741ffa-5aa4-4bae-a518-1214377b2a92.png"
+            "method": "Restore previously map-aligned route geometry between current fixed junctions, reconnect endpoints locally, and retain short straight approaches.",
+            "fixed_straight_approach_limit_m": 10,
+            "fixed_straight_approach_maximum_segment_fraction": 0.15,
+            "curvature_transition_limit_m": 32,
+            "junction_topology_preserved": true,
+            "building_and_crossing_constraints_enforced": true,
+            "maximum_offset_from_current_road_m": 4,
+            "maximum_offset_for_established_curved_routes_m": 15
           },
           "source_segment_ids": [
             "S068"
@@ -9892,6 +10262,46 @@
             40.15027863
           ],
           [
+            116.26409067,
+            40.15024776
+          ],
+          [
+            116.2640674,
+            40.1502418
+          ],
+          [
+            116.26402139,
+            40.15023346
+          ],
+          [
+            116.26390275,
+            40.150221
+          ],
+          [
+            116.26385675,
+            40.15021217
+          ],
+          [
+            116.2638344,
+            40.1502061
+          ],
+          [
+            116.26336948,
+            40.15006768
+          ],
+          [
+            116.2632433,
+            40.1500148
+          ],
+          [
+            116.26320017,
+            40.14999952
+          ],
+          [
+            116.26315524,
+            40.14998599
+          ],
+          [
             116.26304494,
             40.14995512
           ]
@@ -9902,13 +10312,13 @@
         "point_a": "P040",
         "point_b": "P047",
         "directed": false,
-        "length_m": 104.85,
-        "coordinate_count": 2,
-        "geometry_method": "user_annotated_straight_road_axis",
+        "length_m": 105.29,
+        "coordinate_count": 12,
+        "geometry_method": "route_supported_curvature_with_straight_junction_approaches",
         "length_method": "WGS84_geodesic_sum_along_map_corrected_polyline",
         "supporting_gps_sample_count": 21,
-        "median_support_offset_m": 6.41,
-        "max_support_offset_m": 9.55,
+        "median_support_offset_m": 3.75,
+        "max_support_offset_m": 9.42,
         "is_user_corrected": true,
         "connection_confirmed": true,
         "connection_source": "user_map_annotation",
@@ -9917,33 +10327,19 @@
         "source_segment_ids": [
           "S069"
         ],
-        "correction_notes": "straighten_laboratory_frontage_at_P040_P042",
+        "correction_notes": "restore_natural_mid_segment_shapes",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
-          "geometry_basis": "user_annotated_straight_road_axis",
+          "geometry_basis": "route_supported_curvature_with_straight_junction_approaches",
           "registration": {
-            "method": "Screenshot scale and translation from three unchanged node markers; shared intersections calculated from red road axes.",
-            "control_point_ids": [
-              "P029",
-              "P031",
-              "P047"
-            ],
-            "control_pixel_xy": [
-              [
-                133.25,
-                6.25
-              ],
-              [
-                35.7,
-                41.1
-              ],
-              [
-                84,
-                255
-              ]
-            ],
-            "scale_px_per_m": 1.3654591889287413,
-            "source_image": "codex-clipboard-af741ffa-5aa4-4bae-a518-1214377b2a92.png"
+            "method": "Restore previously map-aligned route geometry between current fixed junctions, reconnect endpoints locally, and retain short straight approaches.",
+            "fixed_straight_approach_limit_m": 10,
+            "fixed_straight_approach_maximum_segment_fraction": 0.15,
+            "curvature_transition_limit_m": 32,
+            "junction_topology_preserved": true,
+            "building_and_crossing_constraints_enforced": true,
+            "maximum_offset_from_current_road_m": 4,
+            "maximum_offset_for_established_curved_routes_m": 15
           },
           "source_segment_ids": [
             "S069"
@@ -10083,6 +10479,26 @@
             40.15041813
           ],
           [
+            116.26474221,
+            40.15033422
+          ],
+          [
+            116.26476924,
+            40.15028427
+          ],
+          [
+            116.26483747,
+            40.15016937
+          ],
+          [
+            116.26503712,
+            40.14976478
+          ],
+          [
+            116.26512731,
+            40.14957891
+          ],
+          [
             116.26517008,
             40.14949501
           ]
@@ -10093,13 +10509,13 @@
         "point_a": "P042",
         "point_b": "P067",
         "directed": false,
-        "length_m": 110.07,
-        "coordinate_count": 2,
-        "geometry_method": "user_annotated_straight_road_axis",
+        "length_m": 110.09,
+        "coordinate_count": 7,
+        "geometry_method": "route_supported_curvature_with_straight_junction_approaches",
         "length_method": "WGS84_geodesic_sum_along_map_corrected_polyline",
         "supporting_gps_sample_count": 47,
-        "median_support_offset_m": 2.94,
-        "max_support_offset_m": 8.35,
+        "median_support_offset_m": 2.68,
+        "max_support_offset_m": 7.52,
         "is_user_corrected": true,
         "connection_confirmed": true,
         "connection_source": "user_map_annotation",
@@ -10108,33 +10524,19 @@
         "source_segment_ids": [
           "S071"
         ],
-        "correction_notes": "straighten_laboratory_frontage_at_P040_P042",
+        "correction_notes": "restore_natural_mid_segment_shapes",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
-          "geometry_basis": "user_annotated_straight_road_axis",
+          "geometry_basis": "route_supported_curvature_with_straight_junction_approaches",
           "registration": {
-            "method": "Screenshot scale and translation from three unchanged node markers; shared intersections calculated from red road axes.",
-            "control_point_ids": [
-              "P029",
-              "P031",
-              "P047"
-            ],
-            "control_pixel_xy": [
-              [
-                133.25,
-                6.25
-              ],
-              [
-                35.7,
-                41.1
-              ],
-              [
-                84,
-                255
-              ]
-            ],
-            "scale_px_per_m": 1.3654591889287413,
-            "source_image": "codex-clipboard-af741ffa-5aa4-4bae-a518-1214377b2a92.png"
+            "method": "Restore previously map-aligned route geometry between current fixed junctions, reconnect endpoints locally, and retain short straight approaches.",
+            "fixed_straight_approach_limit_m": 10,
+            "fixed_straight_approach_maximum_segment_fraction": 0.15,
+            "curvature_transition_limit_m": 32,
+            "junction_topology_preserved": true,
+            "building_and_crossing_constraints_enforced": true,
+            "maximum_offset_from_current_road_m": 4,
+            "maximum_offset_for_established_curved_routes_m": 15
           },
           "source_segment_ids": [
             "S071"
@@ -10159,60 +10561,108 @@
             40.15041813
           ],
           [
-            116.26447006,
-            40.15090756
+            116.26465971,
+            40.1505029
           ],
           [
-            116.26462455,
-            40.15093218
+            116.2646509,
+            40.15051962
           ],
           [
-            116.2646562,
-            40.15095337
+            116.26462848,
+            40.15055022
           ],
           [
-            116.26475209,
-            40.15097215
+            116.2645768,
+            40.1506063
           ],
           [
-            116.2648639,
-            40.15100935
+            116.26455397,
+            40.15063496
           ],
           [
-            116.26519531,
-            40.15110086
+            116.26454436,
+            40.15065019
           ],
           [
-            116.26523654,
-            40.15110219
+            116.26453632,
+            40.15066634
           ],
           [
-            116.26530905,
-            40.15109189
+            116.26451201,
+            40.15072233
           ],
           [
-            116.26534292,
-            40.15106337
+            116.26450796,
+            40.15074003
           ],
           [
-            116.26535079,
-            40.1510446
+            116.26451701,
+            40.15077552
           ],
           [
-            116.26534987,
-            40.15102174
+            116.26457286,
+            40.15087527
           ],
           [
-            116.26533069,
-            40.15099733
+            116.26462746,
+            40.15093413
           ],
           [
-            116.26528277,
-            40.15096032
+            116.26466493,
+            40.15095509
           ],
           [
-            116.26523824,
-            40.15090553
+            116.26475609,
+            40.15097349
+          ],
+          [
+            116.26486427,
+            40.15100945
+          ],
+          [
+            116.26519717,
+            40.15110091
+          ],
+          [
+            116.26524416,
+            40.15110111
+          ],
+          [
+            116.26531225,
+            40.1510892
+          ],
+          [
+            116.26534342,
+            40.15106219
+          ],
+          [
+            116.26535064,
+            40.15104496
+          ],
+          [
+            116.26535008,
+            40.1510269
+          ],
+          [
+            116.26532837,
+            40.15099554
+          ],
+          [
+            116.26527957,
+            40.15095639
+          ],
+          [
+            116.26524215,
+            40.15091033
+          ],
+          [
+            116.26524255,
+            40.15089354
+          ],
+          [
+            116.26566309,
+            40.14972464
           ],
           [
             116.26569433,
@@ -10225,12 +10675,12 @@
         "point_a": "P042",
         "point_b": "P068",
         "directed": false,
-        "length_m": 304.58,
-        "coordinate_count": 16,
-        "geometry_method": "user_annotated_straight_road_axis",
+        "length_m": 296.33,
+        "coordinate_count": 28,
+        "geometry_method": "route_supported_curvature_with_straight_junction_approaches",
         "length_method": "WGS84_geodesic_sum_along_map_corrected_polyline",
         "supporting_gps_sample_count": 67,
-        "median_support_offset_m": 4.58,
+        "median_support_offset_m": 4.97,
         "max_support_offset_m": 12.46,
         "is_user_corrected": true,
         "connection_confirmed": true,
@@ -10240,33 +10690,19 @@
         "source_segment_ids": [
           "S072"
         ],
-        "correction_notes": "straighten_laboratory_frontage_at_P040_P042",
+        "correction_notes": "restore_natural_mid_segment_shapes",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
-          "geometry_basis": "user_annotated_straight_road_axis",
+          "geometry_basis": "route_supported_curvature_with_straight_junction_approaches",
           "registration": {
-            "method": "Screenshot scale and translation from three unchanged node markers; shared intersections calculated from red road axes.",
-            "control_point_ids": [
-              "P029",
-              "P031",
-              "P047"
-            ],
-            "control_pixel_xy": [
-              [
-                133.25,
-                6.25
-              ],
-              [
-                35.7,
-                41.1
-              ],
-              [
-                84,
-                255
-              ]
-            ],
-            "scale_px_per_m": 1.3654591889287413,
-            "source_image": "codex-clipboard-af741ffa-5aa4-4bae-a518-1214377b2a92.png"
+            "method": "Restore previously map-aligned route geometry between current fixed junctions, reconnect endpoints locally, and retain short straight approaches.",
+            "fixed_straight_approach_limit_m": 10,
+            "fixed_straight_approach_maximum_segment_fraction": 0.15,
+            "curvature_transition_limit_m": 32,
+            "junction_topology_preserved": true,
+            "building_and_crossing_constraints_enforced": true,
+            "maximum_offset_from_current_road_m": 4,
+            "maximum_offset_for_established_curved_routes_m": 15
           },
           "source_segment_ids": [
             "S072"
@@ -13525,6 +13961,62 @@
             40.15253957
           ],
           [
+            116.26675874,
+            40.15245476
+          ],
+          [
+            116.26677686,
+            40.15241922
+          ],
+          [
+            116.26682791,
+            40.15233452
+          ],
+          [
+            116.26685634,
+            40.1522827
+          ],
+          [
+            116.26693249,
+            40.15211686
+          ],
+          [
+            116.26695422,
+            40.1520855
+          ],
+          [
+            116.26697296,
+            40.15206151
+          ],
+          [
+            116.26698196,
+            40.15204554
+          ],
+          [
+            116.26698738,
+            40.15202817
+          ],
+          [
+            116.26699084,
+            40.1520101
+          ],
+          [
+            116.26699404,
+            40.15197283
+          ],
+          [
+            116.26699707,
+            40.15195454
+          ],
+          [
+            116.26700195,
+            40.15193668
+          ],
+          [
+            116.26700957,
+            40.15191789
+          ],
+          [
             116.26704919,
             40.15183308
           ]
@@ -13535,23 +14027,27 @@
         "point_a": "P019",
         "point_b": "P069",
         "directed": false,
-        "length_m": 83.34,
+        "length_m": 83.77,
         "length_is_estimate": true,
         "is_inferred": true,
-        "coordinate_count": 2,
-        "geometry_method": "user_confirmed_staggered_junction_alignment",
+        "coordinate_count": 16,
+        "geometry_method": "route_supported_curvature_with_straight_junction_approaches",
         "length_method": "WGS84_geodesic_sum_along_map_corrected_polyline",
         "supporting_gps_sample_count": 0,
         "median_support_offset_m": null,
         "max_support_offset_m": null,
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
-          "geometry_basis": "user_confirmed_staggered_junction_alignment",
+          "geometry_basis": "route_supported_curvature_with_straight_junction_approaches",
           "registration": {
-            "method": "User confirmed two staggered junctions; intersect the established side-road centerlines with the north-south road axis. Preserve side-road geometry outside the previous false shared junction.",
-            "western_junction_id": "P069",
-            "eastern_junction_id": "P028",
-            "connecting_segment_id": "S109"
+            "method": "Restore previously map-aligned route geometry between current fixed junctions, reconnect endpoints locally, and retain short straight approaches.",
+            "fixed_straight_approach_limit_m": 10,
+            "fixed_straight_approach_maximum_segment_fraction": 0.15,
+            "curvature_transition_limit_m": 32,
+            "junction_topology_preserved": true,
+            "building_and_crossing_constraints_enforced": true,
+            "maximum_offset_from_current_road_m": 4,
+            "maximum_offset_for_established_curved_routes_m": 15
           },
           "source_segment_ids": [
             "S100"
@@ -13571,7 +14067,7 @@
         "source_segment_ids": [
           "S100"
         ],
-        "correction_notes": "split_P028_into_staggered_three_way_junctions"
+        "correction_notes": "restore_natural_mid_segment_shapes"
       }
     },
     {
@@ -13731,6 +14227,46 @@
             40.1540395
           ],
           [
+            116.26871244,
+            40.15396738
+          ],
+          [
+            116.26871732,
+            40.15395024
+          ],
+          [
+            116.26871915,
+            40.15393551
+          ],
+          [
+            116.26871608,
+            40.15388048
+          ],
+          [
+            116.26872108,
+            40.15385611
+          ],
+          [
+            116.26872517,
+            40.15384582
+          ],
+          [
+            116.26876419,
+            40.15378033
+          ],
+          [
+            116.26880685,
+            40.15370129
+          ],
+          [
+            116.26882228,
+            40.15366562
+          ],
+          [
+            116.26883537,
+            40.15363078
+          ],
+          [
             116.2688617,
             40.15355866
           ]
@@ -13746,60 +14282,40 @@
         "connection_source": "user_map_annotation",
         "geometry_is_estimate": true,
         "length_is_estimate": true,
-        "geometry_method": "user_annotated_straight_road_axis",
+        "geometry_method": "route_supported_curvature_with_straight_junction_approaches",
         "length_method": "WGS84_geodesic_sum_along_map_corrected_polyline",
         "source_segment_ids": [
           "S102"
         ],
-        "correction_notes": "straighten_northern_dormitory_and_canteen_roads",
+        "correction_notes": "restore_natural_mid_segment_shapes",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
-          "geometry_basis": "user_annotated_straight_road_axis",
+          "geometry_basis": "route_supported_curvature_with_straight_junction_approaches",
           "registration": {
-            "method": "Screenshot scale and translation from four unchanged point markers; shared junctions derived from straight road intersections.",
-            "control_point_ids": [
-              "P001",
-              "P007",
-              "P065",
-              "P024"
-            ],
-            "control_pixel_xy": [
-              [
-                245.2,
-                72.5
-              ],
-              [
-                104,
-                309
-              ],
-              [
-                458.3,
-                264.05
-              ],
-              [
-                544.9,
-                583.05
-              ]
-            ],
-            "scale_px_per_m": 1.684012471707224,
-            "source_image": "codex-clipboard-bc7ecb2e-fbfa-4537-b160-5fa9e73ec784.png",
-            "preserved_route": "S101 remains the distinct eastern canteen loop; S102 is the direct route."
+            "method": "Restore previously map-aligned route geometry between current fixed junctions, reconnect endpoints locally, and retain short straight approaches.",
+            "fixed_straight_approach_limit_m": 10,
+            "fixed_straight_approach_maximum_segment_fraction": 0.15,
+            "curvature_transition_limit_m": 32,
+            "junction_topology_preserved": true,
+            "building_and_crossing_constraints_enforced": true,
+            "maximum_offset_from_current_road_m": 4,
+            "maximum_offset_for_established_curved_routes_m": 15
           },
           "source_segment_ids": [
             "S102"
           ],
           "actual_route_length_measured": false
         },
-        "coordinate_count": 2,
-        "length_m": 55.45,
+        "coordinate_count": 12,
+        "length_m": 55.97,
         "notes": [
           "Road geometry and junction connectivity corrected from the user annotation.",
           "Distance is a geodesic sum along the corrected map polyline and remains an estimate.",
           "Nearby supporting samples do not prove full traversal of the corrected route."
         ],
         "supporting_gps_sample_count": 11,
-        "median_support_offset_m": 1.4,
-        "max_support_offset_m": 5.93
+        "median_support_offset_m": 0.21,
+        "max_support_offset_m": 5.9
       }
     },
     {
