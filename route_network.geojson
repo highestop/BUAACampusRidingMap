@@ -43,7 +43,7 @@
         "kind": "junction",
         "is_user_corrected": true,
         "correction_source": "user_map_annotation",
-        "correction_notes": "按同一道路方向和共享节点约束贴合底图。"
+        "correction_notes": "Aligned to the basemap using road-heading consistency and shared-node constraints."
       }
     },
     {
@@ -67,7 +67,7 @@
         "kind": "junction",
         "is_user_corrected": true,
         "correction_source": "user_map_annotation",
-        "correction_notes": "按同一道路方向和共享节点约束贴合底图。"
+        "correction_notes": "Aligned to the basemap using road-heading consistency and shared-node constraints."
       }
     },
     {
@@ -154,7 +154,7 @@
         "kind": "junction",
         "is_user_corrected": true,
         "correction_source": "user_map_annotation",
-        "correction_notes": "按同一道路方向和共享节点约束贴合底图。"
+        "correction_notes": "Aligned to the basemap using road-heading consistency and shared-node constraints."
       }
     },
     {
@@ -178,7 +178,7 @@
         "kind": "junction",
         "is_user_corrected": true,
         "correction_source": "user_map_annotation",
-        "correction_notes": "按用户红线和底图真实共用路口修正。",
+        "correction_notes": "Refined against the user annotation and the actual shared basemap junction.",
         "osm_node_id": 6942512889
       }
     },
@@ -225,7 +225,7 @@
         "kind": "junction",
         "is_user_corrected": true,
         "correction_source": "user_map_annotation",
-        "correction_notes": "依据用户北片卫星红线定位；通过本地 OSM 地面道路节点做图像配准，非直接使用高德坐标。"
+        "correction_notes": "Located from the northern satellite annotation and registered using local OSM ground-road nodes, without treating Amap coordinates as WGS84."
       }
     },
     {
@@ -270,7 +270,7 @@
         "kind": "junction",
         "is_user_corrected": true,
         "correction_source": "user_map_annotation",
-        "correction_notes": "按同一道路方向和共享节点约束贴合底图。"
+        "correction_notes": "Aligned to the basemap using road-heading consistency and shared-node constraints."
       }
     },
     {
@@ -294,7 +294,7 @@
         "kind": "junction",
         "is_user_corrected": true,
         "correction_source": "user_map_annotation",
-        "correction_notes": "按同一道路方向和共享节点约束贴合底图。"
+        "correction_notes": "Aligned to the basemap using road-heading consistency and shared-node constraints."
       }
     },
     {
@@ -318,7 +318,7 @@
         "kind": "junction",
         "is_user_corrected": true,
         "correction_source": "user_map_annotation",
-        "correction_notes": "依据用户北片卫星红线定位；通过本地 OSM 地面道路节点做图像配准，非直接使用高德坐标。"
+        "correction_notes": "Located from the northern satellite annotation and registered using local OSM ground-road nodes, without treating Amap coordinates as WGS84."
       }
     },
     {
@@ -343,7 +343,7 @@
         "kind": "junction",
         "is_user_corrected": true,
         "correction_source": "user_map_annotation",
-        "correction_notes": "依据用户北片卫星红线定位；通过本地 OSM 地面道路节点做图像配准，非直接使用高德坐标。"
+        "correction_notes": "Located from the northern satellite annotation and registered using local OSM ground-road nodes, without treating Amap coordinates as WGS84."
       }
     },
     {
@@ -367,7 +367,7 @@
         "kind": "junction",
         "is_user_corrected": true,
         "correction_source": "user_map_annotation",
-        "correction_notes": "按用户红线和底图真实共用路口修正。",
+        "correction_notes": "Refined against the user annotation and the actual shared basemap junction.",
         "osm_node_id": 9171968240
       }
     },
@@ -392,7 +392,7 @@
         "kind": "junction",
         "is_user_corrected": true,
         "correction_source": "user_map_annotation",
-        "correction_notes": "按同一道路方向和共享节点约束贴合底图。"
+        "correction_notes": "Aligned to the basemap using road-heading consistency and shared-node constraints."
       }
     },
     {
@@ -416,7 +416,7 @@
         "kind": "junction",
         "is_user_corrected": true,
         "correction_source": "user_map_annotation",
-        "correction_notes": "依据用户北片卫星红线定位；通过本地 OSM 地面道路节点做图像配准，非直接使用高德坐标。"
+        "correction_notes": "Located from the northern satellite annotation and registered using local OSM ground-road nodes, without treating Amap coordinates as WGS84."
       }
     },
     {
@@ -441,7 +441,7 @@
         "kind": "junction",
         "is_user_corrected": true,
         "correction_source": "user_map_annotation",
-        "correction_notes": "按同一道路方向和共享节点约束贴合底图。"
+        "correction_notes": "Aligned to the basemap using road-heading consistency and shared-node constraints."
       }
     },
     {
@@ -465,7 +465,7 @@
         "kind": "junction",
         "is_user_corrected": true,
         "correction_source": "user_map_annotation",
-        "correction_notes": "依据用户北片卫星红线定位；通过本地 OSM 地面道路节点做图像配准，非直接使用高德坐标。"
+        "correction_notes": "Located from the northern satellite annotation and registered using local OSM ground-road nodes, without treating Amap coordinates as WGS84."
       }
     },
     {
@@ -511,7 +511,7 @@
         "kind": "junction",
         "is_user_corrected": true,
         "correction_source": "user_map_annotation",
-        "correction_notes": "依据用户北片卫星红线定位；通过本地 OSM 地面道路节点做图像配准，非直接使用高德坐标。"
+        "correction_notes": "Located from the northern satellite annotation and registered using local OSM ground-road nodes, without treating Amap coordinates as WGS84."
       }
     },
     {
@@ -535,7 +535,7 @@
         "kind": "junction",
         "is_user_corrected": true,
         "correction_source": "user_map_annotation",
-        "correction_notes": "依据用户北片卫星红线定位；通过本地 OSM 地面道路节点做图像配准，非直接使用高德坐标。"
+        "correction_notes": "Located from the northern satellite annotation and registered using local OSM ground-road nodes, without treating Amap coordinates as WGS84."
       }
     },
     {
@@ -559,7 +559,7 @@
         "kind": "junction",
         "is_user_corrected": true,
         "correction_source": "user_map_annotation",
-        "correction_notes": "按同一道路方向和共享节点约束贴合底图。"
+        "correction_notes": "Aligned to the basemap using road-heading consistency and shared-node constraints."
       }
     },
     {
@@ -583,7 +583,7 @@
         "kind": "junction",
         "is_user_corrected": true,
         "correction_source": "user_map_annotation",
-        "correction_notes": "依据用户北片卫星红线定位；通过本地 OSM 地面道路节点做图像配准，非直接使用高德坐标。"
+        "correction_notes": "Located from the northern satellite annotation and registered using local OSM ground-road nodes, without treating Amap coordinates as WGS84."
       }
     },
     {
@@ -607,7 +607,7 @@
         "kind": "junction",
         "is_user_corrected": true,
         "correction_source": "user_map_annotation",
-        "correction_notes": "依据用户北片卫星红线定位；通过本地 OSM 地面道路节点做图像配准，非直接使用高德坐标。"
+        "correction_notes": "Located from the northern satellite annotation and registered using local OSM ground-road nodes, without treating Amap coordinates as WGS84."
       }
     },
     {
@@ -631,7 +631,7 @@
         "kind": "junction",
         "is_user_corrected": true,
         "correction_source": "user_map_annotation",
-        "correction_notes": "依据用户北片卫星红线定位；通过本地 OSM 地面道路节点做图像配准，非直接使用高德坐标。"
+        "correction_notes": "Located from the northern satellite annotation and registered using local OSM ground-road nodes, without treating Amap coordinates as WGS84."
       }
     },
     {
@@ -678,7 +678,7 @@
         "kind": "junction",
         "is_user_corrected": true,
         "correction_source": "user_map_annotation",
-        "correction_notes": "依据用户北片卫星红线定位；通过本地 OSM 地面道路节点做图像配准，非直接使用高德坐标。"
+        "correction_notes": "Located from the northern satellite annotation and registered using local OSM ground-road nodes, without treating Amap coordinates as WGS84."
       }
     },
     {
@@ -702,7 +702,7 @@
         "kind": "junction",
         "is_user_corrected": true,
         "correction_source": "user_map_annotation",
-        "correction_notes": "按用户红圈移动到北侧实际路口。",
+        "correction_notes": "Moved north to the actual junction indicated by the user.",
         "osm_node_id": 4434148045
       }
     },
@@ -727,7 +727,7 @@
         "kind": "junction",
         "is_user_corrected": true,
         "correction_source": "user_map_annotation",
-        "correction_notes": "依据用户北片卫星红线定位；通过本地 OSM 地面道路节点做图像配准，非直接使用高德坐标。"
+        "correction_notes": "Located from the northern satellite annotation and registered using local OSM ground-road nodes, without treating Amap coordinates as WGS84."
       }
     },
     {
@@ -751,7 +751,7 @@
         "kind": "junction",
         "is_user_corrected": true,
         "correction_source": "user_map_annotation",
-        "correction_notes": "按同一道路方向和共享节点约束贴合底图。"
+        "correction_notes": "Aligned to the basemap using road-heading consistency and shared-node constraints."
       }
     },
     {
@@ -775,7 +775,7 @@
         "kind": "junction",
         "is_user_corrected": true,
         "correction_source": "user_map_annotation",
-        "correction_notes": "依据用户北片卫星红线定位；通过本地 OSM 地面道路节点做图像配准，非直接使用高德坐标。"
+        "correction_notes": "Located from the northern satellite annotation and registered using local OSM ground-road nodes, without treating Amap coordinates as WGS84."
       }
     },
     {
@@ -799,7 +799,7 @@
         "kind": "junction",
         "is_user_corrected": true,
         "correction_source": "user_map_annotation",
-        "correction_notes": "按同一道路方向和共享节点约束贴合底图。"
+        "correction_notes": "Aligned to the basemap using road-heading consistency and shared-node constraints."
       }
     },
     {
@@ -823,7 +823,7 @@
         "kind": "junction",
         "is_user_corrected": true,
         "correction_source": "user_map_annotation",
-        "correction_notes": "按同一道路方向和共享节点约束贴合底图。"
+        "correction_notes": "Aligned to the basemap using road-heading consistency and shared-node constraints."
       }
     },
     {
@@ -848,7 +848,7 @@
         "kind": "junction",
         "is_user_corrected": true,
         "correction_source": "user_map_annotation",
-        "correction_notes": "按同一道路方向和共享节点约束贴合底图。"
+        "correction_notes": "Aligned to the basemap using road-heading consistency and shared-node constraints."
       }
     },
     {
@@ -872,7 +872,7 @@
         "kind": "junction",
         "is_user_corrected": true,
         "correction_source": "user_map_annotation",
-        "correction_notes": "按同一道路方向和共享节点约束贴合底图。"
+        "correction_notes": "Aligned to the basemap using road-heading consistency and shared-node constraints."
       }
     },
     {
@@ -917,7 +917,7 @@
         "kind": "junction",
         "is_user_corrected": true,
         "correction_source": "user_map_annotation",
-        "correction_notes": "按同一道路方向和共享节点约束贴合底图。"
+        "correction_notes": "Aligned to the basemap using road-heading consistency and shared-node constraints."
       }
     },
     {
@@ -962,7 +962,7 @@
         "kind": "junction",
         "is_user_corrected": true,
         "correction_source": "user_map_annotation",
-        "correction_notes": "按同一道路方向和共享节点约束贴合底图。"
+        "correction_notes": "Aligned to the basemap using road-heading consistency and shared-node constraints."
       }
     },
     {
@@ -1007,7 +1007,7 @@
         "kind": "junction",
         "is_user_corrected": true,
         "correction_source": "user_map_annotation",
-        "correction_notes": "按最新红线和真实路口精修。"
+        "correction_notes": "Refined using the latest route annotation and actual junctions."
       }
     },
     {
@@ -1031,7 +1031,7 @@
         "kind": "junction",
         "is_user_corrected": true,
         "correction_source": "user_map_annotation",
-        "correction_notes": "按最新红线和真实路口精修。"
+        "correction_notes": "Refined using the latest route annotation and actual junctions."
       }
     },
     {
@@ -1055,7 +1055,7 @@
         "kind": "junction",
         "is_user_corrected": true,
         "correction_source": "user_map_annotation",
-        "correction_notes": "按同一道路方向和共享节点约束贴合底图。"
+        "correction_notes": "Aligned to the basemap using road-heading consistency and shared-node constraints."
       }
     },
     {
@@ -1079,7 +1079,7 @@
         "kind": "junction",
         "is_user_corrected": true,
         "correction_source": "user_map_annotation",
-        "correction_notes": "按最新红线和真实路口精修。"
+        "correction_notes": "Refined using the latest route annotation and actual junctions."
       }
     },
     {
@@ -1103,7 +1103,7 @@
         "kind": "junction",
         "is_user_corrected": true,
         "correction_source": "user_map_annotation",
-        "correction_notes": "保留现有真实东支，沿用户红线将节点对齐本地OSM路口；约向西11米。"
+        "correction_notes": "Preserved the actual eastern branch and moved the node approximately 11 m west to align the annotation with the local OSM junction."
       }
     },
     {
@@ -1127,7 +1127,7 @@
         "kind": "junction",
         "is_user_corrected": true,
         "correction_source": "user_map_annotation",
-        "correction_notes": "按同一道路方向和共享节点约束贴合底图。"
+        "correction_notes": "Aligned to the basemap using road-heading consistency and shared-node constraints."
       }
     },
     {
@@ -1151,7 +1151,7 @@
         "kind": "junction",
         "is_user_corrected": true,
         "correction_source": "user_map_annotation",
-        "correction_notes": "按最新红线和真实路口精修。"
+        "correction_notes": "Refined using the latest route annotation and actual junctions."
       }
     },
     {
@@ -1175,7 +1175,7 @@
         "kind": "junction",
         "is_user_corrected": true,
         "correction_source": "user_map_annotation",
-        "correction_notes": "依据用户卫星图红线与本地 OSM 参照配准修正；坐标精度约5–10米。"
+        "correction_notes": "Corrected by registering the user-annotated satellite route against local OSM references; estimated positional uncertainty is 5-10 m."
       }
     },
     {
@@ -1199,7 +1199,7 @@
         "kind": "junction",
         "is_user_corrected": true,
         "correction_source": "user_map_annotation",
-        "correction_notes": "依据用户卫星图红线与本地 OSM 参照配准修正；坐标精度约5–10米。"
+        "correction_notes": "Corrected by registering the user-annotated satellite route against local OSM references; estimated positional uncertainty is 5-10 m."
       }
     },
     {
@@ -1223,7 +1223,7 @@
         "kind": "junction",
         "is_user_corrected": true,
         "correction_source": "user_map_annotation",
-        "correction_notes": "依据用户卫星图红线与本地 OSM 参照配准修正；坐标精度约5–10米。"
+        "correction_notes": "Corrected by registering the user-annotated satellite route against local OSM references; estimated positional uncertainty is 5-10 m."
       }
     },
     {
@@ -1247,7 +1247,7 @@
         "kind": "junction",
         "is_user_corrected": true,
         "correction_source": "user_map_annotation",
-        "correction_notes": "依据用户卫星图红线与本地 OSM 参照配准修正；坐标精度约5–10米。"
+        "correction_notes": "Corrected by registering the user-annotated satellite route against local OSM references; estimated positional uncertainty is 5-10 m."
       }
     },
     {
@@ -1271,7 +1271,7 @@
         "kind": "junction",
         "is_user_corrected": true,
         "correction_source": "user_map_annotation",
-        "correction_notes": "依据用户卫星图红线与本地 OSM 参照配准修正；坐标精度约5–10米。"
+        "correction_notes": "Corrected by registering the user-annotated satellite route against local OSM references; estimated positional uncertainty is 5-10 m."
       }
     },
     {
@@ -1295,7 +1295,7 @@
         "kind": "junction",
         "is_user_corrected": true,
         "correction_source": "user_map_annotation",
-        "correction_notes": "按同一道路方向和共享节点约束贴合底图。"
+        "correction_notes": "Aligned to the basemap using road-heading consistency and shared-node constraints."
       }
     },
     {
@@ -1319,7 +1319,7 @@
         "kind": "junction",
         "is_user_corrected": true,
         "correction_source": "user_map_annotation",
-        "correction_notes": "依据用户卫星图红线与本地 OSM 参照配准修正；坐标精度约5–10米。"
+        "correction_notes": "Corrected by registering the user-annotated satellite route against local OSM references; estimated positional uncertainty is 5-10 m."
       }
     },
     {
@@ -1364,7 +1364,7 @@
         "kind": "junction",
         "is_user_corrected": true,
         "correction_source": "user_map_annotation",
-        "correction_notes": "依据用户卫星图红线与本地 OSM 参照配准修正；坐标精度约5–10米。"
+        "correction_notes": "Corrected by registering the user-annotated satellite route against local OSM references; estimated positional uncertainty is 5-10 m."
       }
     },
     {
@@ -1388,7 +1388,7 @@
         "kind": "junction",
         "is_user_corrected": true,
         "correction_source": "user_map_annotation",
-        "correction_notes": "依据用户卫星图红线与本地 OSM 参照配准修正；坐标精度约5–10米。"
+        "correction_notes": "Corrected by registering the user-annotated satellite route against local OSM references; estimated positional uncertainty is 5-10 m."
       }
     },
     {
@@ -1412,7 +1412,7 @@
         "kind": "junction",
         "is_user_corrected": true,
         "correction_source": "user_map_annotation",
-        "correction_notes": "依据用户卫星图红线与本地 OSM 参照配准修正；坐标精度约5–10米。"
+        "correction_notes": "Corrected by registering the user-annotated satellite route against local OSM references; estimated positional uncertainty is 5-10 m."
       }
     },
     {
@@ -1430,7 +1430,7 @@
         "kind": "junction",
         "is_user_corrected": true,
         "correction_source": "user_map_annotation",
-        "correction_notes": "按用户标注新增四向交叉点；东侧与南侧至P011为两条独立路线。",
+        "correction_notes": "Added the annotated four-way junction; the eastern and southern routes to P011 remain distinct.",
         "osm_node_id": 9171952690,
         "segment_ids": [
           "S003",
@@ -1456,7 +1456,7 @@
         "kind": "junction",
         "is_user_corrected": true,
         "correction_source": "user_map_annotation",
-        "correction_notes": "红线显示的主路与东侧横支交点；与楼边P046分开保留。",
+        "correction_notes": "Intersection of the annotated main road and eastern branch, kept separate from the building-side P046.",
         "segment_ids": [
           "S074",
           "S077",
@@ -1537,7 +1537,7 @@
         "source_segment_ids": [
           "S001"
         ],
-        "correction_notes": "全网按底图道路贴合",
+        "correction_notes": "Network alignment to basemap roads",
         "provenance": {
           "connection_basis": "Existing network connection preserved during map registration.",
           "geometry_basis": "osm_constrained_map_snap",
@@ -1563,9 +1563,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按底图匹配相同方向的邻近道路；缺少对应道路的部分保留轨迹形状，仅衔接共享端点。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Matched nearby basemap roads with consistent headings; unmatched portions retain their track shape with shared endpoints reconnected.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ],
         "map_alignment": {
           "id": "S001",
@@ -1617,7 +1617,7 @@
         "source_segment_ids": [
           "S002"
         ],
-        "correction_notes": "全网按底图道路贴合",
+        "correction_notes": "Network alignment to basemap roads",
         "provenance": {
           "connection_basis": "Existing network connection preserved during map registration.",
           "geometry_basis": "osm_constrained_map_snap",
@@ -1643,9 +1643,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按底图匹配相同方向的邻近道路；缺少对应道路的部分保留轨迹形状，仅衔接共享端点。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Matched nearby basemap roads with consistent headings; unmatched portions retain their track shape with shared endpoints reconnected.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ],
         "map_alignment": {
           "id": "S002",
@@ -1773,7 +1773,7 @@
         "source_segment_ids": [
           "S003"
         ],
-        "correction_notes": "用户标注的两处交叉点",
+        "correction_notes": "Two user-annotated junctions",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
           "geometry_basis": "user_annotated_junction_with_osm",
@@ -1784,9 +1784,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按用户提供的地图标注校正路线与连接。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Route geometry and connections corrected using the supplied map annotations.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ]
       }
     },
@@ -1862,7 +1862,7 @@
         "source_segment_ids": [
           "S004"
         ],
-        "correction_notes": "全网按底图道路贴合",
+        "correction_notes": "Network alignment to basemap roads",
         "provenance": {
           "connection_basis": "Existing network connection preserved during map registration.",
           "geometry_basis": "osm_constrained_map_snap",
@@ -1888,9 +1888,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按底图匹配相同方向的邻近道路；缺少对应道路的部分保留轨迹形状，仅衔接共享端点。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Matched nearby basemap roads with consistent headings; unmatched portions retain their track shape with shared endpoints reconnected.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ],
         "map_alignment": {
           "id": "S004",
@@ -1946,7 +1946,7 @@
         "source_segment_ids": [
           "S005"
         ],
-        "correction_notes": "全网按底图道路贴合",
+        "correction_notes": "Network alignment to basemap roads",
         "provenance": {
           "connection_basis": "Existing network connection preserved during map registration.",
           "geometry_basis": "osm_constrained_map_snap",
@@ -1972,9 +1972,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按底图匹配相同方向的邻近道路；缺少对应道路的部分保留轨迹形状，仅衔接共享端点。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Matched nearby basemap roads with consistent headings; unmatched portions retain their track shape with shared endpoints reconnected.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ],
         "map_alignment": {
           "id": "S005",
@@ -2026,7 +2026,7 @@
         "source_segment_ids": [
           "S006"
         ],
-        "correction_notes": "全网按底图道路贴合",
+        "correction_notes": "Network alignment to basemap roads",
         "provenance": {
           "connection_basis": "Existing network connection preserved during map registration.",
           "geometry_basis": "osm_constrained_map_snap",
@@ -2052,9 +2052,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按底图匹配相同方向的邻近道路；缺少对应道路的部分保留轨迹形状，仅衔接共享端点。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Matched nearby basemap roads with consistent headings; unmatched portions retain their track shape with shared endpoints reconnected.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ],
         "map_alignment": {
           "id": "S006",
@@ -2134,7 +2134,7 @@
         "source_segment_ids": [
           "S007"
         ],
-        "correction_notes": "全网按底图道路贴合",
+        "correction_notes": "Network alignment to basemap roads",
         "provenance": {
           "connection_basis": "Existing network connection preserved during map registration.",
           "geometry_basis": "osm_constrained_map_snap",
@@ -2160,9 +2160,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按底图匹配相同方向的邻近道路；缺少对应道路的部分保留轨迹形状，仅衔接共享端点。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Matched nearby basemap roads with consistent headings; unmatched portions retain their track shape with shared endpoints reconnected.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ],
         "map_alignment": {
           "id": "S007",
@@ -2330,9 +2330,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按用户提供的地图标注校正路线与连接。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Route geometry and connections corrected using the supplied map annotations.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ]
       }
     },
@@ -2452,7 +2452,7 @@
         "source_segment_ids": [
           "S009"
         ],
-        "correction_notes": "用户地图标注校正",
+        "correction_notes": "User map annotation correction",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
           "geometry_basis": "registered satellite redline",
@@ -2523,9 +2523,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按用户提供的地图标注校正路线与连接。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Route geometry and connections corrected using the supplied map annotations.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ]
       }
     },
@@ -2605,7 +2605,7 @@
         "source_segment_ids": [
           "S010"
         ],
-        "correction_notes": "全网按底图道路贴合",
+        "correction_notes": "Network alignment to basemap roads",
         "provenance": {
           "connection_basis": "Existing network connection preserved during map registration.",
           "geometry_basis": "osm_constrained_map_snap",
@@ -2631,9 +2631,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按底图匹配相同方向的邻近道路；缺少对应道路的部分保留轨迹形状，仅衔接共享端点。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Matched nearby basemap roads with consistent headings; unmatched portions retain their track shape with shared endpoints reconnected.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ],
         "map_alignment": {
           "id": "S010",
@@ -2697,7 +2697,7 @@
         "source_segment_ids": [
           "S011"
         ],
-        "correction_notes": "用户地图标注校正",
+        "correction_notes": "User map annotation correction",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
           "geometry_basis": "registered satellite redline",
@@ -2768,9 +2768,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按用户提供的地图标注校正路线与连接。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Route geometry and connections corrected using the supplied map annotations.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ]
       }
     },
@@ -2834,7 +2834,7 @@
         "source_segment_ids": [
           "S012"
         ],
-        "correction_notes": "用户地图标注校正",
+        "correction_notes": "User map annotation correction",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
           "geometry_basis": "registered satellite redline",
@@ -2905,9 +2905,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按用户提供的地图标注校正路线与连接。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Route geometry and connections corrected using the supplied map annotations.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ]
       }
     },
@@ -3063,7 +3063,7 @@
         "source_segment_ids": [
           "S013"
         ],
-        "correction_notes": "用户地图标注校正",
+        "correction_notes": "User map annotation correction",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
           "geometry_basis": "registered satellite redline",
@@ -3134,9 +3134,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按用户提供的地图标注校正路线与连接。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Route geometry and connections corrected using the supplied map annotations.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ]
       }
     },
@@ -3244,9 +3244,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按用户提供的地图标注校正路线与连接。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Route geometry and connections corrected using the supplied map annotations.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ]
       }
     },
@@ -3302,7 +3302,7 @@
         "source_segment_ids": [
           "S015"
         ],
-        "correction_notes": "全网按底图道路贴合",
+        "correction_notes": "Network alignment to basemap roads",
         "provenance": {
           "connection_basis": "Existing network connection preserved during map registration.",
           "geometry_basis": "osm_constrained_map_snap",
@@ -3328,9 +3328,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按底图匹配相同方向的邻近道路；缺少对应道路的部分保留轨迹形状，仅衔接共享端点。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Matched nearby basemap roads with consistent headings; unmatched portions retain their track shape with shared endpoints reconnected.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ],
         "map_alignment": {
           "id": "S015",
@@ -3454,9 +3454,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按用户提供的地图标注校正路线与连接。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Route geometry and connections corrected using the supplied map annotations.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ]
       }
     },
@@ -3520,7 +3520,7 @@
         "source_segment_ids": [
           "S017"
         ],
-        "correction_notes": "用户标注的两处交叉点",
+        "correction_notes": "Two user-annotated junctions",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
           "geometry_basis": "user_annotated_junction_with_osm",
@@ -3531,9 +3531,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按用户提供的地图标注校正路线与连接。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Route geometry and connections corrected using the supplied map annotations.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ]
       }
     },
@@ -3593,7 +3593,7 @@
         "source_segment_ids": [
           "S018"
         ],
-        "correction_notes": "全网按底图道路贴合",
+        "correction_notes": "Network alignment to basemap roads",
         "provenance": {
           "connection_basis": "Existing network connection preserved during map registration.",
           "geometry_basis": "osm_constrained_map_snap",
@@ -3619,9 +3619,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按底图匹配相同方向的邻近道路；缺少对应道路的部分保留轨迹形状，仅衔接共享端点。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Matched nearby basemap roads with consistent headings; unmatched portions retain their track shape with shared endpoints reconnected.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ],
         "map_alignment": {
           "id": "S018",
@@ -3693,7 +3693,7 @@
         "source_segment_ids": [
           "S019"
         ],
-        "correction_notes": "全网按底图道路贴合",
+        "correction_notes": "Network alignment to basemap roads",
         "provenance": {
           "connection_basis": "Existing network connection preserved during map registration.",
           "geometry_basis": "osm_constrained_map_snap",
@@ -3719,9 +3719,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按底图匹配相同方向的邻近道路；缺少对应道路的部分保留轨迹形状，仅衔接共享端点。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Matched nearby basemap roads with consistent headings; unmatched portions retain their track shape with shared endpoints reconnected.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ],
         "map_alignment": {
           "id": "S019",
@@ -3785,7 +3785,7 @@
         "source_segment_ids": [
           "S020"
         ],
-        "correction_notes": "用户地图标注校正",
+        "correction_notes": "User map annotation correction",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
           "geometry_basis": "registered satellite redline",
@@ -3856,9 +3856,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按用户提供的地图标注校正路线与连接。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Route geometry and connections corrected using the supplied map annotations.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ]
       }
     },
@@ -3914,7 +3914,7 @@
         "source_segment_ids": [
           "S021"
         ],
-        "correction_notes": "全网按底图道路贴合",
+        "correction_notes": "Network alignment to basemap roads",
         "provenance": {
           "connection_basis": "Existing network connection preserved during map registration.",
           "geometry_basis": "osm_constrained_map_snap",
@@ -3940,9 +3940,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按底图匹配相同方向的邻近道路；缺少对应道路的部分保留轨迹形状，仅衔接共享端点。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Matched nearby basemap roads with consistent headings; unmatched portions retain their track shape with shared endpoints reconnected.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ],
         "map_alignment": {
           "id": "S021",
@@ -3990,7 +3990,7 @@
         "source_segment_ids": [
           "S022"
         ],
-        "correction_notes": "全网按底图道路贴合",
+        "correction_notes": "Network alignment to basemap roads",
         "provenance": {
           "connection_basis": "Existing network connection preserved during map registration.",
           "geometry_basis": "osm_constrained_map_snap",
@@ -4016,9 +4016,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按底图匹配相同方向的邻近道路；缺少对应道路的部分保留轨迹形状，仅衔接共享端点。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Matched nearby basemap roads with consistent headings; unmatched portions retain their track shape with shared endpoints reconnected.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ],
         "map_alignment": {
           "id": "S022",
@@ -4094,7 +4094,7 @@
         "source_segment_ids": [
           "S023"
         ],
-        "correction_notes": "全网按底图道路贴合",
+        "correction_notes": "Network alignment to basemap roads",
         "provenance": {
           "connection_basis": "Existing network connection preserved during map registration.",
           "geometry_basis": "osm_constrained_map_snap",
@@ -4120,9 +4120,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按底图匹配相同方向的邻近道路；缺少对应道路的部分保留轨迹形状，仅衔接共享端点。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Matched nearby basemap roads with consistent headings; unmatched portions retain their track shape with shared endpoints reconnected.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ],
         "map_alignment": {
           "id": "S023",
@@ -4194,7 +4194,7 @@
         "source_segment_ids": [
           "S024"
         ],
-        "correction_notes": "全网按底图道路贴合",
+        "correction_notes": "Network alignment to basemap roads",
         "provenance": {
           "connection_basis": "Existing network connection preserved during map registration.",
           "geometry_basis": "osm_constrained_map_snap",
@@ -4220,9 +4220,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按底图匹配相同方向的邻近道路；缺少对应道路的部分保留轨迹形状，仅衔接共享端点。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Matched nearby basemap roads with consistent headings; unmatched portions retain their track shape with shared endpoints reconnected.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ],
         "map_alignment": {
           "id": "S024",
@@ -4286,7 +4286,7 @@
         "source_segment_ids": [
           "S025"
         ],
-        "correction_notes": "用户地图标注校正",
+        "correction_notes": "User map annotation correction",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
           "geometry_basis": "registered satellite redline",
@@ -4357,9 +4357,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按用户提供的地图标注校正路线与连接。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Route geometry and connections corrected using the supplied map annotations.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ]
       }
     },
@@ -4419,7 +4419,7 @@
         "source_segment_ids": [
           "S026"
         ],
-        "correction_notes": "用户地图标注校正",
+        "correction_notes": "User map annotation correction",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
           "geometry_basis": "registered satellite redline",
@@ -4490,9 +4490,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按用户提供的地图标注校正路线与连接。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Route geometry and connections corrected using the supplied map annotations.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ]
       }
     },
@@ -4560,7 +4560,7 @@
         "source_segment_ids": [
           "S027"
         ],
-        "correction_notes": "用户地图标注校正",
+        "correction_notes": "User map annotation correction",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
           "geometry_basis": "registered satellite redline",
@@ -4631,9 +4631,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按用户提供的地图标注校正路线与连接。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Route geometry and connections corrected using the supplied map annotations.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ]
       }
     },
@@ -4693,7 +4693,7 @@
         "source_segment_ids": [
           "S028"
         ],
-        "correction_notes": "用户地图标注校正",
+        "correction_notes": "User map annotation correction",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
           "geometry_basis": "registered satellite redline",
@@ -4764,9 +4764,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按用户提供的地图标注校正路线与连接。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Route geometry and connections corrected using the supplied map annotations.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ]
       }
     },
@@ -4902,9 +4902,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按用户提供的地图标注校正路线与连接。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Route geometry and connections corrected using the supplied map annotations.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ]
       }
     },
@@ -5040,9 +5040,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按用户提供的地图标注校正路线与连接。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Route geometry and connections corrected using the supplied map annotations.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ]
       }
     },
@@ -5114,7 +5114,7 @@
         "source_segment_ids": [
           "S031"
         ],
-        "correction_notes": "全网按底图道路贴合",
+        "correction_notes": "Network alignment to basemap roads",
         "provenance": {
           "connection_basis": "Existing network connection preserved during map registration.",
           "geometry_basis": "osm_constrained_map_snap",
@@ -5140,9 +5140,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按底图匹配相同方向的邻近道路；缺少对应道路的部分保留轨迹形状，仅衔接共享端点。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Matched nearby basemap roads with consistent headings; unmatched portions retain their track shape with shared endpoints reconnected.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ],
         "map_alignment": {
           "id": "S031",
@@ -5218,7 +5218,7 @@
         "source_segment_ids": [
           "S032"
         ],
-        "correction_notes": "用户地图标注校正",
+        "correction_notes": "User map annotation correction",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
           "geometry_basis": "registered satellite redline",
@@ -5289,9 +5289,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按用户提供的地图标注校正路线与连接。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Route geometry and connections corrected using the supplied map annotations.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ]
       }
     },
@@ -5359,7 +5359,7 @@
         "source_segment_ids": [
           "S033"
         ],
-        "correction_notes": "用户地图标注校正",
+        "correction_notes": "User map annotation correction",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
           "geometry_basis": "registered satellite redline",
@@ -5430,9 +5430,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按用户提供的地图标注校正路线与连接。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Route geometry and connections corrected using the supplied map annotations.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ]
       }
     },
@@ -5488,7 +5488,7 @@
         "source_segment_ids": [
           "S034"
         ],
-        "correction_notes": "全网按底图道路贴合",
+        "correction_notes": "Network alignment to basemap roads",
         "provenance": {
           "connection_basis": "Existing network connection preserved during map registration.",
           "geometry_basis": "osm_constrained_map_snap",
@@ -5514,9 +5514,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按底图匹配相同方向的邻近道路；缺少对应道路的部分保留轨迹形状，仅衔接共享端点。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Matched nearby basemap roads with consistent headings; unmatched portions retain their track shape with shared endpoints reconnected.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ],
         "map_alignment": {
           "id": "S034",
@@ -5616,7 +5616,7 @@
         "source_segment_ids": [
           "S035"
         ],
-        "correction_notes": "用户地图标注校正",
+        "correction_notes": "User map annotation correction",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
           "geometry_basis": "registered satellite redline",
@@ -5687,9 +5687,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按用户提供的地图标注校正路线与连接。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Route geometry and connections corrected using the supplied map annotations.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ]
       }
     },
@@ -5781,7 +5781,7 @@
         "source_segment_ids": [
           "S036"
         ],
-        "correction_notes": "用户地图标注校正",
+        "correction_notes": "User map annotation correction",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
           "geometry_basis": "registered satellite redline",
@@ -5852,9 +5852,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按用户提供的地图标注校正路线与连接。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Route geometry and connections corrected using the supplied map annotations.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ]
       }
     },
@@ -5926,7 +5926,7 @@
         "source_segment_ids": [
           "S037"
         ],
-        "correction_notes": "用户标注的两处交叉点",
+        "correction_notes": "Two user-annotated junctions",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
           "geometry_basis": "user_annotated_junction_with_osm",
@@ -5937,9 +5937,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按用户提供的地图标注校正路线与连接。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Route geometry and connections corrected using the supplied map annotations.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ]
       }
     },
@@ -5987,7 +5987,7 @@
         "source_segment_ids": [
           "S038"
         ],
-        "correction_notes": "用户地图标注校正",
+        "correction_notes": "User map annotation correction",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
           "geometry_basis": "registered satellite redline",
@@ -6058,9 +6058,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按用户提供的地图标注校正路线与连接。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Route geometry and connections corrected using the supplied map annotations.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ]
       }
     },
@@ -6156,7 +6156,7 @@
         "source_segment_ids": [
           "S039"
         ],
-        "correction_notes": "用户地图标注校正",
+        "correction_notes": "User map annotation correction",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
           "geometry_basis": "registered satellite redline",
@@ -6227,9 +6227,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按用户提供的地图标注校正路线与连接。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Route geometry and connections corrected using the supplied map annotations.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ]
       }
     },
@@ -6277,7 +6277,7 @@
         "source_segment_ids": [
           "S040"
         ],
-        "correction_notes": "用户地图标注校正",
+        "correction_notes": "User map annotation correction",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
           "geometry_basis": "registered satellite redline",
@@ -6348,9 +6348,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按用户提供的地图标注校正路线与连接。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Route geometry and connections corrected using the supplied map annotations.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ]
       }
     },
@@ -6414,7 +6414,7 @@
         "source_segment_ids": [
           "S041"
         ],
-        "correction_notes": "用户地图标注校正",
+        "correction_notes": "User map annotation correction",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
           "geometry_basis": "registered satellite redline",
@@ -6485,9 +6485,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按用户提供的地图标注校正路线与连接。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Route geometry and connections corrected using the supplied map annotations.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ]
       }
     },
@@ -6539,7 +6539,7 @@
         "source_segment_ids": [
           "S042"
         ],
-        "correction_notes": "全网按底图道路贴合",
+        "correction_notes": "Network alignment to basemap roads",
         "provenance": {
           "connection_basis": "Existing network connection preserved during map registration.",
           "geometry_basis": "osm_constrained_map_snap",
@@ -6565,9 +6565,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按底图匹配相同方向的邻近道路；缺少对应道路的部分保留轨迹形状，仅衔接共享端点。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Matched nearby basemap roads with consistent headings; unmatched portions retain their track shape with shared endpoints reconnected.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ],
         "map_alignment": {
           "id": "S042",
@@ -6655,7 +6655,7 @@
         "source_segment_ids": [
           "S043"
         ],
-        "correction_notes": "全网按底图道路贴合",
+        "correction_notes": "Network alignment to basemap roads",
         "provenance": {
           "connection_basis": "Existing network connection preserved during map registration.",
           "geometry_basis": "osm_constrained_map_snap",
@@ -6681,9 +6681,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按底图匹配相同方向的邻近道路；缺少对应道路的部分保留轨迹形状，仅衔接共享端点。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Matched nearby basemap roads with consistent headings; unmatched portions retain their track shape with shared endpoints reconnected.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ],
         "map_alignment": {
           "id": "S043",
@@ -6751,7 +6751,7 @@
         "source_segment_ids": [
           "S044"
         ],
-        "correction_notes": "用户地图标注校正",
+        "correction_notes": "User map annotation correction",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
           "geometry_basis": "registered satellite redline",
@@ -6822,9 +6822,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按用户提供的地图标注校正路线与连接。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Route geometry and connections corrected using the supplied map annotations.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ]
       }
     },
@@ -6872,7 +6872,7 @@
         "source_segment_ids": [
           "S045"
         ],
-        "correction_notes": "用户地图标注校正",
+        "correction_notes": "User map annotation correction",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
           "geometry_basis": "registered satellite redline",
@@ -6943,9 +6943,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按用户提供的地图标注校正路线与连接。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Route geometry and connections corrected using the supplied map annotations.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ]
       }
     },
@@ -7021,7 +7021,7 @@
         "source_segment_ids": [
           "S046"
         ],
-        "correction_notes": "用户标注的两处交叉点",
+        "correction_notes": "Two user-annotated junctions",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
           "geometry_basis": "user_annotated_junction_with_osm",
@@ -7032,9 +7032,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按用户提供的地图标注校正路线与连接。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Route geometry and connections corrected using the supplied map annotations.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ]
       }
     },
@@ -7090,7 +7090,7 @@
         "source_segment_ids": [
           "S047"
         ],
-        "correction_notes": "全网按底图道路贴合",
+        "correction_notes": "Network alignment to basemap roads",
         "provenance": {
           "connection_basis": "Existing network connection preserved during map registration.",
           "geometry_basis": "osm_constrained_map_snap",
@@ -7116,9 +7116,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按底图匹配相同方向的邻近道路；缺少对应道路的部分保留轨迹形状，仅衔接共享端点。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Matched nearby basemap roads with consistent headings; unmatched portions retain their track shape with shared endpoints reconnected.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ],
         "map_alignment": {
           "id": "S047",
@@ -7182,7 +7182,7 @@
         "source_segment_ids": [
           "S048"
         ],
-        "correction_notes": "用户地图标注校正",
+        "correction_notes": "User map annotation correction",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
           "geometry_basis": "registered satellite redline",
@@ -7253,9 +7253,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按用户提供的地图标注校正路线与连接。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Route geometry and connections corrected using the supplied map annotations.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ]
       }
     },
@@ -7355,7 +7355,7 @@
         "source_segment_ids": [
           "S049"
         ],
-        "correction_notes": "用户地图标注校正",
+        "correction_notes": "User map annotation correction",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
           "geometry_basis": "registered satellite redline",
@@ -7426,9 +7426,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按用户提供的地图标注校正路线与连接。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Route geometry and connections corrected using the supplied map annotations.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ]
       }
     },
@@ -7480,7 +7480,7 @@
         "source_segment_ids": [
           "S050"
         ],
-        "correction_notes": "主楼南侧与游泳馆西侧按最新红线精修",
+        "correction_notes": "Latest annotated refinements south of the main building and west of the swimming pool",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
           "geometry_basis": "user_redline_precise_local_refinement",
@@ -7506,9 +7506,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按用户提供的地图标注校正路线与连接。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Route geometry and connections corrected using the supplied map annotations.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ]
       }
     },
@@ -7580,7 +7580,7 @@
         "source_segment_ids": [
           "S051"
         ],
-        "correction_notes": "用户地图标注校正",
+        "correction_notes": "User map annotation correction",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
           "geometry_basis": "registered satellite redline",
@@ -7651,9 +7651,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按用户提供的地图标注校正路线与连接。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Route geometry and connections corrected using the supplied map annotations.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ]
       }
     },
@@ -7709,7 +7709,7 @@
         "source_segment_ids": [
           "S052"
         ],
-        "correction_notes": "用户地图标注校正",
+        "correction_notes": "User map annotation correction",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
           "geometry_basis": "registered satellite redline",
@@ -7780,9 +7780,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按用户提供的地图标注校正路线与连接。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Route geometry and connections corrected using the supplied map annotations.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ]
       }
     },
@@ -7862,7 +7862,7 @@
         "source_segment_ids": [
           "S053"
         ],
-        "correction_notes": "全网按底图道路贴合",
+        "correction_notes": "Network alignment to basemap roads",
         "provenance": {
           "connection_basis": "Existing network connection preserved during map registration.",
           "geometry_basis": "osm_constrained_map_snap",
@@ -7888,9 +7888,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按底图匹配相同方向的邻近道路；缺少对应道路的部分保留轨迹形状，仅衔接共享端点。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Matched nearby basemap roads with consistent headings; unmatched portions retain their track shape with shared endpoints reconnected.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ],
         "map_alignment": {
           "id": "S053",
@@ -7970,7 +7970,7 @@
         "source_segment_ids": [
           "S054"
         ],
-        "correction_notes": "全网按底图道路贴合",
+        "correction_notes": "Network alignment to basemap roads",
         "provenance": {
           "connection_basis": "Existing network connection preserved during map registration.",
           "geometry_basis": "osm_constrained_map_snap",
@@ -7996,9 +7996,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按底图匹配相同方向的邻近道路；缺少对应道路的部分保留轨迹形状，仅衔接共享端点。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Matched nearby basemap roads with consistent headings; unmatched portions retain their track shape with shared endpoints reconnected.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ],
         "map_alignment": {
           "id": "S054",
@@ -8062,7 +8062,7 @@
         "source_segment_ids": [
           "S055"
         ],
-        "correction_notes": "全网按底图道路贴合",
+        "correction_notes": "Network alignment to basemap roads",
         "provenance": {
           "connection_basis": "Existing network connection preserved during map registration.",
           "geometry_basis": "osm_constrained_map_snap",
@@ -8088,9 +8088,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按底图匹配相同方向的邻近道路；缺少对应道路的部分保留轨迹形状，仅衔接共享端点。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Matched nearby basemap roads with consistent headings; unmatched portions retain their track shape with shared endpoints reconnected.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ],
         "map_alignment": {
           "id": "S055",
@@ -8154,7 +8154,7 @@
         "source_segment_ids": [
           "S056"
         ],
-        "correction_notes": "用户地图标注校正",
+        "correction_notes": "User map annotation correction",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
           "geometry_basis": "registered satellite redline",
@@ -8225,9 +8225,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按用户提供的地图标注校正路线与连接。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Route geometry and connections corrected using the supplied map annotations.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ]
       }
     },
@@ -8279,7 +8279,7 @@
         "source_segment_ids": [
           "S057"
         ],
-        "correction_notes": "全网按底图道路贴合",
+        "correction_notes": "Network alignment to basemap roads",
         "provenance": {
           "connection_basis": "Existing network connection preserved during map registration.",
           "geometry_basis": "osm_constrained_map_snap",
@@ -8305,9 +8305,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按底图匹配相同方向的邻近道路；缺少对应道路的部分保留轨迹形状，仅衔接共享端点。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Matched nearby basemap roads with consistent headings; unmatched portions retain their track shape with shared endpoints reconnected.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ],
         "map_alignment": {
           "id": "S057",
@@ -8391,7 +8391,7 @@
         "source_segment_ids": [
           "S058"
         ],
-        "correction_notes": "全网按底图道路贴合",
+        "correction_notes": "Network alignment to basemap roads",
         "provenance": {
           "connection_basis": "Existing network connection preserved during map registration.",
           "geometry_basis": "osm_constrained_map_snap",
@@ -8417,9 +8417,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按底图匹配相同方向的邻近道路；缺少对应道路的部分保留轨迹形状，仅衔接共享端点。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Matched nearby basemap roads with consistent headings; unmatched portions retain their track shape with shared endpoints reconnected.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ],
         "map_alignment": {
           "id": "S058",
@@ -8499,7 +8499,7 @@
         "source_segment_ids": [
           "S059"
         ],
-        "correction_notes": "全网按底图道路贴合",
+        "correction_notes": "Network alignment to basemap roads",
         "provenance": {
           "connection_basis": "Existing network connection preserved during map registration.",
           "geometry_basis": "osm_constrained_map_snap",
@@ -8525,9 +8525,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按底图匹配相同方向的邻近道路；缺少对应道路的部分保留轨迹形状，仅衔接共享端点。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Matched nearby basemap roads with consistent headings; unmatched portions retain their track shape with shared endpoints reconnected.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ],
         "map_alignment": {
           "id": "S059",
@@ -8579,7 +8579,7 @@
         "source_segment_ids": [
           "S060"
         ],
-        "correction_notes": "全网按底图道路贴合",
+        "correction_notes": "Network alignment to basemap roads",
         "provenance": {
           "connection_basis": "Existing network connection preserved during map registration.",
           "geometry_basis": "osm_constrained_map_snap",
@@ -8605,9 +8605,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按底图匹配相同方向的邻近道路；缺少对应道路的部分保留轨迹形状，仅衔接共享端点。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Matched nearby basemap roads with consistent headings; unmatched portions retain their track shape with shared endpoints reconnected.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ],
         "map_alignment": {
           "id": "S060",
@@ -8699,7 +8699,7 @@
         "source_segment_ids": [
           "S061"
         ],
-        "correction_notes": "全网按底图道路贴合",
+        "correction_notes": "Network alignment to basemap roads",
         "provenance": {
           "connection_basis": "Existing network connection preserved during map registration.",
           "geometry_basis": "osm_constrained_map_snap",
@@ -8725,9 +8725,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按底图匹配相同方向的邻近道路；缺少对应道路的部分保留轨迹形状，仅衔接共享端点。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Matched nearby basemap roads with consistent headings; unmatched portions retain their track shape with shared endpoints reconnected.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ],
         "map_alignment": {
           "id": "S061",
@@ -8799,7 +8799,7 @@
         "source_segment_ids": [
           "S062"
         ],
-        "correction_notes": "主楼南侧与游泳馆西侧按最新红线精修",
+        "correction_notes": "Latest annotated refinements south of the main building and west of the swimming pool",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
           "geometry_basis": "user_redline_precise_local_refinement",
@@ -8825,9 +8825,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按用户提供的地图标注校正路线与连接。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Route geometry and connections corrected using the supplied map annotations.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ]
       }
     },
@@ -8871,7 +8871,7 @@
         "source_segment_ids": [
           "S063"
         ],
-        "correction_notes": "主楼南侧与游泳馆西侧按最新红线精修",
+        "correction_notes": "Latest annotated refinements south of the main building and west of the swimming pool",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
           "geometry_basis": "user_redline_precise_local_refinement",
@@ -8897,9 +8897,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按用户提供的地图标注校正路线与连接。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Route geometry and connections corrected using the supplied map annotations.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ]
       }
     },
@@ -8967,7 +8967,7 @@
         "source_segment_ids": [
           "S064"
         ],
-        "correction_notes": "工程训练中心及周边按卫星红线校正",
+        "correction_notes": "Engineering Training Center and surrounding roads corrected from satellite annotations",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
           "geometry_basis": "user_satellite_redline_registered",
@@ -9068,9 +9068,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按用户提供的地图标注校正路线与连接。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Route geometry and connections corrected using the supplied map annotations.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ]
       }
     },
@@ -9210,7 +9210,7 @@
         "source_segment_ids": [
           "S065"
         ],
-        "correction_notes": "工程训练中心及周边按卫星红线校正",
+        "correction_notes": "Engineering Training Center and surrounding roads corrected from satellite annotations",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
           "geometry_basis": "user_satellite_redline_registered",
@@ -9311,9 +9311,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按用户提供的地图标注校正路线与连接。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Route geometry and connections corrected using the supplied map annotations.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ]
       }
     },
@@ -9389,7 +9389,7 @@
         "source_segment_ids": [
           "S066"
         ],
-        "correction_notes": "全网按底图道路贴合",
+        "correction_notes": "Network alignment to basemap roads",
         "provenance": {
           "connection_basis": "Existing network connection preserved during map registration.",
           "geometry_basis": "osm_constrained_map_snap",
@@ -9415,9 +9415,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按底图匹配相同方向的邻近道路；缺少对应道路的部分保留轨迹形状，仅衔接共享端点。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Matched nearby basemap roads with consistent headings; unmatched portions retain their track shape with shared endpoints reconnected.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ],
         "map_alignment": {
           "id": "S066",
@@ -9505,7 +9505,7 @@
         "source_segment_ids": [
           "S067"
         ],
-        "correction_notes": "全网按底图道路贴合",
+        "correction_notes": "Network alignment to basemap roads",
         "provenance": {
           "connection_basis": "Existing network connection preserved during map registration.",
           "geometry_basis": "osm_constrained_map_snap",
@@ -9531,9 +9531,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按底图匹配相同方向的邻近道路；缺少对应道路的部分保留轨迹形状，仅衔接共享端点。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Matched nearby basemap roads with consistent headings; unmatched portions retain their track shape with shared endpoints reconnected.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ],
         "map_alignment": {
           "id": "S067",
@@ -9601,7 +9601,7 @@
         "source_segment_ids": [
           "S068"
         ],
-        "correction_notes": "全网按底图道路贴合",
+        "correction_notes": "Network alignment to basemap roads",
         "provenance": {
           "connection_basis": "Existing network connection preserved during map registration.",
           "geometry_basis": "osm_constrained_map_snap",
@@ -9627,9 +9627,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按底图匹配相同方向的邻近道路；缺少对应道路的部分保留轨迹形状，仅衔接共享端点。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Matched nearby basemap roads with consistent headings; unmatched portions retain their track shape with shared endpoints reconnected.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ],
         "map_alignment": {
           "id": "S068",
@@ -9737,7 +9737,7 @@
         "source_segment_ids": [
           "S069"
         ],
-        "correction_notes": "工程训练中心及周边按卫星红线校正",
+        "correction_notes": "Engineering Training Center and surrounding roads corrected from satellite annotations",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
           "geometry_basis": "user_satellite_redline_registered",
@@ -9838,9 +9838,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按用户提供的地图标注校正路线与连接。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Route geometry and connections corrected using the supplied map annotations.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ]
       }
     },
@@ -9904,7 +9904,7 @@
         "source_segment_ids": [
           "S070"
         ],
-        "correction_notes": "主楼南侧与游泳馆西侧按最新红线精修",
+        "correction_notes": "Latest annotated refinements south of the main building and west of the swimming pool",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
           "geometry_basis": "user_redline_precise_local_refinement",
@@ -9930,9 +9930,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按用户提供的地图标注校正路线与连接。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Route geometry and connections corrected using the supplied map annotations.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ]
       }
     },
@@ -10094,7 +10094,7 @@
           "S085",
           "S088"
         ],
-        "correction_notes": "工程训练中心及周边按卫星红线校正",
+        "correction_notes": "Engineering Training Center and surrounding roads corrected from satellite annotations",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
           "geometry_basis": "user_satellite_redline_registered",
@@ -10197,9 +10197,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按用户提供的地图标注校正路线与连接。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Route geometry and connections corrected using the supplied map annotations.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ]
       }
     },
@@ -10407,7 +10407,7 @@
         "source_segment_ids": [
           "S072"
         ],
-        "correction_notes": "全网按底图道路贴合",
+        "correction_notes": "Network alignment to basemap roads",
         "provenance": {
           "connection_basis": "Existing network connection preserved during map registration.",
           "geometry_basis": "osm_constrained_map_snap",
@@ -10433,9 +10433,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按底图匹配相同方向的邻近道路；缺少对应道路的部分保留轨迹形状，仅衔接共享端点。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Matched nearby basemap roads with consistent headings; unmatched portions retain their track shape with shared endpoints reconnected.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ],
         "map_alignment": {
           "id": "S072",
@@ -10487,7 +10487,7 @@
         "source_segment_ids": [
           "S073"
         ],
-        "correction_notes": "主楼南侧与游泳馆西侧按最新红线精修",
+        "correction_notes": "Latest annotated refinements south of the main building and west of the swimming pool",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
           "geometry_basis": "user_redline_precise_local_refinement",
@@ -10513,9 +10513,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按用户提供的地图标注校正路线与连接。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Route geometry and connections corrected using the supplied map annotations.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ]
       }
     },
@@ -10559,7 +10559,7 @@
         "source_segment_ids": [
           "S074"
         ],
-        "correction_notes": "主楼南侧与游泳馆西侧按最新红线精修",
+        "correction_notes": "Latest annotated refinements south of the main building and west of the swimming pool",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
           "geometry_basis": "user_redline_precise_local_refinement",
@@ -10585,9 +10585,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按用户提供的地图标注校正路线与连接。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Route geometry and connections corrected using the supplied map annotations.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ]
       }
     },
@@ -10671,7 +10671,7 @@
         "source_segment_ids": [
           "S075"
         ],
-        "correction_notes": "主楼南侧与游泳馆西侧按最新红线精修",
+        "correction_notes": "Latest annotated refinements south of the main building and west of the swimming pool",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
           "geometry_basis": "user_redline_precise_local_refinement",
@@ -10697,9 +10697,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按用户提供的地图标注校正路线与连接。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Route geometry and connections corrected using the supplied map annotations.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ]
       }
     },
@@ -10747,7 +10747,7 @@
         "source_segment_ids": [
           "S076"
         ],
-        "correction_notes": "全网按底图道路贴合",
+        "correction_notes": "Network alignment to basemap roads",
         "provenance": {
           "connection_basis": "Existing network connection preserved during map registration.",
           "geometry_basis": "osm_constrained_map_snap",
@@ -10773,9 +10773,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按底图匹配相同方向的邻近道路；缺少对应道路的部分保留轨迹形状，仅衔接共享端点。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Matched nearby basemap roads with consistent headings; unmatched portions retain their track shape with shared endpoints reconnected.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ],
         "map_alignment": {
           "id": "S076",
@@ -10831,7 +10831,7 @@
         "source_segment_ids": [
           "S077"
         ],
-        "correction_notes": "主楼南侧与游泳馆西侧按最新红线精修",
+        "correction_notes": "Latest annotated refinements south of the main building and west of the swimming pool",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
           "geometry_basis": "user_redline_precise_local_refinement",
@@ -10857,9 +10857,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按用户提供的地图标注校正路线与连接。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Route geometry and connections corrected using the supplied map annotations.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ]
       }
     },
@@ -10931,7 +10931,7 @@
         "source_segment_ids": [
           "S078"
         ],
-        "correction_notes": "工程训练中心及周边按卫星红线校正",
+        "correction_notes": "Engineering Training Center and surrounding roads corrected from satellite annotations",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
           "geometry_basis": "user_satellite_redline_registered",
@@ -11032,9 +11032,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按用户提供的地图标注校正路线与连接。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Route geometry and connections corrected using the supplied map annotations.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ]
       }
     },
@@ -11082,7 +11082,7 @@
         "source_segment_ids": [
           "S079"
         ],
-        "correction_notes": "主楼南侧与游泳馆西侧按最新红线精修",
+        "correction_notes": "Latest annotated refinements south of the main building and west of the swimming pool",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
           "geometry_basis": "user_redline_precise_local_refinement",
@@ -11108,9 +11108,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按用户提供的地图标注校正路线与连接。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Route geometry and connections corrected using the supplied map annotations.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ]
       }
     },
@@ -11158,7 +11158,7 @@
         "source_segment_ids": [
           "S080"
         ],
-        "correction_notes": "主楼南侧与游泳馆西侧按最新红线精修",
+        "correction_notes": "Latest annotated refinements south of the main building and west of the swimming pool",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
           "geometry_basis": "user_redline_precise_local_refinement",
@@ -11184,9 +11184,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按用户提供的地图标注校正路线与连接。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Route geometry and connections corrected using the supplied map annotations.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ]
       }
     },
@@ -11247,7 +11247,7 @@
           "S081",
           "S086"
         ],
-        "correction_notes": "工程训练中心及周边按卫星红线校正",
+        "correction_notes": "Engineering Training Center and surrounding roads corrected from satellite annotations",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
           "geometry_basis": "user_satellite_redline_registered",
@@ -11349,9 +11349,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按用户提供的地图标注校正路线与连接。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Route geometry and connections corrected using the supplied map annotations.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ]
       }
     },
@@ -11421,7 +11421,7 @@
           "S089",
           "S090"
         ],
-        "correction_notes": "工程训练中心及周边按卫星红线校正",
+        "correction_notes": "Engineering Training Center and surrounding roads corrected from satellite annotations",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
           "geometry_basis": "user_satellite_redline_registered",
@@ -11524,9 +11524,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按用户提供的地图标注校正路线与连接。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Route geometry and connections corrected using the supplied map annotations.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ]
       }
     },
@@ -11582,7 +11582,7 @@
         "source_segment_ids": [
           "S083"
         ],
-        "correction_notes": "工程训练中心及周边按卫星红线校正",
+        "correction_notes": "Engineering Training Center and surrounding roads corrected from satellite annotations",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
           "geometry_basis": "user_satellite_redline_registered",
@@ -11683,9 +11683,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按用户提供的地图标注校正路线与连接。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Route geometry and connections corrected using the supplied map annotations.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ]
       }
     },
@@ -11745,7 +11745,7 @@
         "source_segment_ids": [
           "S084"
         ],
-        "correction_notes": "工程训练中心及周边按卫星红线校正",
+        "correction_notes": "Engineering Training Center and surrounding roads corrected from satellite annotations",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
           "geometry_basis": "user_satellite_redline_registered",
@@ -11846,9 +11846,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按用户提供的地图标注校正路线与连接。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Route geometry and connections corrected using the supplied map annotations.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ]
       }
     },
@@ -11918,7 +11918,7 @@
           "S087",
           "S088"
         ],
-        "correction_notes": "工程训练中心及周边按卫星红线校正",
+        "correction_notes": "Engineering Training Center and surrounding roads corrected from satellite annotations",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
           "geometry_basis": "user_satellite_redline_registered",
@@ -12021,9 +12021,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按用户提供的地图标注校正路线与连接。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Route geometry and connections corrected using the supplied map annotations.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ]
       }
     },
@@ -12079,7 +12079,7 @@
         "source_segment_ids": [
           "S092"
         ],
-        "correction_notes": "工程训练中心及周边按卫星红线校正",
+        "correction_notes": "Engineering Training Center and surrounding roads corrected from satellite annotations",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
           "geometry_basis": "user_satellite_redline_registered",
@@ -12180,9 +12180,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按用户提供的地图标注校正路线与连接。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Route geometry and connections corrected using the supplied map annotations.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ]
       }
     },
@@ -12262,7 +12262,7 @@
         "source_segment_ids": [
           "S093"
         ],
-        "correction_notes": "工程训练中心及周边按卫星红线校正",
+        "correction_notes": "Engineering Training Center and surrounding roads corrected from satellite annotations",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
           "geometry_basis": "user_satellite_redline_registered",
@@ -12363,9 +12363,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按用户提供的地图标注校正路线与连接。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Route geometry and connections corrected using the supplied map annotations.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ]
       }
     },
@@ -12429,7 +12429,7 @@
         "source_segment_ids": [
           "S094"
         ],
-        "correction_notes": "工程训练中心及周边按卫星红线校正",
+        "correction_notes": "Engineering Training Center and surrounding roads corrected from satellite annotations",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
           "geometry_basis": "user_satellite_redline_registered",
@@ -12530,9 +12530,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按用户提供的地图标注校正路线与连接。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Route geometry and connections corrected using the supplied map annotations.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ]
       }
     },
@@ -12580,7 +12580,7 @@
         "source_segment_ids": [
           "S095"
         ],
-        "correction_notes": "全网按底图道路贴合",
+        "correction_notes": "Network alignment to basemap roads",
         "provenance": {
           "connection_basis": "Existing network connection preserved during map registration.",
           "geometry_basis": "osm_constrained_map_snap",
@@ -12606,9 +12606,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按底图匹配相同方向的邻近道路；缺少对应道路的部分保留轨迹形状，仅衔接共享端点。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Matched nearby basemap roads with consistent headings; unmatched portions retain their track shape with shared endpoints reconnected.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ],
         "map_alignment": {
           "id": "S095",
@@ -12752,7 +12752,7 @@
         "source_segment_ids": [
           "S096"
         ],
-        "correction_notes": "工程训练中心及周边按卫星红线校正",
+        "correction_notes": "Engineering Training Center and surrounding roads corrected from satellite annotations",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
           "geometry_basis": "user_satellite_redline_registered",
@@ -12853,9 +12853,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按用户提供的地图标注校正路线与连接。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Route geometry and connections corrected using the supplied map annotations.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ]
       }
     },
@@ -12963,7 +12963,7 @@
         "source_segment_ids": [
           "S097"
         ],
-        "correction_notes": "工程训练中心及周边按卫星红线校正",
+        "correction_notes": "Engineering Training Center and surrounding roads corrected from satellite annotations",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
           "geometry_basis": "user_satellite_redline_registered",
@@ -13064,9 +13064,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按用户提供的地图标注校正路线与连接。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Route geometry and connections corrected using the supplied map annotations.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ]
       }
     },
@@ -13134,7 +13134,7 @@
         "source_segment_ids": [
           "S098"
         ],
-        "correction_notes": "工程训练中心及周边按卫星红线校正",
+        "correction_notes": "Engineering Training Center and surrounding roads corrected from satellite annotations",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
           "geometry_basis": "user_satellite_redline_registered",
@@ -13235,9 +13235,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按用户提供的地图标注校正路线与连接。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Route geometry and connections corrected using the supplied map annotations.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ]
       }
     },
@@ -13329,7 +13329,7 @@
         "source_segment_ids": [
           "S099"
         ],
-        "correction_notes": "工程训练中心及周边按卫星红线校正",
+        "correction_notes": "Engineering Training Center and surrounding roads corrected from satellite annotations",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
           "geometry_basis": "user_satellite_redline_registered",
@@ -13430,9 +13430,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按用户提供的地图标注校正路线与连接。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Route geometry and connections corrected using the supplied map annotations.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ]
       }
     },
@@ -13515,9 +13515,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "按底图匹配相同方向的邻近道路；缺少对应道路的部分保留轨迹形状，仅衔接共享端点。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Matched nearby basemap roads with consistent headings; unmatched portions retain their track shape with shared endpoints reconnected.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ],
         "connection_confirmed": true,
         "connection_source": "user",
@@ -13527,7 +13527,7 @@
         "source_segment_ids": [
           "S100"
         ],
-        "correction_notes": "全网按底图道路贴合",
+        "correction_notes": "Network alignment to basemap roads",
         "map_alignment": {
           "id": "S100",
           "matched_sample_fraction": 1.0,
@@ -13637,7 +13637,7 @@
         "source_segment_ids": [
           "S003"
         ],
-        "correction_notes": "用户标注的两处交叉点",
+        "correction_notes": "Two user-annotated junctions",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
           "geometry_basis": "user_annotated_junction_with_osm",
@@ -13650,9 +13650,9 @@
         "coordinate_count": 19,
         "length_m": 151.6,
         "notes": [
-          "按用户提供的地图标注校正路线与连接。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Route geometry and connections corrected using the supplied map annotations.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ],
         "supporting_gps_sample_count": 36,
         "median_support_offset_m": 0.26,
@@ -13710,7 +13710,7 @@
         "source_segment_ids": [
           "S017"
         ],
-        "correction_notes": "用户标注的两处交叉点",
+        "correction_notes": "Two user-annotated junctions",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
           "geometry_basis": "user_annotated_junction_with_osm",
@@ -13723,9 +13723,9 @@
         "coordinate_count": 7,
         "length_m": 58.36,
         "notes": [
-          "按用户提供的地图标注校正路线与连接。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Route geometry and connections corrected using the supplied map annotations.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ],
         "supporting_gps_sample_count": 12,
         "median_support_offset_m": 0.05,
@@ -13771,7 +13771,7 @@
         "source_segment_ids": [
           "S074"
         ],
-        "correction_notes": "主楼南侧与游泳馆西侧按最新红线精修",
+        "correction_notes": "Latest annotated refinements south of the main building and west of the swimming pool",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
           "geometry_basis": "user_redline_precise_local_refinement",
@@ -13799,9 +13799,9 @@
         "coordinate_count": 4,
         "length_m": 25.97,
         "notes": [
-          "按用户提供的地图标注校正路线与连接。",
-          "距离沿校正后折线累计，为地图估算；并非本次活动实测。",
-          "GPS支撑仅表示附近原始采样，不等于校正后路线已完整骑行。"
+          "Route geometry and connections corrected using the supplied map annotations.",
+          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
+          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
         ],
         "supporting_gps_sample_count": 9,
         "median_support_offset_m": 4.09,

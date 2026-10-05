@@ -1,0 +1,77 @@
+BUAA Shahe Campus Map: data and methods
+
+Current network
+- 62 points, 97 undirected segments, and one connected component.
+- Total network length: 11,811.06 m, counting each segment once. Map-corrected distances are estimates, not measured activity distances.
+- Each point connects 3 or 4 distinct segments. The valid network has no dead-end nodes.
+- Original GPS samples, historical dead ends, and earlier audits remain available. Geometry corrections did not alter the source activity samples.
+
+Completed corrections
+1. Move P030 north to the annotated junction and reconnect P021, P028, and P044.
+2. Add the four-way junction P065 by splitting S003 and S017; the new segments are S101 and S102.
+   Keep the eastern loop and direct southern route between P065 and P011 as distinct edges.
+3. Rebuild the Engineering Training Center area from the annotated satellite image, removing false nodes P052, P053, P055, and P056 and six redundant edges.
+4. Rebuild the northern main road and laboratory area from the other satellite annotation. P022 and P023 are separate real junctions and remain distinct.
+5. Align other geometry to the OSM basemap while prioritizing annotated routes and their shared endpoints.
+6. Keep the user-confirmed P019-P028 connection, S100, as a solid blue line. Its current estimated length is 112.91 m.
+7. Move P008 south to the actual junction and refine P016. Redraw S016 along the lower east-west road.
+8. Refine P043, P044, and P049. Add P066 where the north-south main road meets the eastern side street.
+   Reconnect S074 and S077 to P066 and add S103 between P066 and P046. Keep the building-side P046 separate; both are three-way junctions.
+
+Map alignment
+- Register annotated satellite images to local metric coordinates using ground-level junctions and corresponding road features, then convert to WGS84.
+  Do not interpret Amap image pixels or GCJ-02 readings directly as WGS84. Image registration and manual annotations still have uncertainty.
+- Match ordinary routes using along-line samples, road headings, and local continuity, with a maximum candidate displacement of 18 m.
+  Prefer nearby road junctions with matching branch directions. Incident segments share exactly the same endpoint coordinates.
+- Reduce alignment strength locally if it would introduce unintended crossings. Preserve nearby distinct roads and real loops.
+- S066 and S068 have no corresponding mapped road. Keep their route shapes and reconnect shared endpoints without forcing them onto unrelated roads.
+- S004 is partially matched. The map_alignment fields record match coverage and status.
+- This is a representative network derived from activity and map evidence, not a surveying product.
+
+Interactive viewer
+route_network.html is an offline map with zoom, pan, point/segment details, node selection, and JSON download.
+- Valid routes are solid blue. The original track is hidden by default and can be enabled for comparison.
+- Mouse dragging, zoom, keyboard panning, and window resizing stay within the available basemap bounds.
+- Refresh the page after updating its file.
+- DATA_GUIDE.txt explains the data; it is not required to run the page.
+
+Files
+route_network.json: metadata, points, segments, removed_dead_ends, and raw_track.
+route_network.geojson: the valid network as Point and LineString features.
+points.csv: node coordinates, degrees, and connected segment IDs.
+segments.csv: endpoints, along-route lengths, coordinate counts, supporting samples, WKT geometry, and provenance.
+removed_dead_ends.geojson: four dead ends removed during initial inference, retained only for historical inspection.
+validation.json: current coordinate, topology, and distance checks. historical_pre_correction_audit applies only to earlier versions.
+network_with_map.png: the current network over the basemap.
+network_overview.png: the current network compared with the original GPS track.
+map_corrections_preview.png: four earlier correction close-ups.
+latest_refinements_preview.png: the latest P008 and western swimming-pool-area refinements.
+inferred_S100.png: a close-up of the user-confirmed P019-P028 connection.
+map_basemap.json / map_basemap.geojson: offline basemap features.
+Use Code > Download ZIP on GitHub to download the repository.
+
+Field conventions
+1. Geographic coordinates use WGS84 EPSG:4326 and are stored as [longitude, latitude].
+2. geometry_xy stores metres in EPSG:32650 (UTM zone 50N), relative to metadata.local_xy_origin_utm_m.
+3. segment.coordinates contains the complete ordered polyline. point_a and point_b define storage order only; all segments are undirected.
+4. length_m is the sum of WGS84 ellipsoidal distances along successive polyline vertices, not the straight-line endpoint distance.
+5. degree counts distinct segment IDs. The same endpoint pair can have multiple geometrically distinct routes.
+6. is_user_corrected identifies user-requested map corrections. geometry_method distinguishes image registration, junction refinement, and ordinary basemap alignment.
+7. geometry_is_estimate and length_is_estimate mark estimates. Decimal precision does not imply positional accuracy.
+8. supporting_gps_record_indices are zero-based indexes into raw_track, not indexes into all FIT messages.
+   Affected samples are reassigned to the nearest corrected segment within 18 m. Proximity support does not prove that the entire corrected route was traversed.
+9. S100's is_inferred flag describes the origin of its added geometry; its connection was confirmed by the user. geometry_method records its current construction method.
+10. Retired point and segment IDs are not reused. Metadata records retired IDs and the regional correction history.
+
+Historical initial extraction
+The source FIT contained 3,662 valid GPS samples and reported an activity distance of 16,680.50 m. GPS polyline length and FIT distance are different measurements.
+Initial processing used a 5 m trajectory buffer, 1 m raster centerlines, narrow-gap merging, compact junction clusters, and iterative dead-end removal.
+The approximately 10 m merge tolerance produced 64 points and 99 segments before S100 and subsequent map corrections were added.
+The 8/10/12 m experiments in metadata.sensitivity apply only to the original extraction before manual corrections.
+
+Basemap source
+Copyright OpenStreetMap contributors, ODbL 1.0.
+https://www.openstreetmap.org/copyright
+https://opendatacommons.org/licenses/odbl/1-0/
+The regional basemap was downloaded with user authorization and contains 444 features. It is embedded locally; opening, zooming, and inspecting the viewer require no further network requests.
+The original FIT and annotated satellite screenshots are not included in the repository. Their derived geometry and provenance records are retained as described above.

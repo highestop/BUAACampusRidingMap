@@ -21,7 +21,7 @@
 | `map_basemap.json` / `map_basemap.geojson` | 本区域离线 OpenStreetMap 底图 |
 | `removed_dead_ends.geojson` | 初始提取时剔除的死路，供历史核查 |
 | `validation.json` | 当前验证结果及有明确适用范围的历史审核 |
-| `说明.txt` | 完整数据约定、校正记录、方法与局限 |
+| `DATA_GUIDE.txt` | 英文数据说明：字段约定、校正记录、方法与局限 |
 | `*.png` | 全网及局部校正预览 |
 | `scripts/build_viewer.py` | 从当前 JSON 数据重新生成页面 |
 
