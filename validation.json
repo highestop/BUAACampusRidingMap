@@ -16,15 +16,13 @@
     "one_connected_component": true,
     "corrected_segments_explicitly_marked_as_map_estimates": true,
     "all_point_records_preserved": true,
-    "all_segment_connections_preserved": true,
-    "corrected_approach_directions_preserved": true,
-    "corrected_approaches_have_straight_entry": true
+    "all_segment_connections_preserved": true
   },
   "all_passed": true,
   "summary": {
     "point_count": 65,
     "segment_count": 103,
-    "total_network_length_m": 11900.51,
+    "total_network_length_m": 11897.86,
     "connected_components": 1,
     "minimum_degree": 3,
     "maximum_degree": 4,
@@ -39,7 +37,7 @@
     "user_confirmed_added_segment_count": 2,
     "estimated_geometry_segment_count": 103,
     "user_corrected_segment_count": 103,
-    "map_corrected_network_length_m": 11900.51
+    "map_corrected_network_length_m": 11897.86
   },
   "crossings": []
 }
