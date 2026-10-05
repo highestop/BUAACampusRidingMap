@@ -29,9 +29,9 @@
       "minimum_distinct_incident_segments": 2
     },
     "summary": {
-      "point_count": 64,
-      "segment_count": 102,
-      "total_network_length_m": 11938.16,
+      "point_count": 65,
+      "segment_count": 103,
+      "total_network_length_m": 11917.92,
       "connected_components": 1,
       "minimum_degree": 3,
       "maximum_degree": 4,
@@ -41,12 +41,12 @@
       "gps_derived_segment_count": 0,
       "gps_derived_network_length_m": 0,
       "inferred_segment_count": 1,
-      "inferred_network_length_m": 104.27,
+      "inferred_network_length_m": 83.34,
       "total_length_includes_inferred_segments": true,
       "user_confirmed_added_segment_count": 2,
-      "estimated_geometry_segment_count": 102,
-      "user_corrected_segment_count": 102,
-      "map_corrected_network_length_m": 11938.16
+      "estimated_geometry_segment_count": 103,
+      "user_corrected_segment_count": 103,
+      "map_corrected_network_length_m": 11917.92
     },
     "sensitivity": [
       {
@@ -84,14 +84,14 @@
         "segment_id": "S100",
         "endpoints": [
           "P019",
-          "P028"
+          "P069"
         ],
         "reason": "User confirmed missing traversable connection outside recorded trajectory",
         "connection_confirmed": true,
         "geometry_is_estimate": true,
         "is_inferred": true,
-        "estimated_length_m": 104.27,
-        "current_geometry_method": "user_annotated_straight_road_axis"
+        "estimated_length_m": 83.34,
+        "current_geometry_method": "user_confirmed_staggered_junction_alignment"
       }
     ],
     "sensitivity_scope": "Original 99 GPS-derived segments before manual S100 addition.",
@@ -1489,6 +1489,41 @@
           "S071",
           "S072"
         ]
+      },
+      {
+        "name": "split_P028_into_staggered_three_way_junctions",
+        "geometry_method": "user_confirmed_staggered_junction_alignment",
+        "points_updates": [
+          {
+            "id": "P069",
+            "xy": [
+              815.1047246695647,
+              449.40027341057714
+            ],
+            "notes": "Three-way junction for the west side road."
+          },
+          {
+            "id": "P028",
+            "xy": [
+              817.5459439353073,
+              442.4098077727553
+            ],
+            "notes": "Three-way junction for the east side road."
+          }
+        ],
+        "registration": {
+          "method": "User confirmed two staggered junctions; intersect the established side-road centerlines with the north-south road axis. Preserve side-road geometry outside the previous false shared junction.",
+          "western_junction_id": "P069",
+          "eastern_junction_id": "P028",
+          "connecting_segment_id": "S109"
+        },
+        "corrected_segment_ids": [
+          "S100",
+          "S109",
+          "S046",
+          "S042",
+          "S047"
+        ]
       }
     ],
     "retired_point_ids": [
@@ -1964,18 +1999,20 @@
     },
     {
       "id": "P028",
-      "longitude": 116.26714376,
-      "latitude": 40.1516589,
-      "x_m": 823.0,
-      "y_m": 430.0,
-      "degree": 4,
+      "longitude": 116.26707853,
+      "latitude": 40.15177029,
+      "x_m": 817.545944,
+      "y_m": 442.409808,
+      "degree": 3,
       "segment_ids": [
         "S042",
-        "S046",
         "S047",
-        "S100"
+        "S109"
       ],
-      "kind": "junction"
+      "kind": "junction",
+      "is_user_corrected": true,
+      "correction_source": "user_map_annotation",
+      "correction_notes": "Three-way junction for the east side road."
     },
     {
       "id": "P029",
@@ -2594,6 +2631,23 @@
         "S107"
       ],
       "degree": 4
+    },
+    {
+      "id": "P069",
+      "kind": "junction",
+      "x_m": 815.104725,
+      "y_m": 449.400273,
+      "is_user_corrected": true,
+      "correction_source": "user_map_annotation",
+      "longitude": 116.26704919,
+      "latitude": 40.15183308,
+      "correction_notes": "Three-way junction for the west side road.",
+      "segment_ids": [
+        "S046",
+        "S100",
+        "S109"
+      ],
+      "degree": 3
     }
   ],
   "segments": [
@@ -10622,7 +10676,7 @@
       "point_a": "P024",
       "point_b": "P028",
       "directed": false,
-      "length_m": 206.32,
+      "length_m": 200.11,
       "coordinates": [
         [
           116.26930784,
@@ -10637,12 +10691,8 @@
           40.15180176
         ],
         [
-          116.26716708,
-          40.15177754
-        ],
-        [
-          116.26714376,
-          40.1516589
+          116.26707853,
+          40.15177029
         ]
       ],
       "geometry_xy": [
@@ -10659,18 +10709,14 @@
           445.815
         ],
         [
-          825.095,
-          443.152
-        ],
-        [
-          823.0,
-          430.0
+          817.545944,
+          442.409808
         ]
       ],
-      "coordinate_count": 5,
-      "geometry_method": "osm_constrained_map_snap",
+      "coordinate_count": 4,
+      "geometry_method": "user_confirmed_staggered_junction_alignment",
       "length_method": "WGS84_geodesic_sum_along_map_corrected_polyline",
-      "supporting_gps_sample_count": 86,
+      "supporting_gps_sample_count": 83,
       "supporting_gps_record_indices": [
         452,
         453,
@@ -10713,9 +10759,6 @@
         490,
         491,
         492,
-        493,
-        854,
-        855,
         856,
         857,
         858,
@@ -10759,35 +10802,25 @@
         896,
         897
       ],
-      "median_support_offset_m": 1.32,
-      "max_support_offset_m": 4.12,
+      "median_support_offset_m": 1.28,
+      "max_support_offset_m": 6.21,
       "is_user_corrected": true,
       "connection_confirmed": true,
-      "connection_source": "osm_basemap_alignment",
+      "connection_source": "user_map_annotation",
       "geometry_is_estimate": true,
       "length_is_estimate": true,
       "source_segment_ids": [
         "S042"
       ],
-      "correction_notes": "Network alignment to basemap roads",
+      "correction_notes": "split_P028_into_staggered_three_way_junctions",
       "provenance": {
-        "connection_basis": "Existing network connection preserved during map registration.",
-        "geometry_basis": "osm_constrained_map_snap",
+        "connection_basis": "User supplied actual route annotation.",
+        "geometry_basis": "user_confirmed_staggered_junction_alignment",
         "registration": {
-          "method": "Heading- and continuity-constrained local map registration; user satellite corrections locked.",
-          "max_candidate_offset_m": 18,
-          "minimum_heading_abs_cos": 0.72,
-          "node_junction_search_radius_m": 12,
-          "sample_spacing_m": 3,
-          "soft_snap_fraction": 0.9,
-          "topology_limited_segments": [
-            "S023",
-            "S024",
-            "S054",
-            "S060",
-            "S074",
-            "S077"
-          ]
+          "method": "User confirmed two staggered junctions; intersect the established side-road centerlines with the north-south road axis. Preserve side-road geometry outside the previous false shared junction.",
+          "western_junction_id": "P069",
+          "eastern_junction_id": "P028",
+          "connecting_segment_id": "S109"
         },
         "source_segment_ids": [
           "S042"
@@ -10795,18 +10828,10 @@
         "actual_route_length_measured": false
       },
       "notes": [
-        "Matched nearby basemap roads with consistent headings; unmatched portions retain their track shape with shared endpoints reconnected.",
-        "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
-        "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
-      ],
-      "map_alignment": {
-        "id": "S042",
-        "matched_sample_fraction": 1.0,
-        "source_map_distance_p95_m": 3.22,
-        "aligned_map_distance_p95_m": 1.03,
-        "registration_scale": 1.0,
-        "status": "matched"
-      }
+        "Road geometry and junction connectivity corrected from the user annotation.",
+        "Distance is a geodesic sum along the corrected map polyline and remains an estimate.",
+        "Nearby supporting samples do not prove full traversal of the corrected route."
+      ]
     },
     {
       "id": "S043",
@@ -11381,34 +11406,14 @@
     },
     {
       "id": "S046",
-      "point_a": "P028",
+      "point_a": "P069",
       "point_b": "P030",
       "directed": false,
-      "length_m": 69.56,
+      "length_m": 55.82,
       "coordinates": [
         [
-          116.26714376,
-          40.1516589
-        ],
-        [
-          116.26699226,
-          40.15174899
-        ],
-        [
-          116.26698442,
-          40.15176051
-        ],
-        [
-          116.26696968,
-          40.15177532
-        ],
-        [
-          116.26693134,
-          40.15179887
-        ],
-        [
-          116.26690779,
-          40.15180471
+          116.26704919,
+          40.15183308
         ],
         [
           116.26687803,
@@ -11425,28 +11430,8 @@
       ],
       "geometry_xy": [
         [
-          823.0,
-          430.0
-        ],
-        [
-          810.179,
-          440.106
-        ],
-        [
-          809.522,
-          441.39
-        ],
-        [
-          808.28,
-          443.045
-        ],
-        [
-          805.036,
-          445.686
-        ],
-        [
-          803.035,
-          446.35
+          815.104725,
+          449.400273
         ],
         [
           800.49,
@@ -11461,17 +11446,11 @@
           433.580382
         ]
       ],
-      "coordinate_count": 9,
-      "geometry_method": "user_annotated_straight_road_axis",
+      "coordinate_count": 4,
+      "geometry_method": "user_confirmed_staggered_junction_alignment",
       "length_method": "WGS84_geodesic_sum_along_map_corrected_polyline",
-      "supporting_gps_sample_count": 18,
+      "supporting_gps_sample_count": 12,
       "supporting_gps_record_indices": [
-        495,
-        496,
-        1516,
-        1517,
-        1518,
-        1519,
         1520,
         1521,
         1522,
@@ -11485,7 +11464,7 @@
         1530,
         1531
       ],
-      "median_support_offset_m": 2.17,
+      "median_support_offset_m": 2.52,
       "max_support_offset_m": 8.0,
       "is_user_corrected": true,
       "connection_confirmed": true,
@@ -11495,39 +11474,15 @@
       "source_segment_ids": [
         "S046"
       ],
-      "correction_notes": "align_P008_P021_P030_main_axis",
+      "correction_notes": "split_P028_into_staggered_three_way_junctions",
       "provenance": {
         "connection_basis": "User supplied actual route annotation.",
-        "geometry_basis": "user_annotated_straight_road_axis",
+        "geometry_basis": "user_confirmed_staggered_junction_alignment",
         "registration": {
-          "method": "Registered annotated horizontal road; north-south axis joins existing P008 and P044. P028 topology and location retained pending clarification.",
-          "control_point_ids": [
-            "P017",
-            "P019",
-            "P030",
-            "P028"
-          ],
-          "control_pixel_xy": [
-            [
-              337,
-              25
-            ],
-            [
-              170.54,
-              72.85
-            ],
-            [
-              131.23,
-              243.31
-            ],
-            [
-              231.08,
-              250.58
-            ]
-          ],
-          "scale_px_per_m": 1.686034933879161,
-          "source_image": "codex-clipboard-9f18fe22-5d79-4cd0-be70-8b20b1b8489c.png",
-          "additional_connection_basis": "Latest user annotation explicitly continues the north-south road from P008 through P021."
+          "method": "User confirmed two staggered junctions; intersect the established side-road centerlines with the north-south road axis. Preserve side-road geometry outside the previous false shared junction.",
+          "western_junction_id": "P069",
+          "eastern_junction_id": "P028",
+          "connecting_segment_id": "S109"
         },
         "source_segment_ids": [
           "S046"
@@ -11545,15 +11500,15 @@
       "point_a": "P028",
       "point_b": "P034",
       "directed": false,
-      "length_m": 88.52,
+      "length_m": 101.75,
       "coordinates": [
         [
-          116.26714376,
-          40.1516589
+          116.26707853,
+          40.15177029
         ],
         [
-          116.26717171,
-          40.15149994
+          116.26717952,
+          40.15148108
         ],
         [
           116.26733103,
@@ -11561,7 +11516,7 @@
         ],
         [
           116.26736867,
-          40.15105001
+          40.15105
         ],
         [
           116.26747936,
@@ -11570,20 +11525,20 @@
       ],
       "geometry_xy": [
         [
-          823.0,
-          430.0
+          817.545944,
+          442.409808
         ],
         [
-          825.235137,
-          412.337465
+          825.883,
+          410.238
         ],
         [
           838.452,
           369.486
         ],
         [
-          841.598796,
-          362.258464
+          841.599,
+          362.258
         ],
         [
           850.9,
@@ -11591,10 +11546,14 @@
         ]
       ],
       "coordinate_count": 5,
-      "geometry_method": "junction_approach_straightening",
+      "geometry_method": "user_confirmed_staggered_junction_alignment",
       "length_method": "WGS84_geodesic_sum_along_map_corrected_polyline",
-      "supporting_gps_sample_count": 53,
+      "supporting_gps_sample_count": 62,
       "supporting_gps_record_indices": [
+        493,
+        494,
+        495,
+        496,
         497,
         498,
         499,
@@ -11630,6 +11589,8 @@
         851,
         852,
         853,
+        854,
+        855,
         1498,
         1499,
         1500,
@@ -11647,84 +11608,41 @@
         1512,
         1513,
         1514,
-        1515
+        1515,
+        1516,
+        1517,
+        1518
       ],
-      "median_support_offset_m": 3.9,
+      "median_support_offset_m": 3.84,
       "max_support_offset_m": 7.18,
       "is_user_corrected": true,
       "connection_confirmed": true,
-      "connection_source": "osm_basemap_alignment",
+      "connection_source": "user_map_annotation",
       "geometry_is_estimate": true,
       "length_is_estimate": true,
       "source_segment_ids": [
         "S047"
       ],
-      "correction_notes": "Network alignment to basemap roads; straighten local junction approaches at user request.",
+      "correction_notes": "split_P028_into_staggered_three_way_junctions",
       "provenance": {
-        "connection_basis": "Existing network connection preserved during map registration.",
-        "geometry_basis": "Straight local approaches to fixed junctions; previous road geometry preserved outside endpoint windows.",
+        "connection_basis": "User supplied actual route annotation.",
+        "geometry_basis": "user_confirmed_staggered_junction_alignment",
         "registration": {
-          "method": "Heading- and continuity-constrained local map registration; user satellite corrections locked.",
-          "max_candidate_offset_m": 18,
-          "minimum_heading_abs_cos": 0.72,
-          "node_junction_search_radius_m": 12,
-          "sample_spacing_m": 3,
-          "soft_snap_fraction": 0.9,
-          "topology_limited_segments": [
-            "S023",
-            "S024",
-            "S054",
-            "S060",
-            "S074",
-            "S077"
-          ]
+          "method": "User confirmed two staggered junctions; intersect the established side-road centerlines with the north-south road axis. Preserve side-road geometry outside the previous false shared junction.",
+          "western_junction_id": "P069",
+          "eastern_junction_id": "P028",
+          "connecting_segment_id": "S109"
         },
         "source_segment_ids": [
           "S047"
         ],
-        "actual_route_length_measured": false,
-        "previous_geometry_basis": "osm_constrained_map_snap"
+        "actual_route_length_measured": false
       },
       "notes": [
-        "Matched nearby basemap roads with consistent headings; unmatched portions retain their track shape with shared endpoints reconnected.",
-        "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
-        "GPS support denotes nearby source samples and does not establish full traversal of the corrected route.",
-        "Endpoint approaches are straightened locally with a 3 m maximum shape displacement; points, connectivity, and central road geometry are preserved."
-      ],
-      "map_alignment": {
-        "id": "S047",
-        "matched_sample_fraction": 1.0,
-        "source_map_distance_p95_m": 3.4,
-        "aligned_map_distance_p95_m": 2.17,
-        "registration_scale": 1.0,
-        "status": "matched",
-        "measurement_scope": "Before junction-approach straightening; retained as historical map-match evidence."
-      },
-      "junction_straightening": {
-        "previous_geometry_method": "osm_constrained_map_snap",
-        "point_coordinates_preserved": true,
-        "middle_geometry_preserved": true,
-        "approaches": [
-          {
-            "segment_id": "S047",
-            "point_id": "P028",
-            "status": "straightened",
-            "window_m": 18.0,
-            "straight_length_m": 17.8034,
-            "maximum_local_offset_m": 1.2739,
-            "transition_turn_degrees": 9.93
-          },
-          {
-            "segment_id": "S047",
-            "point_id": "P034",
-            "status": "straightened",
-            "window_m": 18.0,
-            "straight_length_m": 17.9554,
-            "maximum_local_offset_m": 0.5217,
-            "transition_turn_degrees": 7.67
-          }
-        ]
-      }
+        "Road geometry and junction connectivity corrected from the user annotation.",
+        "Distance is a geodesic sum along the corrected map polyline and remains an estimate.",
+        "Nearby supporting samples do not prove full traversal of the corrected route."
+      ]
     },
     {
       "id": "S048",
@@ -20449,9 +20367,9 @@
     {
       "id": "S100",
       "point_a": "P019",
-      "point_b": "P028",
+      "point_b": "P069",
       "directed": false,
-      "length_m": 104.27,
+      "length_m": 83.34,
       "length_is_estimate": true,
       "is_inferred": true,
       "coordinates": [
@@ -20460,8 +20378,8 @@
           40.15253957
         ],
         [
-          116.26714376,
-          40.1516589
+          116.26704919,
+          40.15183308
         ]
       ],
       "geometry_xy": [
@@ -20470,51 +20388,25 @@
           528.048312
         ],
         [
-          823.0,
-          430.0
+          815.104725,
+          449.400273
         ]
       ],
       "coordinate_count": 2,
-      "geometry_method": "user_annotated_straight_road_axis",
+      "geometry_method": "user_confirmed_staggered_junction_alignment",
       "length_method": "WGS84_geodesic_sum_along_map_corrected_polyline",
-      "supporting_gps_sample_count": 1,
-      "supporting_gps_record_indices": [
-        494
-      ],
-      "median_support_offset_m": 0.84,
-      "max_support_offset_m": 0.84,
+      "supporting_gps_sample_count": 0,
+      "supporting_gps_record_indices": [],
+      "median_support_offset_m": null,
+      "max_support_offset_m": null,
       "provenance": {
         "connection_basis": "User supplied actual route annotation.",
-        "geometry_basis": "user_annotated_straight_road_axis",
+        "geometry_basis": "user_confirmed_staggered_junction_alignment",
         "registration": {
-          "method": "Registered annotated horizontal road; north-south axis joins existing P008 and P044. P028 topology and location retained pending clarification.",
-          "control_point_ids": [
-            "P017",
-            "P019",
-            "P030",
-            "P028"
-          ],
-          "control_pixel_xy": [
-            [
-              337,
-              25
-            ],
-            [
-              170.54,
-              72.85
-            ],
-            [
-              131.23,
-              243.31
-            ],
-            [
-              231.08,
-              250.58
-            ]
-          ],
-          "scale_px_per_m": 1.686034933879161,
-          "source_image": "codex-clipboard-9f18fe22-5d79-4cd0-be70-8b20b1b8489c.png",
-          "additional_connection_basis": "Latest user annotation explicitly continues the north-south road from P008 through P021."
+          "method": "User confirmed two staggered junctions; intersect the established side-road centerlines with the north-south road axis. Preserve side-road geometry outside the previous false shared junction.",
+          "western_junction_id": "P069",
+          "eastern_junction_id": "P028",
+          "connecting_segment_id": "S109"
         },
         "source_segment_ids": [
           "S100"
@@ -20534,7 +20426,7 @@
       "source_segment_ids": [
         "S100"
       ],
-      "correction_notes": "align_P008_P021_P030_main_axis"
+      "correction_notes": "split_P028_into_staggered_three_way_junctions"
     },
     {
       "id": "S101",
@@ -21551,6 +21443,70 @@
       "supporting_gps_sample_count": 1,
       "median_support_offset_m": 1.66,
       "max_support_offset_m": 1.66
+    },
+    {
+      "id": "S109",
+      "point_a": "P069",
+      "point_b": "P028",
+      "directed": false,
+      "is_user_corrected": true,
+      "connection_confirmed": true,
+      "connection_source": "user_map_annotation",
+      "geometry_is_estimate": true,
+      "length_is_estimate": true,
+      "geometry_method": "user_confirmed_staggered_junction_alignment",
+      "length_method": "WGS84_geodesic_sum_along_map_corrected_polyline",
+      "source_segment_ids": [
+        "S100"
+      ],
+      "correction_notes": "split_P028_into_staggered_three_way_junctions",
+      "provenance": {
+        "connection_basis": "User supplied actual route annotation.",
+        "geometry_basis": "user_confirmed_staggered_junction_alignment",
+        "registration": {
+          "method": "User confirmed two staggered junctions; intersect the established side-road centerlines with the north-south road axis. Preserve side-road geometry outside the previous false shared junction.",
+          "western_junction_id": "P069",
+          "eastern_junction_id": "P028",
+          "connecting_segment_id": "S109"
+        },
+        "source_segment_ids": [
+          "S100"
+        ],
+        "actual_route_length_measured": false
+      },
+      "geometry_xy": [
+        [
+          815.104725,
+          449.400273
+        ],
+        [
+          817.545944,
+          442.409808
+        ]
+      ],
+      "coordinates": [
+        [
+          116.26704919,
+          40.15183308
+        ],
+        [
+          116.26707853,
+          40.15177029
+        ]
+      ],
+      "coordinate_count": 2,
+      "length_m": 7.41,
+      "notes": [
+        "Road geometry and junction connectivity corrected from the user annotation.",
+        "Distance is a geodesic sum along the corrected map polyline and remains an estimate.",
+        "Nearby supporting samples do not prove full traversal of the corrected route."
+      ],
+      "supporting_gps_record_indices": [
+        1519
+      ],
+      "supporting_gps_sample_count": 1,
+      "median_support_offset_m": 7.2,
+      "max_support_offset_m": 7.2
     }
   ],
   "removed_dead_ends": [
