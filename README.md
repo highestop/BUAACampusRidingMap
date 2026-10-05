@@ -10,8 +10,6 @@
 
 GitHub 文件页展示 HTML 源码，下载后打开即可使用交互地图。更新本地文件后，刷新页面查看新版本。
 
-![校区线路图](network_with_map.png)
-
 ## 基本概念
 
 - **交叉点（point）**：多条路段共用的连接位置。每个点至少连接两条不同路段；当前网络中的点均连接 3 或 4 条路段。
@@ -63,7 +61,6 @@ GitHub 文件页展示 HTML 源码，下载后打开即可使用交互地图。�
 | `points.csv` / `segments.csv` | 节点坐标、连接关系、路段距离与折线 |
 | `map_basemap.json` / `map_basemap.geojson` | 离线底图数据 |
 | `validation.json` | 数据一致性与网络结构检查结果 |
-| `*.png` | 全网或局部预览图 |
 | `scripts/build_viewer.py` | 根据当前 JSON 数据重新生成页面 |
 
 ## 重新生成页面
