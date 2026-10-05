@@ -1264,9 +1264,9 @@
         "id": "P058",
         "degree": 3,
         "segment_ids": [
-          "S071",
           "S083",
-          "S094"
+          "S094",
+          "S104"
         ],
         "kind": "junction",
         "is_user_corrected": true,
@@ -1280,22 +1280,22 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          116.26593784,
-          40.14890041
+          116.26596093,
+          40.14889672
         ]
       },
       "properties": {
         "id": "P059",
         "degree": 3,
         "segment_ids": [
-          "S075",
           "S080",
-          "S095"
+          "S095",
+          "S107"
         ],
         "kind": "junction",
         "is_user_corrected": true,
         "correction_source": "user_map_annotation",
-        "correction_notes": "Aligned to the basemap using road-heading consistency and shared-node constraints."
+        "correction_notes": "Intersection of the user-annotated straight road axes."
       }
     },
     {
@@ -1328,19 +1328,22 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          116.26555409,
-          40.14881986
+          116.26551583,
+          40.14877691
         ]
       },
       "properties": {
         "id": "P061",
         "degree": 3,
         "segment_ids": [
-          "S072",
           "S095",
-          "S097"
+          "S097",
+          "S105"
         ],
-        "kind": "junction"
+        "kind": "junction",
+        "is_user_corrected": true,
+        "correction_source": "user_map_annotation",
+        "correction_notes": "Intersection of the user-annotated straight road axes."
       }
     },
     {
@@ -1463,6 +1466,56 @@
           "S103"
         ],
         "degree": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "P067",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.26517008,
+          40.14949501
+        ]
+      },
+      "properties": {
+        "id": "P067",
+        "kind": "junction",
+        "is_user_corrected": true,
+        "correction_source": "user_map_annotation",
+        "correction_notes": "Intersection of the user-annotated straight road axes.",
+        "segment_ids": [
+          "S071",
+          "S104",
+          "S105",
+          "S106"
+        ],
+        "degree": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "P068",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.26569433,
+          40.14963779
+        ]
+      },
+      "properties": {
+        "id": "P068",
+        "kind": "junction",
+        "is_user_corrected": true,
+        "correction_source": "user_map_annotation",
+        "correction_notes": "Intersection of the user-annotated straight road axes.",
+        "segment_ids": [
+          "S072",
+          "S075",
+          "S106",
+          "S107"
+        ],
+        "degree": 4
       }
     },
     {
@@ -11126,283 +11179,78 @@
             40.15034637
           ],
           [
-            116.26487166,
-            40.15021361
-          ],
-          [
-            116.26488481,
-            40.15019629
-          ],
-          [
-            116.26490307,
-            40.15016128
-          ],
-          [
-            116.26492422,
-            40.15008958
-          ],
-          [
-            116.26494272,
-            40.14999905
-          ],
-          [
-            116.26497417,
-            40.14992629
-          ],
-          [
-            116.26498551,
-            40.14991129
-          ],
-          [
-            116.26500896,
-            40.14987659
-          ],
-          [
-            116.2650427,
-            40.14982665
-          ],
-          [
-            116.26507644,
-            40.1497767
-          ],
-          [
-            116.2651102,
-            40.14972677
-          ],
-          [
-            116.26514394,
-            40.14967683
-          ],
-          [
-            116.26517768,
-            40.14962689
-          ],
-          [
-            116.26518819,
-            40.14961133
-          ],
-          [
-            116.26520302,
-            40.14957595
-          ],
-          [
-            116.26520565,
-            40.14956969
-          ],
-          [
-            116.26521069,
-            40.14952549
-          ],
-          [
-            116.26521496,
-            40.14948824
-          ],
-          [
-            116.26521361,
-            40.14947588
-          ],
-          [
-            116.26511513,
-            40.14944953
-          ],
-          [
-            116.26500915,
-            40.14942344
-          ],
-          [
-            116.26486471,
-            40.14936282
-          ],
-          [
-            116.26473617,
-            40.14933756
-          ],
-          [
-            116.26462238,
-            40.14929978
-          ],
-          [
-            116.26447097,
-            40.14926337
-          ],
-          [
-            116.26434229,
-            40.14923212
-          ],
-          [
-            116.26421388,
-            40.14921285
-          ],
-          [
-            116.26407809,
-            40.14919983
-          ],
-          [
-            116.26406278,
-            40.14919825
-          ],
-          [
-            116.26385888,
-            40.14915991
+            116.26517008,
+            40.14949501
           ]
         ]
       },
       "properties": {
         "id": "S071",
         "point_a": "P042",
-        "point_b": "P058",
+        "point_b": "P067",
         "directed": false,
-        "length_m": 227.29,
-        "coordinate_count": 31,
-        "geometry_method": "junction_approach_straightening",
+        "length_m": 101.05,
+        "coordinate_count": 2,
+        "geometry_method": "user_redline_registered_junction_reconstruction",
         "length_method": "WGS84_geodesic_sum_along_map_corrected_polyline",
-        "supporting_gps_sample_count": 90,
-        "median_support_offset_m": 3.79,
-        "max_support_offset_m": 11.47,
+        "supporting_gps_sample_count": 43,
+        "median_support_offset_m": 2.4,
+        "max_support_offset_m": 7.62,
         "is_user_corrected": true,
         "connection_confirmed": true,
         "connection_source": "user_map_annotation",
         "geometry_is_estimate": true,
         "length_is_estimate": true,
         "source_segment_ids": [
-          "S071",
-          "S085",
-          "S088"
+          "S071"
         ],
-        "correction_notes": "Engineering Training Center and surrounding roads corrected from satellite annotations; straighten local junction approaches at user request.",
+        "correction_notes": "restore_two_library_south_crossroads",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
-          "geometry_basis": "Straight local approaches to fixed junctions; previous road geometry preserved outside endpoint windows.",
+          "geometry_basis": "user_redline_registered_junction_reconstruction",
           "registration": {
-            "method": "local affine fit to ground-road junctions and garden circular-path center; no GCJ02 coordinate assumptions",
-            "anchors": [
-              {
-                "name": "engineering_north_main_road_junction",
-                "pixel": [
-                  520,
-                  334
-                ],
-                "xy": [
-                  502.22,
-                  150.87
-                ],
-                "osm": "way/992727781 + way/992727774",
-                "residual_m": 3.746
-              },
-              {
-                "name": "engineering_southeast_road_junction",
-                "pixel": [
-                  615,
-                  440
-                ],
-                "xy": [
-                  563.94,
-                  73.3
-                ],
-                "osm": "way/992727780 + way/992727779",
-                "residual_m": 0.969
-              },
-              {
-                "name": "engineering_southwest_road_junction",
-                "pixel": [
-                  384,
-                  521
-                ],
-                "xy": [
-                  414.68,
-                  24.84
-                ],
-                "osm": "way/992727777 + way/992727779",
-                "residual_m": 3.585
-              },
-              {
-                "name": "engineering_northwest_road_junction",
-                "pixel": [
-                  335,
-                  381
-                ],
-                "xy": [
-                  383.85,
-                  127.52
-                ],
-                "osm": "way/992727777 + way/992727778",
-                "residual_m": 4.567
-              },
-              {
-                "name": "garden_southeast_round_path_center",
-                "pixel": [
-                  408,
-                  194
-                ],
-                "xy": [
-                  436.3,
-                  241.1
-                ],
-                "osm": "way/992727756 ring bounds center",
-                "residual_m": 3.843
-              }
+            "method": "Uniform screenshot scale and translation fitted to three existing node markers; intersections computed from red road axes.",
+            "control_point_ids": [
+              "P040",
+              "P044",
+              "P061"
             ],
-            "affine_pixel_homogeneous_to_local_xy": [
+            "control_pixel_xy": [
               [
-                0.6402833996956108,
-                -0.035786438984098626
+                20.37,
+                146.21
               ],
               [
-                -0.017509706479063344,
-                -0.6642921708985366
+                448.5,
+                209.8
               ],
               [
-                177.08242020087576,
-                388.161056912459
+                219.0,
+                439.0
               ]
             ],
-            "rmse_m": 3.562,
-            "max_residual_m": 4.567,
-            "estimated_absolute_uncertainty_m": [
-              5,
-              10
+            "scale_px_per_m": 1.6836060124305428,
+            "origin_pixel": [
+              -934.1996070103754,
+              634.4257766008843
             ],
-            "notes": "Anchor residuals measure mutual fit only, not geographic ground truth. Satellite road marking thickness and hand placement add uncertainty. Red stroke gaps at apparent physical junctions were bridged."
+            "fit_rmse_px": 0.0856229137790502,
+            "new_junction_ids": [
+              "P067",
+              "P068"
+            ],
+            "source_image": "codex-clipboard-58e83c7b-1c9a-4f04-a973-63417a689949.png"
           },
           "source_segment_ids": [
-            "S071",
-            "S085",
-            "S088"
+            "S071"
           ],
-          "actual_route_length_measured": false,
-          "previous_geometry_basis": "user_satellite_redline_registered"
+          "actual_route_length_measured": false
         },
         "notes": [
-          "Route geometry and connections corrected using the supplied map annotations.",
-          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
-          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route.",
-          "Endpoint approaches are straightened locally with a 3 m maximum shape displacement; points, connectivity, and central road geometry are preserved."
-        ],
-        "junction_straightening": {
-          "previous_geometry_method": "user_satellite_redline_registered",
-          "point_coordinates_preserved": true,
-          "middle_geometry_preserved": true,
-          "approaches": [
-            {
-              "segment_id": "S071",
-              "point_id": "P042",
-              "status": "straightened",
-              "window_m": 18.0,
-              "straight_length_m": 17.9657,
-              "maximum_local_offset_m": 0.4456,
-              "transition_turn_degrees": 4.66
-            },
-            {
-              "segment_id": "S071",
-              "point_id": "P058",
-              "status": "straightened",
-              "window_m": 18.0,
-              "straight_length_m": 17.8814,
-              "maximum_local_offset_m": 1.0281,
-              "transition_turn_degrees": 6.08
-            }
-          ]
-        }
+          "Road geometry and junction connectivity corrected from the user annotation.",
+          "Distance is a geodesic sum along the corrected map polyline and remains an estimate.",
+          "Nearby supporting samples do not prove full traversal of the corrected route."
+        ]
       }
     },
     {
@@ -11417,7 +11265,7 @@
           ],
           [
             116.26462131,
-            40.15047068
+            40.15047069
           ],
           [
             116.2645128,
@@ -11484,181 +11332,82 @@
             40.15096032
           ],
           [
-            116.26527547,
-            40.15094123
+            116.26523824,
+            40.15090553
           ],
           [
-            116.26528511,
-            40.15089718
-          ],
-          [
-            116.26532891,
-            40.15079465
-          ],
-          [
-            116.26534153,
-            40.15071045
-          ],
-          [
-            116.26535069,
-            40.15068608
-          ],
-          [
-            116.26561762,
-            40.15007276
-          ],
-          [
-            116.26562491,
-            40.15004275
-          ],
-          [
-            116.26560796,
-            40.15000938
-          ],
-          [
-            116.26556674,
-            40.14996789
-          ],
-          [
-            116.26554496,
-            40.14993195
-          ],
-          [
-            116.26554675,
-            40.14990665
-          ],
-          [
-            116.26558549,
-            40.14980233
-          ],
-          [
-            116.26554773,
-            40.14973971
-          ],
-          [
-            116.26551988,
-            40.14966875
-          ],
-          [
-            116.2654991,
-            40.1496415
-          ],
-          [
-            116.2653355,
-            40.14958928
-          ],
-          [
-            116.26529023,
-            40.14956656
-          ],
-          [
-            116.26523402,
-            40.14949347
-          ],
-          [
-            116.26523414,
-            40.14947605
-          ],
-          [
-            116.26524824,
-            40.14942393
-          ],
-          [
-            116.2654434,
-            40.14895554
-          ],
-          [
-            116.26555409,
-            40.14881986
+            116.26569433,
+            40.14963779
           ]
         ]
       },
       "properties": {
         "id": "S072",
         "point_a": "P042",
-        "point_b": "P061",
+        "point_b": "P068",
         "directed": false,
-        "length_m": 417.45,
-        "coordinate_count": 40,
-        "geometry_method": "junction_approach_straightening",
+        "length_m": 306.31,
+        "coordinate_count": 20,
+        "geometry_method": "user_redline_registered_junction_reconstruction",
         "length_method": "WGS84_geodesic_sum_along_map_corrected_polyline",
-        "supporting_gps_sample_count": 95,
-        "median_support_offset_m": 3.68,
-        "max_support_offset_m": 11.53,
+        "supporting_gps_sample_count": 69,
+        "median_support_offset_m": 5.15,
+        "max_support_offset_m": 12.46,
         "is_user_corrected": true,
         "connection_confirmed": true,
-        "connection_source": "osm_basemap_alignment",
+        "connection_source": "user_map_annotation",
         "geometry_is_estimate": true,
         "length_is_estimate": true,
         "source_segment_ids": [
           "S072"
         ],
-        "correction_notes": "Network alignment to basemap roads; straighten local junction approaches at user request.",
+        "correction_notes": "restore_two_library_south_crossroads",
         "provenance": {
-          "connection_basis": "Existing network connection preserved during map registration.",
-          "geometry_basis": "Straight local approaches to fixed junctions; previous road geometry preserved outside endpoint windows.",
+          "connection_basis": "User supplied actual route annotation.",
+          "geometry_basis": "user_redline_registered_junction_reconstruction",
           "registration": {
-            "method": "Heading- and continuity-constrained local map registration; user satellite corrections locked.",
-            "max_candidate_offset_m": 18,
-            "minimum_heading_abs_cos": 0.72,
-            "node_junction_search_radius_m": 12,
-            "sample_spacing_m": 3,
-            "soft_snap_fraction": 0.9,
-            "topology_limited_segments": [
-              "S023",
-              "S024",
-              "S054",
-              "S060",
-              "S074",
-              "S077"
-            ]
+            "method": "Uniform screenshot scale and translation fitted to three existing node markers; intersections computed from red road axes.",
+            "control_point_ids": [
+              "P040",
+              "P044",
+              "P061"
+            ],
+            "control_pixel_xy": [
+              [
+                20.37,
+                146.21
+              ],
+              [
+                448.5,
+                209.8
+              ],
+              [
+                219.0,
+                439.0
+              ]
+            ],
+            "scale_px_per_m": 1.6836060124305428,
+            "origin_pixel": [
+              -934.1996070103754,
+              634.4257766008843
+            ],
+            "fit_rmse_px": 0.0856229137790502,
+            "new_junction_ids": [
+              "P067",
+              "P068"
+            ],
+            "source_image": "codex-clipboard-58e83c7b-1c9a-4f04-a973-63417a689949.png"
           },
           "source_segment_ids": [
             "S072"
           ],
-          "actual_route_length_measured": false,
-          "previous_geometry_basis": "osm_constrained_map_snap"
+          "actual_route_length_measured": false
         },
         "notes": [
-          "Matched nearby basemap roads with consistent headings; unmatched portions retain their track shape with shared endpoints reconnected.",
-          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
-          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route.",
-          "Endpoint approaches are straightened locally with a 3 m maximum shape displacement; points, connectivity, and central road geometry are preserved."
-        ],
-        "map_alignment": {
-          "id": "S072",
-          "matched_sample_fraction": 0.958,
-          "source_map_distance_p95_m": 11.77,
-          "aligned_map_distance_p95_m": 5.51,
-          "registration_scale": 1.0,
-          "status": "matched",
-          "measurement_scope": "Before junction-approach straightening; retained as historical map-match evidence."
-        },
-        "junction_straightening": {
-          "previous_geometry_method": "osm_constrained_map_snap",
-          "point_coordinates_preserved": true,
-          "middle_geometry_preserved": true,
-          "approaches": [
-            {
-              "segment_id": "S072",
-              "point_id": "P042",
-              "status": "straightened",
-              "window_m": 18.0,
-              "straight_length_m": 17.6766,
-              "maximum_local_offset_m": 1.3291,
-              "transition_turn_degrees": 20.18
-            },
-            {
-              "segment_id": "S072",
-              "point_id": "P061",
-              "status": "straightened",
-              "window_m": 18.0,
-              "straight_length_m": 17.7677,
-              "maximum_local_offset_m": 1.1731,
-              "transition_turn_degrees": 14.32
-            }
-          ]
-        }
+          "Road geometry and junction connectivity corrected from the user annotation.",
+          "Distance is a geodesic sum along the corrected map polyline and remains an estimate.",
+          "Nearby supporting samples do not prove full traversal of the corrected route."
+        ]
       }
     },
     {
@@ -11834,67 +11583,27 @@
             40.15005762
           ],
           [
-            116.26687101,
-            40.14998862
+            116.26697062,
+            40.1499854
           ],
           [
-            116.26624369,
-            40.14982689
-          ],
-          [
-            116.26577655,
-            40.14970509
-          ],
-          [
-            116.26575259,
-            40.1496938
-          ],
-          [
-            116.26572735,
-            40.14966958
-          ],
-          [
-            116.26570162,
-            40.14958508
-          ],
-          [
-            116.26570078,
-            40.14956279
-          ],
-          [
-            116.26571289,
-            40.1495326
-          ],
-          [
-            116.26571161,
-            40.14950443
-          ],
-          [
-            116.26569838,
-            40.14946976
-          ],
-          [
-            116.26570069,
-            40.14944488
-          ],
-          [
-            116.26593784,
-            40.14890041
+            116.26569433,
+            40.14963779
           ]
         ]
       },
       "properties": {
         "id": "S075",
         "point_a": "P044",
-        "point_b": "P059",
+        "point_b": "P068",
         "directed": false,
-        "length_m": 217.7,
-        "coordinate_count": 13,
-        "geometry_method": "user_redline_precise_local_refinement",
+        "length_m": 131.9,
+        "coordinate_count": 3,
+        "geometry_method": "user_redline_registered_junction_reconstruction",
         "length_method": "WGS84_geodesic_sum_along_map_corrected_polyline",
-        "supporting_gps_sample_count": 48,
-        "median_support_offset_m": 2.2,
-        "max_support_offset_m": 7.52,
+        "supporting_gps_sample_count": 30,
+        "median_support_offset_m": 1.18,
+        "max_support_offset_m": 8.85,
         "is_user_corrected": true,
         "connection_confirmed": true,
         "connection_source": "user_map_annotation",
@@ -11903,25 +11612,42 @@
         "source_segment_ids": [
           "S075"
         ],
-        "correction_notes": "Latest annotated refinements south of the main building and west of the swimming pool",
+        "correction_notes": "restore_two_library_south_crossroads",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
-          "geometry_basis": "user_redline_precise_local_refinement",
+          "geometry_basis": "user_redline_registered_junction_reconstruction",
           "registration": {
-            "method": "Screenshot affine scale and translation from four existing point positions; user redline crossing takes priority over nearby OSM junction.",
-            "scale_px_per_m": 1.7512304485074885,
-            "origin_pixel": [
-              -1364.0127472690995,
-              531.9712625509036
+            "method": "Uniform screenshot scale and translation fitted to three existing node markers; intersections computed from red road axes.",
+            "control_point_ids": [
+              "P040",
+              "P044",
+              "P061"
             ],
-            "fit_rmse_px": 0.08311521105520296,
-            "point_P066_basis": "Intersection of centerline fits to red north-south and east-west strokes, independently reviewed.",
-            "reference_road_ways": [
-              446085861,
-              992727774,
-              992742374,
-              992727780
-            ]
+            "control_pixel_xy": [
+              [
+                20.37,
+                146.21
+              ],
+              [
+                448.5,
+                209.8
+              ],
+              [
+                219.0,
+                439.0
+              ]
+            ],
+            "scale_px_per_m": 1.6836060124305428,
+            "origin_pixel": [
+              -934.1996070103754,
+              634.4257766008843
+            ],
+            "fit_rmse_px": 0.0856229137790502,
+            "new_junction_ids": [
+              "P067",
+              "P068"
+            ],
+            "source_image": "codex-clipboard-58e83c7b-1c9a-4f04-a973-63417a689949.png"
           },
           "source_segment_ids": [
             "S075"
@@ -11929,9 +11655,9 @@
           "actual_route_length_measured": false
         },
         "notes": [
-          "Route geometry and connections corrected using the supplied map annotations.",
-          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
-          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route."
+          "Road geometry and junction connectivity corrected from the user annotation.",
+          "Distance is a geodesic sum along the corrected map polyline and remains an estimate.",
+          "Nearby supporting samples do not prove full traversal of the corrected route."
         ]
       }
     },
@@ -12430,12 +12156,12 @@
             40.14936152
           ],
           [
-            116.26604158,
-            40.14892656
+            116.26605751,
+            40.14892402
           ],
           [
-            116.26593784,
-            40.14890041
+            116.26596093,
+            40.14889672
           ]
         ]
       },
@@ -12444,12 +12170,12 @@
         "point_a": "P049",
         "point_b": "P059",
         "directed": false,
-        "length_m": 185.66,
+        "length_m": 183.92,
         "coordinate_count": 4,
-        "geometry_method": "junction_approach_straightening",
+        "geometry_method": "user_redline_registered_junction_reconstruction",
         "length_method": "WGS84_geodesic_sum_along_map_corrected_polyline",
-        "supporting_gps_sample_count": 40,
-        "median_support_offset_m": 0.47,
+        "supporting_gps_sample_count": 39,
+        "median_support_offset_m": 0.86,
         "max_support_offset_m": 2.58,
         "is_user_corrected": true,
         "connection_confirmed": true,
@@ -12459,54 +12185,53 @@
         "source_segment_ids": [
           "S080"
         ],
-        "correction_notes": "Latest annotated refinements south of the main building and west of the swimming pool; straighten local junction approaches at user request.",
+        "correction_notes": "restore_two_library_south_crossroads",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
-          "geometry_basis": "Straight local approaches to fixed junctions; previous road geometry preserved outside endpoint windows.",
+          "geometry_basis": "user_redline_registered_junction_reconstruction",
           "registration": {
-            "method": "Screenshot affine scale and translation from four existing point positions; user redline crossing takes priority over nearby OSM junction.",
-            "scale_px_per_m": 1.7512304485074885,
-            "origin_pixel": [
-              -1364.0127472690995,
-              531.9712625509036
+            "method": "Uniform screenshot scale and translation fitted to three existing node markers; intersections computed from red road axes.",
+            "control_point_ids": [
+              "P040",
+              "P044",
+              "P061"
             ],
-            "fit_rmse_px": 0.08311521105520296,
-            "point_P066_basis": "Intersection of centerline fits to red north-south and east-west strokes, independently reviewed.",
-            "reference_road_ways": [
-              446085861,
-              992727774,
-              992742374,
-              992727780
-            ]
+            "control_pixel_xy": [
+              [
+                20.37,
+                146.21
+              ],
+              [
+                448.5,
+                209.8
+              ],
+              [
+                219.0,
+                439.0
+              ]
+            ],
+            "scale_px_per_m": 1.6836060124305428,
+            "origin_pixel": [
+              -934.1996070103754,
+              634.4257766008843
+            ],
+            "fit_rmse_px": 0.0856229137790502,
+            "new_junction_ids": [
+              "P067",
+              "P068"
+            ],
+            "source_image": "codex-clipboard-58e83c7b-1c9a-4f04-a973-63417a689949.png"
           },
           "source_segment_ids": [
             "S080"
           ],
-          "actual_route_length_measured": false,
-          "previous_geometry_basis": "user_redline_precise_local_refinement"
+          "actual_route_length_measured": false
         },
         "notes": [
-          "Route geometry and connections corrected using the supplied map annotations.",
-          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
-          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route.",
-          "Endpoint approaches are straightened locally with a 3 m maximum shape displacement; points, connectivity, and central road geometry are preserved."
-        ],
-        "junction_straightening": {
-          "previous_geometry_method": "user_redline_precise_local_refinement",
-          "point_coordinates_preserved": true,
-          "middle_geometry_preserved": true,
-          "approaches": [
-            {
-              "segment_id": "S080",
-              "point_id": "P049",
-              "status": "straightened",
-              "window_m": 18.0,
-              "straight_length_m": 17.9899,
-              "maximum_local_offset_m": 0.2878,
-              "transition_turn_degrees": 1.41
-            }
-          ]
-        }
+          "Road geometry and junction connectivity corrected from the user annotation.",
+          "Distance is a geodesic sum along the corrected map polyline and remains an estimate.",
+          "Nearby supporting samples do not prove full traversal of the corrected route."
+        ]
       }
     },
     {
@@ -14039,20 +13764,12 @@
         "type": "LineString",
         "coordinates": [
           [
-            116.26593784,
-            40.14890041
+            116.26596093,
+            40.14889672
           ],
           [
-            116.26569533,
-            40.14883723
-          ],
-          [
-            116.26567206,
-            40.14883283
-          ],
-          [
-            116.26555409,
-            40.14881986
+            116.26551583,
+            40.14877691
           ]
         ]
       },
@@ -14061,78 +13778,68 @@
         "point_a": "P059",
         "point_b": "P061",
         "directed": false,
-        "length_m": 34.02,
-        "coordinate_count": 4,
-        "geometry_method": "junction_approach_straightening",
+        "length_m": 40.19,
+        "coordinate_count": 2,
+        "geometry_method": "user_redline_registered_junction_reconstruction",
         "length_method": "WGS84_geodesic_sum_along_map_corrected_polyline",
-        "supporting_gps_sample_count": 15,
-        "median_support_offset_m": 0.95,
-        "max_support_offset_m": 3.15,
+        "supporting_gps_sample_count": 16,
+        "median_support_offset_m": 0.39,
+        "max_support_offset_m": 4.16,
         "is_user_corrected": true,
         "connection_confirmed": true,
-        "connection_source": "osm_basemap_alignment",
+        "connection_source": "user_map_annotation",
         "geometry_is_estimate": true,
         "length_is_estimate": true,
         "source_segment_ids": [
           "S095"
         ],
-        "correction_notes": "Network alignment to basemap roads; straighten local junction approaches at user request.",
+        "correction_notes": "restore_two_library_south_crossroads",
         "provenance": {
-          "connection_basis": "Existing network connection preserved during map registration.",
-          "geometry_basis": "Straight local approaches to fixed junctions; previous road geometry preserved outside endpoint windows.",
+          "connection_basis": "User supplied actual route annotation.",
+          "geometry_basis": "user_redline_registered_junction_reconstruction",
           "registration": {
-            "method": "Heading- and continuity-constrained local map registration; user satellite corrections locked.",
-            "max_candidate_offset_m": 18,
-            "minimum_heading_abs_cos": 0.72,
-            "node_junction_search_radius_m": 12,
-            "sample_spacing_m": 3,
-            "soft_snap_fraction": 0.9,
-            "topology_limited_segments": [
-              "S023",
-              "S024",
-              "S054",
-              "S060",
-              "S074",
-              "S077"
-            ]
+            "method": "Uniform screenshot scale and translation fitted to three existing node markers; intersections computed from red road axes.",
+            "control_point_ids": [
+              "P040",
+              "P044",
+              "P061"
+            ],
+            "control_pixel_xy": [
+              [
+                20.37,
+                146.21
+              ],
+              [
+                448.5,
+                209.8
+              ],
+              [
+                219.0,
+                439.0
+              ]
+            ],
+            "scale_px_per_m": 1.6836060124305428,
+            "origin_pixel": [
+              -934.1996070103754,
+              634.4257766008843
+            ],
+            "fit_rmse_px": 0.0856229137790502,
+            "new_junction_ids": [
+              "P067",
+              "P068"
+            ],
+            "source_image": "codex-clipboard-58e83c7b-1c9a-4f04-a973-63417a689949.png"
           },
           "source_segment_ids": [
             "S095"
           ],
-          "actual_route_length_measured": false,
-          "previous_geometry_basis": "osm_constrained_map_snap"
+          "actual_route_length_measured": false
         },
         "notes": [
-          "Matched nearby basemap roads with consistent headings; unmatched portions retain their track shape with shared endpoints reconnected.",
-          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
-          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route.",
-          "Endpoint approaches are straightened locally with a 3 m maximum shape displacement; points, connectivity, and central road geometry are preserved."
-        ],
-        "map_alignment": {
-          "id": "S095",
-          "matched_sample_fraction": 1.0,
-          "source_map_distance_p95_m": 1.37,
-          "aligned_map_distance_p95_m": 1.2,
-          "registration_scale": 1.0,
-          "status": "matched",
-          "measurement_scope": "Before junction-approach straightening; retained as historical map-match evidence."
-        },
-        "junction_straightening": {
-          "previous_geometry_method": "osm_constrained_map_snap",
-          "point_coordinates_preserved": true,
-          "middle_geometry_preserved": true,
-          "approaches": [
-            {
-              "segment_id": "S095",
-              "point_id": "P061",
-              "status": "straightened",
-              "window_m": 10.224,
-              "straight_length_m": 10.1509,
-              "maximum_local_offset_m": 0.5996,
-              "transition_turn_degrees": 5.68
-            }
-          ]
-        }
+          "Road geometry and junction connectivity corrected from the user annotation.",
+          "Distance is a geodesic sum along the corrected map polyline and remains an estimate.",
+          "Nearby supporting samples do not prove full traversal of the corrected route."
+        ]
       }
     },
     {
@@ -14399,24 +14106,24 @@
         "type": "LineString",
         "coordinates": [
           [
-            116.26555409,
-            40.14881986
+            116.26551583,
+            40.14877691
           ],
           [
-            116.26541508,
-            40.14870255
+            116.26539926,
+            40.1486848
           ],
           [
-            116.26540284,
-            40.14869479
+            116.26538876,
+            40.14867897
           ],
           [
-            116.26535475,
-            40.14866426
+            116.26534745,
+            40.14865605
           ],
           [
-            116.26530667,
-            40.14863375
+            116.26530613,
+            40.14863315
           ],
           [
             116.26515555,
@@ -14457,13 +14164,13 @@
         "point_a": "P061",
         "point_b": "P063",
         "directed": false,
-        "length_m": 133.11,
+        "length_m": 127.5,
         "coordinate_count": 13,
-        "geometry_method": "junction_approach_straightening",
+        "geometry_method": "user_redline_registered_junction_reconstruction",
         "length_method": "WGS84_geodesic_sum_along_map_corrected_polyline",
-        "supporting_gps_sample_count": 26,
-        "median_support_offset_m": 6.1,
-        "max_support_offset_m": 8.29,
+        "supporting_gps_sample_count": 25,
+        "median_support_offset_m": 6.28,
+        "max_support_offset_m": 8.35,
         "is_user_corrected": true,
         "connection_confirmed": true,
         "connection_source": "user_map_annotation",
@@ -14472,138 +14179,53 @@
         "source_segment_ids": [
           "S097"
         ],
-        "correction_notes": "Engineering Training Center and surrounding roads corrected from satellite annotations; straighten local junction approaches at user request.",
+        "correction_notes": "restore_two_library_south_crossroads",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
-          "geometry_basis": "Straight local approaches to fixed junctions; previous road geometry preserved outside endpoint windows.",
+          "geometry_basis": "user_redline_registered_junction_reconstruction",
           "registration": {
-            "method": "local affine fit to ground-road junctions and garden circular-path center; no GCJ02 coordinate assumptions",
-            "anchors": [
-              {
-                "name": "engineering_north_main_road_junction",
-                "pixel": [
-                  520,
-                  334
-                ],
-                "xy": [
-                  502.22,
-                  150.87
-                ],
-                "osm": "way/992727781 + way/992727774",
-                "residual_m": 3.746
-              },
-              {
-                "name": "engineering_southeast_road_junction",
-                "pixel": [
-                  615,
-                  440
-                ],
-                "xy": [
-                  563.94,
-                  73.3
-                ],
-                "osm": "way/992727780 + way/992727779",
-                "residual_m": 0.969
-              },
-              {
-                "name": "engineering_southwest_road_junction",
-                "pixel": [
-                  384,
-                  521
-                ],
-                "xy": [
-                  414.68,
-                  24.84
-                ],
-                "osm": "way/992727777 + way/992727779",
-                "residual_m": 3.585
-              },
-              {
-                "name": "engineering_northwest_road_junction",
-                "pixel": [
-                  335,
-                  381
-                ],
-                "xy": [
-                  383.85,
-                  127.52
-                ],
-                "osm": "way/992727777 + way/992727778",
-                "residual_m": 4.567
-              },
-              {
-                "name": "garden_southeast_round_path_center",
-                "pixel": [
-                  408,
-                  194
-                ],
-                "xy": [
-                  436.3,
-                  241.1
-                ],
-                "osm": "way/992727756 ring bounds center",
-                "residual_m": 3.843
-              }
+            "method": "Uniform screenshot scale and translation fitted to three existing node markers; intersections computed from red road axes.",
+            "control_point_ids": [
+              "P040",
+              "P044",
+              "P061"
             ],
-            "affine_pixel_homogeneous_to_local_xy": [
+            "control_pixel_xy": [
               [
-                0.6402833996956108,
-                -0.035786438984098626
+                20.37,
+                146.21
               ],
               [
-                -0.017509706479063344,
-                -0.6642921708985366
+                448.5,
+                209.8
               ],
               [
-                177.08242020087576,
-                388.161056912459
+                219.0,
+                439.0
               ]
             ],
-            "rmse_m": 3.562,
-            "max_residual_m": 4.567,
-            "estimated_absolute_uncertainty_m": [
-              5,
-              10
+            "scale_px_per_m": 1.6836060124305428,
+            "origin_pixel": [
+              -934.1996070103754,
+              634.4257766008843
             ],
-            "notes": "Anchor residuals measure mutual fit only, not geographic ground truth. Satellite road marking thickness and hand placement add uncertainty. Red stroke gaps at apparent physical junctions were bridged."
+            "fit_rmse_px": 0.0856229137790502,
+            "new_junction_ids": [
+              "P067",
+              "P068"
+            ],
+            "source_image": "codex-clipboard-58e83c7b-1c9a-4f04-a973-63417a689949.png"
           },
           "source_segment_ids": [
             "S097"
           ],
-          "actual_route_length_measured": false,
-          "previous_geometry_basis": "user_satellite_redline_registered"
+          "actual_route_length_measured": false
         },
         "notes": [
-          "Route geometry and connections corrected using the supplied map annotations.",
-          "Distance is accumulated along the corrected polyline as a map estimate, not a measurement from the source activity.",
-          "GPS support denotes nearby source samples and does not establish full traversal of the corrected route.",
-          "Endpoint approaches are straightened locally with a 3 m maximum shape displacement; points, connectivity, and central road geometry are preserved."
-        ],
-        "junction_straightening": {
-          "previous_geometry_method": "user_satellite_redline_registered",
-          "point_coordinates_preserved": true,
-          "middle_geometry_preserved": true,
-          "approaches": [
-            {
-              "segment_id": "S097",
-              "point_id": "P061",
-              "status": "straightened",
-              "window_m": 18.0,
-              "straight_length_m": 17.5996,
-              "maximum_local_offset_m": 1.5747,
-              "transition_turn_degrees": 8.13
-            },
-            {
-              "segment_id": "S097",
-              "point_id": "P063",
-              "status": "straightened",
-              "window_m": 18.0,
-              "straight_length_m": 17.9502,
-              "maximum_local_offset_m": 0.6244,
-              "transition_turn_degrees": 6.2
-            }
-          ]
-        }
+          "Road geometry and junction connectivity corrected from the user annotation.",
+          "Distance is a geodesic sum along the corrected map polyline and remains an estimate.",
+          "Nearby supporting samples do not prove full traversal of the corrected route."
+        ]
       }
     },
     {
@@ -15458,6 +15080,354 @@
             }
           ]
         }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "S104",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.26385888,
+            40.14915991
+          ],
+          [
+            116.26433539,
+            40.14926767
+          ],
+          [
+            116.26517008,
+            40.14949501
+          ]
+        ]
+      },
+      "properties": {
+        "id": "S104",
+        "point_a": "P058",
+        "point_b": "P067",
+        "directed": false,
+        "is_user_corrected": true,
+        "connection_confirmed": true,
+        "connection_source": "user_map_annotation",
+        "geometry_is_estimate": true,
+        "length_is_estimate": true,
+        "geometry_method": "user_redline_registered_junction_reconstruction",
+        "length_method": "WGS84_geodesic_sum_along_map_corrected_polyline",
+        "source_segment_ids": [
+          "S071"
+        ],
+        "correction_notes": "restore_two_library_south_crossroads",
+        "provenance": {
+          "connection_basis": "User supplied actual route annotation.",
+          "geometry_basis": "user_redline_registered_junction_reconstruction",
+          "registration": {
+            "method": "Uniform screenshot scale and translation fitted to three existing node markers; intersections computed from red road axes.",
+            "control_point_ids": [
+              "P040",
+              "P044",
+              "P061"
+            ],
+            "control_pixel_xy": [
+              [
+                20.37,
+                146.21
+              ],
+              [
+                448.5,
+                209.8
+              ],
+              [
+                219.0,
+                439.0
+              ]
+            ],
+            "scale_px_per_m": 1.6836060124305428,
+            "origin_pixel": [
+              -934.1996070103754,
+              634.4257766008843
+            ],
+            "fit_rmse_px": 0.0856229137790502,
+            "new_junction_ids": [
+              "P067",
+              "P068"
+            ],
+            "source_image": "codex-clipboard-58e83c7b-1c9a-4f04-a973-63417a689949.png"
+          },
+          "source_segment_ids": [
+            "S071"
+          ],
+          "actual_route_length_measured": false
+        },
+        "coordinate_count": 3,
+        "length_m": 117.8,
+        "notes": [
+          "Road geometry and junction connectivity corrected from the user annotation.",
+          "Distance is a geodesic sum along the corrected map polyline and remains an estimate.",
+          "Nearby supporting samples do not prove full traversal of the corrected route."
+        ],
+        "supporting_gps_sample_count": 47,
+        "median_support_offset_m": 1.79,
+        "max_support_offset_m": 10.44
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "S105",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.26517008,
+            40.14949501
+          ],
+          [
+            116.26551583,
+            40.14877691
+          ]
+        ]
+      },
+      "properties": {
+        "id": "S105",
+        "point_a": "P067",
+        "point_b": "P061",
+        "directed": false,
+        "is_user_corrected": true,
+        "connection_confirmed": true,
+        "connection_source": "user_map_annotation",
+        "geometry_is_estimate": true,
+        "length_is_estimate": true,
+        "geometry_method": "user_redline_registered_junction_reconstruction",
+        "length_method": "WGS84_geodesic_sum_along_map_corrected_polyline",
+        "source_segment_ids": [
+          "S072"
+        ],
+        "correction_notes": "restore_two_library_south_crossroads",
+        "provenance": {
+          "connection_basis": "User supplied actual route annotation.",
+          "geometry_basis": "user_redline_registered_junction_reconstruction",
+          "registration": {
+            "method": "Uniform screenshot scale and translation fitted to three existing node markers; intersections computed from red road axes.",
+            "control_point_ids": [
+              "P040",
+              "P044",
+              "P061"
+            ],
+            "control_pixel_xy": [
+              [
+                20.37,
+                146.21
+              ],
+              [
+                448.5,
+                209.8
+              ],
+              [
+                219.0,
+                439.0
+              ]
+            ],
+            "scale_px_per_m": 1.6836060124305428,
+            "origin_pixel": [
+              -934.1996070103754,
+              634.4257766008843
+            ],
+            "fit_rmse_px": 0.0856229137790502,
+            "new_junction_ids": [
+              "P067",
+              "P068"
+            ],
+            "source_image": "codex-clipboard-58e83c7b-1c9a-4f04-a973-63417a689949.png"
+          },
+          "source_segment_ids": [
+            "S072"
+          ],
+          "actual_route_length_measured": false
+        },
+        "coordinate_count": 2,
+        "length_m": 85.0,
+        "notes": [
+          "Road geometry and junction connectivity corrected from the user annotation.",
+          "Distance is a geodesic sum along the corrected map polyline and remains an estimate.",
+          "Nearby supporting samples do not prove full traversal of the corrected route."
+        ],
+        "supporting_gps_sample_count": 18,
+        "median_support_offset_m": 3.68,
+        "max_support_offset_m": 6.05
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "S106",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.26517008,
+            40.14949501
+          ],
+          [
+            116.26569433,
+            40.14963779
+          ]
+        ]
+      },
+      "properties": {
+        "id": "S106",
+        "point_a": "P067",
+        "point_b": "P068",
+        "directed": false,
+        "is_user_corrected": true,
+        "connection_confirmed": true,
+        "connection_source": "user_map_annotation",
+        "geometry_is_estimate": true,
+        "length_is_estimate": true,
+        "geometry_method": "user_redline_registered_junction_reconstruction",
+        "length_method": "WGS84_geodesic_sum_along_map_corrected_polyline",
+        "source_segment_ids": [
+          "S071",
+          "S072",
+          "S075"
+        ],
+        "correction_notes": "restore_two_library_south_crossroads",
+        "provenance": {
+          "connection_basis": "User supplied actual route annotation.",
+          "geometry_basis": "user_redline_registered_junction_reconstruction",
+          "registration": {
+            "method": "Uniform screenshot scale and translation fitted to three existing node markers; intersections computed from red road axes.",
+            "control_point_ids": [
+              "P040",
+              "P044",
+              "P061"
+            ],
+            "control_pixel_xy": [
+              [
+                20.37,
+                146.21
+              ],
+              [
+                448.5,
+                209.8
+              ],
+              [
+                219.0,
+                439.0
+              ]
+            ],
+            "scale_px_per_m": 1.6836060124305428,
+            "origin_pixel": [
+              -934.1996070103754,
+              634.4257766008843
+            ],
+            "fit_rmse_px": 0.0856229137790502,
+            "new_junction_ids": [
+              "P067",
+              "P068"
+            ],
+            "source_image": "codex-clipboard-58e83c7b-1c9a-4f04-a973-63417a689949.png"
+          },
+          "source_segment_ids": [
+            "S071",
+            "S072",
+            "S075"
+          ],
+          "actual_route_length_measured": false
+        },
+        "coordinate_count": 2,
+        "length_m": 47.4,
+        "notes": [
+          "Road geometry and junction connectivity corrected from the user annotation.",
+          "Distance is a geodesic sum along the corrected map polyline and remains an estimate.",
+          "Nearby supporting samples do not prove full traversal of the corrected route."
+        ],
+        "supporting_gps_sample_count": 8,
+        "median_support_offset_m": 6.49,
+        "max_support_offset_m": 11.24
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "S107",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.26569433,
+            40.14963779
+          ],
+          [
+            116.26596093,
+            40.14889672
+          ]
+        ]
+      },
+      "properties": {
+        "id": "S107",
+        "point_a": "P068",
+        "point_b": "P059",
+        "directed": false,
+        "is_user_corrected": true,
+        "connection_confirmed": true,
+        "connection_source": "user_map_annotation",
+        "geometry_is_estimate": true,
+        "length_is_estimate": true,
+        "geometry_method": "user_redline_registered_junction_reconstruction",
+        "length_method": "WGS84_geodesic_sum_along_map_corrected_polyline",
+        "source_segment_ids": [
+          "S075"
+        ],
+        "correction_notes": "restore_two_library_south_crossroads",
+        "provenance": {
+          "connection_basis": "User supplied actual route annotation.",
+          "geometry_basis": "user_redline_registered_junction_reconstruction",
+          "registration": {
+            "method": "Uniform screenshot scale and translation fitted to three existing node markers; intersections computed from red road axes.",
+            "control_point_ids": [
+              "P040",
+              "P044",
+              "P061"
+            ],
+            "control_pixel_xy": [
+              [
+                20.37,
+                146.21
+              ],
+              [
+                448.5,
+                209.8
+              ],
+              [
+                219.0,
+                439.0
+              ]
+            ],
+            "scale_px_per_m": 1.6836060124305428,
+            "origin_pixel": [
+              -934.1996070103754,
+              634.4257766008843
+            ],
+            "fit_rmse_px": 0.0856229137790502,
+            "new_junction_ids": [
+              "P067",
+              "P068"
+            ],
+            "source_image": "codex-clipboard-58e83c7b-1c9a-4f04-a973-63417a689949.png"
+          },
+          "source_segment_ids": [
+            "S075"
+          ],
+          "actual_route_length_measured": false
+        },
+        "coordinate_count": 2,
+        "length_m": 85.36,
+        "notes": [
+          "Road geometry and junction connectivity corrected from the user annotation.",
+          "Distance is a geodesic sum along the corrected map polyline and remains an estimate.",
+          "Nearby supporting samples do not prove full traversal of the corrected route."
+        ],
+        "supporting_gps_sample_count": 19,
+        "median_support_offset_m": 2.81,
+        "max_support_offset_m": 5.57
       }
     }
   ]
