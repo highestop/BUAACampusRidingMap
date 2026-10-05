@@ -1,0 +1,76 @@
+Afternoon_Ride.fit → 无向路线网络（地图校正版）
+
+当前结果
+- 62 个 point，97 个无向 segment，1 个连通分量。
+- 网络总长 11,811.06 米，按每条曲线只累计一次；地图校正后的距离是估算，非活动实测。
+- 每个 point 连接 3–4 条不同 segment；没有死路节点。
+- 保留原始 GPS、历史死路和此前审核记录，校正没有改变原始活动数据。
+
+已完成的调整
+1. P030 北移到用户红圈路口，并重新衔接 P021、P028、P044 三个方向。
+2. 新增 P065 四向交叉点，拆分原 S003、S017；新段为 S101、S102。
+   P065–P011 保留东侧绕行与南向直达两条独立路线，不能按相同端点去重。
+3. 工程训练中心周边按用户卫星红线重整，删除假节点 P052、P053、P055、P056 和 6 条冗余边。
+4. 北部主路和原国家实验室周边按另一张卫星红线重画；P022 与 P023 是两个真实路口，保留并拉开至真实位置。
+5. 全网剩余点线按 OSM 底图匹配；用户标绘的路线和相连端点优先保留。
+6. P019–P028（S100）仍为用户确认可走的蓝色实线，当前估计长度 112.91 米。
+7. P008 向南落到真实交叉口，P016精修；S016沿下方东西主路重画。
+8. P043、P044、P049重新对齐路口；新增P066作为南北主路与东侧横支的交点。
+   S074、S077改接P066，新S103连接P066–P046；保留东侧楼边的P046，两个交点分别为三岔。
+
+地图贴合规则
+- 用户卫星红线以地面路口、园内道路等对应位置配准到局部米坐标，再转为 WGS84。
+  不把高德屏幕像素或 GCJ-02 位置读数直接当作 WGS84。配准误差和手绘误差仍存在。
+- 普通路线按沿线采样、道路方向和相邻位置的连续性匹配，候选偏移上限18米。
+  接近实际路口且分支方向一致时使用路口坐标；各段共享完全相同的端点。
+- 对可能导致错交的局部减少贴合幅度；附近不同道路和真实回环分别保留。
+- 底图没有对应道路的段：S066, S068。
+  这些段保留原路线形状，仅衔接移动后的共享端点；不会硬拉到不相关的道路。
+- 部分贴合的段：S004。详情中的 map_alignment 记录匹配比例和贴合状态。
+- 贴合后的网络仍是依据活动与地图整理的代表路线，不是测绘成果。
+
+交互页面
+route_network.html：本地离线地图，支持缩放、拖动、点线详情、节点选择及下载JSON。
+- 所有有效路线采用蓝色实线；原始轨迹默认隐藏，可勾选查看。
+- 鼠标拖动、缩放、键盘平移及窗口变化均限制在已有底图范围。
+- 修改后刷新原页面即可查看。
+
+数据文件
+route_network.json：完整 metadata、points、segments、removed_dead_ends、raw_track。
+route_network.geojson：有效网络，含 Point 和 LineString。
+points.csv：节点经纬度、度数和关联 segment。
+segments.csv：两端点、沿线长度、坐标数、支撑采样、WKT及来源。
+removed_dead_ends.geojson：初始轨迹推断阶段剔除的4条死路，历史留存，不参与网络。
+validation.json：当前坐标、拓扑、长度检查；historical_pre_correction_audit仅适用于旧版本。
+network_with_map.png：当前全网与底图叠加。
+network_overview.png：当前网络及原始GPS对照。
+map_corrections_preview.png：四处重点校正的局部预览。
+latest_refinements_preview.png：P008和游泳馆西侧最新精修预览。
+map_basemap.json / map_basemap.geojson：离线地图要素。
+完整压缩包：可在 GitHub 仓库点击 Code → Download ZIP 获取。
+
+字段约定
+1. 经纬度采用 WGS84 EPSG:4326，数组顺序为 [经度,纬度]。
+2. geometry_xy 为 EPSG:32650（UTM 50N）减去 metadata.local_xy_origin_utm_m 后的米坐标。
+3. segment.coordinates 是完整有序折线；point_a/point_b 只表示存储顺序，所有段均无向。
+4. length_m 为 WGS84 椭球逐小段累计的二维曲线长度，不是端点直线距离。
+5. degree 统计不同segment ID数，同一对端点可以连接两条不同道路。
+6. is_user_corrected 表示本轮用户要求的地图校正；geometry_method区分红线配准、路口校正及普通底图贴合。
+7. geometry_is_estimate / length_is_estimate 表明几何与距离为估算。小数位数只是存储精度。
+8. supporting_gps_record_indices 是 raw_track 的从0开始索引，不是FIT全部消息索引。
+   受影响采样按最近校正段重新分配（18米以内）；只是附近GPS支撑，不代表校正线路已完整经过。
+9. S100 的 is_inferred 仅指原补线几何来源；连接已由用户确认。地图贴合后 geometry_method 记录当前方法。
+10. 退役点段的ID不复用，metadata列出退役ID和逐区域校正记录。
+
+历史初始提取
+原FIT含3662条有效GPS采样，活动计距16680.50米；GPS折线与FIT计距是不同测量。
+初始按双向轨迹缓冲5米、1米栅格中心线、细缝合并、紧凑路口聚类，再迭代剔除死路。
+原始自动容差约10米，产生64点99段；之后加入S100及本轮地图校正。
+metadata.sensitivity中的8/10/12米实验仅对应人工校正前的初始提取。
+
+底图来源
+© OpenStreetMap contributors，ODbL 1.0。
+https://www.openstreetmap.org/copyright
+https://opendatacommons.org/licenses/odbl/1-0/
+经用户授权下载区域底图，共444个要素；底图已内嵌，打开、缩放、查看不再请求网络。
+用户提供的卫星截图仅用作本地人工校正参考，没有上传原始FIT或截图。

@@ -1,0 +1,1174 @@
+{
+  "scope": "Current network after user map corrections",
+  "checks": {
+    "all_points_min_two_distinct_segments": true,
+    "all_segment_endpoints_exist": true,
+    "all_geometry_endpoints_equal_point_coordinates": true,
+    "all_local_endpoints_equal_point_coordinates": true,
+    "all_segment_lengths_recompute_within_1cm": true,
+    "all_geometries_simple": true,
+    "all_geometries_at_least_two_coordinates": true,
+    "all_lengths_positive": true,
+    "point_ids_unique": true,
+    "segment_ids_unique": true,
+    "undirected_no_self_loops": true,
+    "no_crossings_away_from_shared_endpoints": true,
+    "one_connected_component": true,
+    "untouched_segments_exactly_preserved": true,
+    "raw_track_exactly_preserved": true,
+    "corrected_segments_explicitly_marked_as_map_estimates": true
+  },
+  "all_passed": true,
+  "summary": {
+    "point_count": 62,
+    "segment_count": 97,
+    "total_network_length_m": 11811.06,
+    "connected_components": 1,
+    "minimum_degree": 3,
+    "maximum_degree": 4,
+    "removed_dead_end_count": 4,
+    "removed_dead_end_length_m": 97.27,
+    "independent_cycles": 36,
+    "gps_derived_segment_count": 0,
+    "gps_derived_network_length_m": 0,
+    "inferred_segment_count": 1,
+    "inferred_network_length_m": 112.91,
+    "total_length_includes_inferred_segments": true,
+    "user_confirmed_added_segment_count": 1,
+    "estimated_geometry_segment_count": 97,
+    "user_corrected_segment_count": 97,
+    "map_corrected_network_length_m": 11811.06
+  },
+  "crossings": [],
+  "changed_segment_ids": [
+    "S008",
+    "S014",
+    "S016",
+    "S029",
+    "S030",
+    "S050",
+    "S062",
+    "S063",
+    "S070",
+    "S073",
+    "S074",
+    "S075",
+    "S077",
+    "S079",
+    "S080",
+    "S103"
+  ],
+  "unchanged_segment_ids": [
+    "S001",
+    "S002",
+    "S003",
+    "S004",
+    "S005",
+    "S006",
+    "S007",
+    "S009",
+    "S010",
+    "S011",
+    "S012",
+    "S013",
+    "S015",
+    "S017",
+    "S018",
+    "S019",
+    "S020",
+    "S021",
+    "S022",
+    "S023",
+    "S024",
+    "S025",
+    "S026",
+    "S027",
+    "S028",
+    "S031",
+    "S032",
+    "S033",
+    "S034",
+    "S035",
+    "S036",
+    "S037",
+    "S038",
+    "S039",
+    "S040",
+    "S041",
+    "S042",
+    "S043",
+    "S044",
+    "S045",
+    "S046",
+    "S047",
+    "S048",
+    "S049",
+    "S051",
+    "S052",
+    "S053",
+    "S054",
+    "S055",
+    "S056",
+    "S057",
+    "S058",
+    "S059",
+    "S060",
+    "S061",
+    "S064",
+    "S065",
+    "S066",
+    "S067",
+    "S068",
+    "S069",
+    "S071",
+    "S072",
+    "S076",
+    "S078",
+    "S081",
+    "S082",
+    "S083",
+    "S084",
+    "S088",
+    "S092",
+    "S093",
+    "S094",
+    "S095",
+    "S096",
+    "S097",
+    "S098",
+    "S099",
+    "S100",
+    "S101",
+    "S102"
+  ],
+  "retired_point_ids": [],
+  "retired_segment_ids": [],
+  "historical_pre_correction_audit": {
+    "scope": "Current network after user map corrections",
+    "checks": {
+      "all_points_min_two_distinct_segments": true,
+      "all_segment_endpoints_exist": true,
+      "all_geometry_endpoints_equal_point_coordinates": true,
+      "all_local_endpoints_equal_point_coordinates": true,
+      "all_segment_lengths_recompute_within_1cm": true,
+      "all_geometries_simple": true,
+      "all_geometries_at_least_two_coordinates": true,
+      "all_lengths_positive": true,
+      "point_ids_unique": true,
+      "segment_ids_unique": true,
+      "undirected_no_self_loops": true,
+      "no_crossings_away_from_shared_endpoints": true,
+      "one_connected_component": true,
+      "untouched_segments_exactly_preserved": true,
+      "raw_track_exactly_preserved": true,
+      "corrected_segments_explicitly_marked_as_map_estimates": true
+    },
+    "all_passed": true,
+    "summary": {
+      "point_count": 61,
+      "segment_count": 96,
+      "total_network_length_m": 11811.94,
+      "connected_components": 1,
+      "minimum_degree": 3,
+      "maximum_degree": 4,
+      "removed_dead_end_count": 4,
+      "removed_dead_end_length_m": 97.27,
+      "independent_cycles": 36,
+      "gps_derived_segment_count": 0,
+      "gps_derived_network_length_m": 0,
+      "inferred_segment_count": 1,
+      "inferred_network_length_m": 112.91,
+      "total_length_includes_inferred_segments": true,
+      "user_confirmed_added_segment_count": 1,
+      "estimated_geometry_segment_count": 96,
+      "user_corrected_segment_count": 96,
+      "map_corrected_network_length_m": 11811.94
+    },
+    "crossings": [],
+    "changed_segment_ids": [
+      "S001",
+      "S002",
+      "S003",
+      "S004",
+      "S005",
+      "S006",
+      "S007",
+      "S008",
+      "S009",
+      "S010",
+      "S011",
+      "S012",
+      "S013",
+      "S014",
+      "S015",
+      "S016",
+      "S017",
+      "S018",
+      "S019",
+      "S020",
+      "S021",
+      "S022",
+      "S023",
+      "S024",
+      "S025",
+      "S026",
+      "S027",
+      "S028",
+      "S029",
+      "S030",
+      "S031",
+      "S032",
+      "S033",
+      "S034",
+      "S035",
+      "S036",
+      "S037",
+      "S038",
+      "S039",
+      "S040",
+      "S041",
+      "S042",
+      "S043",
+      "S044",
+      "S045",
+      "S046",
+      "S047",
+      "S048",
+      "S049",
+      "S050",
+      "S051",
+      "S052",
+      "S053",
+      "S054",
+      "S055",
+      "S056",
+      "S057",
+      "S058",
+      "S059",
+      "S060",
+      "S061",
+      "S062",
+      "S063",
+      "S064",
+      "S065",
+      "S066",
+      "S067",
+      "S068",
+      "S069",
+      "S070",
+      "S071",
+      "S072",
+      "S073",
+      "S074",
+      "S075",
+      "S076",
+      "S077",
+      "S078",
+      "S079",
+      "S080",
+      "S081",
+      "S082",
+      "S083",
+      "S084",
+      "S088",
+      "S092",
+      "S093",
+      "S094",
+      "S095",
+      "S096",
+      "S097",
+      "S098",
+      "S099",
+      "S100",
+      "S101",
+      "S102"
+    ],
+    "unchanged_segment_ids": [],
+    "retired_point_ids": [
+      "P052",
+      "P053",
+      "P055",
+      "P056"
+    ],
+    "retired_segment_ids": [
+      "S085",
+      "S086",
+      "S087",
+      "S089",
+      "S090",
+      "S091"
+    ],
+    "historical_pre_correction_audit": {
+      "checks": {
+        "all_points_min_two_distinct_segments": true,
+        "all_segment_endpoints_exist": true,
+        "all_geometry_endpoints_equal_point_coordinates": true,
+        "all_segment_lengths_recompute_within_1cm": true,
+        "all_geometries_at_least_two_coordinates": true,
+        "all_lengths_positive": true,
+        "all_point_adjacencies_match_edges": true,
+        "segment_ids_unique": true,
+        "undirected_no_self_loops": true,
+        "no_unmodelled_nonincident_crossings": true,
+        "inferred_segment_is_marked": true
+      },
+      "all_passed": true,
+      "nonincident_crossings": [],
+      "nearest_network_distance_all_gps_m": {
+        "median": 0.46,
+        "p95": 6.1,
+        "max": 28.25
+      },
+      "summary": {
+        "point_count": 64,
+        "segment_count": 100,
+        "total_network_length_m": 11648.21,
+        "connected_components": 1,
+        "minimum_degree": 3,
+        "maximum_degree": 4,
+        "removed_dead_end_count": 4,
+        "removed_dead_end_length_m": 97.27,
+        "independent_cycles": 37,
+        "gps_derived_segment_count": 99,
+        "gps_derived_network_length_m": 11531.59,
+        "inferred_segment_count": 1,
+        "inferred_network_length_m": 116.62,
+        "total_length_includes_inferred_segments": true,
+        "user_confirmed_added_segment_count": 1,
+        "estimated_geometry_segment_count": 1
+      },
+      "independent_audit": {
+        "errors": [],
+        "crossings_away_from_exact_shared_endpoint": [],
+        "max_length_rounding_difference_m": 0.004968049809875197,
+        "length_sum_m": 11531.59,
+        "components": 1,
+        "min_degree": 3,
+        "max_degree": 4,
+        "same_endpoint_multiedges": [
+          {
+            "points": [
+              "P035",
+              "P045"
+            ],
+            "segments": [
+              "S058",
+              "S059"
+            ],
+            "hausdorff_m": 33.23967388528361
+          }
+        ],
+        "worst_shape_support": [
+          {
+            "id": "S005",
+            "max_to_raw_m": 7.19610366511675,
+            "p95_to_raw_m": 4.73970259578583
+          },
+          {
+            "id": "S014",
+            "max_to_raw_m": 7.19610366511675,
+            "p95_to_raw_m": 5.50638165261125
+          },
+          {
+            "id": "S015",
+            "max_to_raw_m": 7.19610366511675,
+            "p95_to_raw_m": 5.779322498056692
+          },
+          {
+            "id": "S031",
+            "max_to_raw_m": 6.214541914089511,
+            "p95_to_raw_m": 4.648619613916003
+          },
+          {
+            "id": "S063",
+            "max_to_raw_m": 6.115351124656626,
+            "p95_to_raw_m": 5.740396958810886
+          },
+          {
+            "id": "S032",
+            "max_to_raw_m": 5.890806872363142,
+            "p95_to_raw_m": 4.210461211094956
+          },
+          {
+            "id": "S020",
+            "max_to_raw_m": 5.414419089703243,
+            "p95_to_raw_m": 5.392107178764257
+          },
+          {
+            "id": "S026",
+            "max_to_raw_m": 5.399066754347956,
+            "p95_to_raw_m": 3.0202577837628932
+          },
+          {
+            "id": "S038",
+            "max_to_raw_m": 5.399066754347956,
+            "p95_to_raw_m": 5.31129710400891
+          },
+          {
+            "id": "S039",
+            "max_to_raw_m": 5.399066754347956,
+            "p95_to_raw_m": 2.959876749866241
+          },
+          {
+            "id": "S034",
+            "max_to_raw_m": 5.222696621478168,
+            "p95_to_raw_m": 4.652123145198688
+          },
+          {
+            "id": "S057",
+            "max_to_raw_m": 5.190964522379717,
+            "p95_to_raw_m": 4.787943809899218
+          },
+          {
+            "id": "S060",
+            "max_to_raw_m": 5.190964522379717,
+            "p95_to_raw_m": 4.59507055064865
+          },
+          {
+            "id": "S022",
+            "max_to_raw_m": 5.056720518867846,
+            "p95_to_raw_m": 4.593147181442838
+          },
+          {
+            "id": "S019",
+            "max_to_raw_m": 4.364458969972289,
+            "p95_to_raw_m": 2.569107506521668
+          }
+        ]
+      },
+      "prior_audit_scope": "Original GPS-derived network S001–S099; supporting-track audit does not apply to S100.",
+      "inferred_addition_validation": {
+        "segment_id": "S100",
+        "is_inferred": true,
+        "has_no_claimed_GPS_support": true,
+        "geometry_is_simple": true,
+        "new_crossings_away_from_shared_endpoints": [],
+        "source_segments_unchanged": true,
+        "point_P019_degree": 4,
+        "point_P028_degree": 4,
+        "length_m": 116.62
+      }
+    },
+    "historical_audit_scope": "Prior network only; old GPS-fit and crossing statistics do not describe map-corrected geometry.",
+    "independent_map_alignment_audit": {
+      "candidate": "Historical intermediate version (not distributed); retained for audit context.",
+      "new_self_intersections": [],
+      "new_building_crossings": [],
+      "largest_hausdorff_changes": [
+        {
+          "id": "S072",
+          "hausdorff_m": 11.4,
+          "length_delta_m": 26.87
+        },
+        {
+          "id": "S014",
+          "hausdorff_m": 11.27,
+          "length_delta_m": 12.62
+        },
+        {
+          "id": "S067",
+          "hausdorff_m": 11.22,
+          "length_delta_m": 12.83
+        },
+        {
+          "id": "S079",
+          "hausdorff_m": 11.22,
+          "length_delta_m": -0.2
+        },
+        {
+          "id": "S076",
+          "hausdorff_m": 11.18,
+          "length_delta_m": -8.06
+        },
+        {
+          "id": "S058",
+          "hausdorff_m": 10.57,
+          "length_delta_m": 16.48
+        },
+        {
+          "id": "S059",
+          "hausdorff_m": 10.57,
+          "length_delta_m": 11.72
+        },
+        {
+          "id": "S004",
+          "hausdorff_m": 9.61,
+          "length_delta_m": -2.96
+        },
+        {
+          "id": "S006",
+          "hausdorff_m": 9.61,
+          "length_delta_m": 9.66
+        },
+        {
+          "id": "S007",
+          "hausdorff_m": 9.46,
+          "length_delta_m": -0.26
+        },
+        {
+          "id": "S055",
+          "hausdorff_m": 8.98,
+          "length_delta_m": 4.06
+        },
+        {
+          "id": "S005",
+          "hausdorff_m": 8.55,
+          "length_delta_m": 4.55
+        },
+        {
+          "id": "S015",
+          "hausdorff_m": 8.55,
+          "length_delta_m": -4.17
+        },
+        {
+          "id": "S061",
+          "hausdorff_m": 8.52,
+          "length_delta_m": 9.67
+        },
+        {
+          "id": "S047",
+          "hausdorff_m": 7.67,
+          "length_delta_m": 6.5
+        },
+        {
+          "id": "S053",
+          "hausdorff_m": 7.67,
+          "length_delta_m": 3.39
+        },
+        {
+          "id": "S070",
+          "hausdorff_m": 7.5,
+          "length_delta_m": 6.16
+        },
+        {
+          "id": "S066",
+          "hausdorff_m": 7.49,
+          "length_delta_m": 3.1
+        },
+        {
+          "id": "S057",
+          "hausdorff_m": 7.11,
+          "length_delta_m": -6.33
+        },
+        {
+          "id": "S043",
+          "hausdorff_m": 6.74,
+          "length_delta_m": 4.2
+        },
+        {
+          "id": "S002",
+          "hausdorff_m": 6.67,
+          "length_delta_m": -1.24
+        },
+        {
+          "id": "S022",
+          "hausdorff_m": 6.43,
+          "length_delta_m": -1.02
+        },
+        {
+          "id": "S031",
+          "hausdorff_m": 6.43,
+          "length_delta_m": -5.54
+        },
+        {
+          "id": "S034",
+          "hausdorff_m": 6.43,
+          "length_delta_m": 5.1
+        },
+        {
+          "id": "S100",
+          "hausdorff_m": 6.43,
+          "length_delta_m": -3.71
+        },
+        {
+          "id": "S080",
+          "hausdorff_m": 5.8,
+          "length_delta_m": -4.58
+        },
+        {
+          "id": "S095",
+          "hausdorff_m": 5.8,
+          "length_delta_m": 5.53
+        },
+        {
+          "id": "S019",
+          "hausdorff_m": 5.76,
+          "length_delta_m": 5.47
+        },
+        {
+          "id": "S075",
+          "hausdorff_m": 5.69,
+          "length_delta_m": 7.05
+        },
+        {
+          "id": "S073",
+          "hausdorff_m": 4.98,
+          "length_delta_m": 6.14
+        },
+        {
+          "id": "S010",
+          "hausdorff_m": 4.32,
+          "length_delta_m": 0.99
+        },
+        {
+          "id": "S018",
+          "hausdorff_m": 4.08,
+          "length_delta_m": -0.88
+        },
+        {
+          "id": "S023",
+          "hausdorff_m": 4.04,
+          "length_delta_m": -1.64
+        },
+        {
+          "id": "S042",
+          "hausdorff_m": 3.69,
+          "length_delta_m": 4.29
+        },
+        {
+          "id": "S001",
+          "hausdorff_m": 3.25,
+          "length_delta_m": 3.98
+        },
+        {
+          "id": "S062",
+          "hausdorff_m": 3.25,
+          "length_delta_m": -3.32
+        },
+        {
+          "id": "S021",
+          "hausdorff_m": 3.06,
+          "length_delta_m": 0.27
+        },
+        {
+          "id": "S024",
+          "hausdorff_m": 3.06,
+          "length_delta_m": 0.08
+        },
+        {
+          "id": "S063",
+          "hausdorff_m": 2.75,
+          "length_delta_m": 0.64
+        },
+        {
+          "id": "S077",
+          "hausdorff_m": 2.23,
+          "length_delta_m": 2.87
+        },
+        {
+          "id": "S008",
+          "hausdorff_m": 1.98,
+          "length_delta_m": -0.1
+        },
+        {
+          "id": "S054",
+          "hausdorff_m": 1.6,
+          "length_delta_m": -1.56
+        },
+        {
+          "id": "S074",
+          "hausdorff_m": 1.17,
+          "length_delta_m": 1.84
+        },
+        {
+          "id": "S060",
+          "hausdorff_m": 0.87,
+          "length_delta_m": -0.01
+        }
+      ],
+      "unmodelled_crossings": [],
+      "sharp_turns": [],
+      "changed_locked_segments": []
+    },
+    "map_alignment_audit": {
+      "points": {
+        "P002": {
+          "displacement_m": 0.67,
+          "source_map_distance_m": 0.67
+        },
+        "P003": {
+          "displacement_m": 9.612,
+          "source_map_distance_m": 3.181
+        },
+        "P007": {
+          "displacement_m": 8.555,
+          "source_map_distance_m": 5.477
+        },
+        "P012": {
+          "displacement_m": 4.079,
+          "source_map_distance_m": 0.257
+        },
+        "P013": {
+          "displacement_m": 7.236,
+          "source_map_distance_m": 0.284
+        },
+        "P017": {
+          "displacement_m": 6.217,
+          "source_map_distance_m": 1.765
+        },
+        "P019": {
+          "displacement_m": 6.433,
+          "source_map_distance_m": 3.919
+        },
+        "P024": {
+          "displacement_m": 3.55,
+          "source_map_distance_m": 2.264
+        },
+        "P032": {
+          "displacement_m": 4.371,
+          "source_map_distance_m": 4.371
+        },
+        "P034": {
+          "displacement_m": 7.669,
+          "source_map_distance_m": 0.699
+        },
+        "P035": {
+          "displacement_m": 3.855,
+          "source_map_distance_m": 0.962
+        },
+        "P036": {
+          "displacement_m": 2.425,
+          "source_map_distance_m": 2.425
+        },
+        "P037": {
+          "displacement_m": 4.861,
+          "source_map_distance_m": 0.186
+        },
+        "P039": {
+          "displacement_m": 7.492,
+          "source_map_distance_m": 7.492
+        },
+        "P041": {
+          "displacement_m": 7.5,
+          "source_map_distance_m": 7.5
+        },
+        "P043": {
+          "displacement_m": 4.21,
+          "source_map_distance_m": 4.21
+        },
+        "P045": {
+          "displacement_m": 10.569,
+          "source_map_distance_m": 7.111
+        },
+        "P046": {
+          "displacement_m": 0.543,
+          "source_map_distance_m": 0.543
+        },
+        "P048": {
+          "displacement_m": 11.222,
+          "source_map_distance_m": 11.222
+        },
+        "P049": {
+          "displacement_m": 8.103,
+          "source_map_distance_m": 8.103
+        },
+        "P059": {
+          "displacement_m": 5.799,
+          "source_map_distance_m": 1.119
+        }
+      },
+      "segments": [
+        {
+          "id": "S001",
+          "matched_sample_fraction": 0.92,
+          "source_map_distance_p95_m": 6.43,
+          "aligned_map_distance_p95_m": 4.0,
+          "registration_scale": 1.0
+        },
+        {
+          "id": "S002",
+          "matched_sample_fraction": 1.0,
+          "source_map_distance_p95_m": 6.98,
+          "aligned_map_distance_p95_m": 0.58,
+          "registration_scale": 1.0
+        },
+        {
+          "id": "S004",
+          "matched_sample_fraction": 0.848,
+          "source_map_distance_p95_m": 6.09,
+          "aligned_map_distance_p95_m": 2.13,
+          "registration_scale": 1.0
+        },
+        {
+          "id": "S005",
+          "matched_sample_fraction": 1.0,
+          "source_map_distance_p95_m": 2.88,
+          "aligned_map_distance_p95_m": 0.44,
+          "registration_scale": 1.0
+        },
+        {
+          "id": "S006",
+          "matched_sample_fraction": 1.0,
+          "source_map_distance_p95_m": 3.99,
+          "aligned_map_distance_p95_m": 1.5,
+          "registration_scale": 1.0
+        },
+        {
+          "id": "S007",
+          "matched_sample_fraction": 1.0,
+          "source_map_distance_p95_m": 2.95,
+          "aligned_map_distance_p95_m": 0.39,
+          "registration_scale": 1.0
+        },
+        {
+          "id": "S008",
+          "matched_sample_fraction": 1.0,
+          "source_map_distance_p95_m": 2.18,
+          "aligned_map_distance_p95_m": 1.97,
+          "registration_scale": 1.0
+        },
+        {
+          "id": "S010",
+          "matched_sample_fraction": 0.979,
+          "source_map_distance_p95_m": 4.59,
+          "aligned_map_distance_p95_m": 3.08,
+          "registration_scale": 1.0
+        },
+        {
+          "id": "S014",
+          "matched_sample_fraction": 0.708,
+          "source_map_distance_p95_m": 13.04,
+          "aligned_map_distance_p95_m": 10.25,
+          "registration_scale": 1.0
+        },
+        {
+          "id": "S015",
+          "matched_sample_fraction": 1.0,
+          "source_map_distance_p95_m": 3.31,
+          "aligned_map_distance_p95_m": 0.46,
+          "registration_scale": 1.0
+        },
+        {
+          "id": "S018",
+          "matched_sample_fraction": 1.0,
+          "source_map_distance_p95_m": 4.22,
+          "aligned_map_distance_p95_m": 1.69,
+          "registration_scale": 1.0
+        },
+        {
+          "id": "S019",
+          "matched_sample_fraction": 1.0,
+          "source_map_distance_p95_m": 7.41,
+          "aligned_map_distance_p95_m": 3.95,
+          "registration_scale": 1.0
+        },
+        {
+          "id": "S021",
+          "matched_sample_fraction": 1.0,
+          "source_map_distance_p95_m": 2.52,
+          "aligned_map_distance_p95_m": 1.62,
+          "registration_scale": 1.0
+        },
+        {
+          "id": "S022",
+          "matched_sample_fraction": 1.0,
+          "source_map_distance_p95_m": 3.9,
+          "aligned_map_distance_p95_m": 0.27,
+          "registration_scale": 1.0
+        },
+        {
+          "id": "S023",
+          "matched_sample_fraction": 1.0,
+          "source_map_distance_p95_m": 4.69,
+          "aligned_map_distance_p95_m": 2.94,
+          "registration_scale": 0.65
+        },
+        {
+          "id": "S024",
+          "matched_sample_fraction": 1.0,
+          "source_map_distance_p95_m": 4.04,
+          "aligned_map_distance_p95_m": 2.07,
+          "registration_scale": 0.65
+        },
+        {
+          "id": "S031",
+          "matched_sample_fraction": 1.0,
+          "source_map_distance_p95_m": 4.36,
+          "aligned_map_distance_p95_m": 1.41,
+          "registration_scale": 1.0
+        },
+        {
+          "id": "S034",
+          "matched_sample_fraction": 1.0,
+          "source_map_distance_p95_m": 3.72,
+          "aligned_map_distance_p95_m": 2.89,
+          "registration_scale": 1.0
+        },
+        {
+          "id": "S042",
+          "matched_sample_fraction": 1.0,
+          "source_map_distance_p95_m": 3.22,
+          "aligned_map_distance_p95_m": 1.03,
+          "registration_scale": 1.0
+        },
+        {
+          "id": "S043",
+          "matched_sample_fraction": 1.0,
+          "source_map_distance_p95_m": 7.16,
+          "aligned_map_distance_p95_m": 1.17,
+          "registration_scale": 1.0
+        },
+        {
+          "id": "S047",
+          "matched_sample_fraction": 1.0,
+          "source_map_distance_p95_m": 3.4,
+          "aligned_map_distance_p95_m": 2.17,
+          "registration_scale": 1.0
+        },
+        {
+          "id": "S053",
+          "matched_sample_fraction": 0.962,
+          "source_map_distance_p95_m": 5.34,
+          "aligned_map_distance_p95_m": 3.25,
+          "registration_scale": 1.0
+        },
+        {
+          "id": "S054",
+          "matched_sample_fraction": 0.976,
+          "source_map_distance_p95_m": 7.41,
+          "aligned_map_distance_p95_m": 7.0,
+          "registration_scale": 0.179
+        },
+        {
+          "id": "S055",
+          "matched_sample_fraction": 1.0,
+          "source_map_distance_p95_m": 10.52,
+          "aligned_map_distance_p95_m": 5.58,
+          "registration_scale": 1.0
+        },
+        {
+          "id": "S057",
+          "matched_sample_fraction": 1.0,
+          "source_map_distance_p95_m": 2.55,
+          "aligned_map_distance_p95_m": 0.59,
+          "registration_scale": 1.0
+        },
+        {
+          "id": "S058",
+          "matched_sample_fraction": 0.943,
+          "source_map_distance_p95_m": 6.11,
+          "aligned_map_distance_p95_m": 2.33,
+          "registration_scale": 1.0
+        },
+        {
+          "id": "S059",
+          "matched_sample_fraction": 1.0,
+          "source_map_distance_p95_m": 6.4,
+          "aligned_map_distance_p95_m": 1.1,
+          "registration_scale": 1.0
+        },
+        {
+          "id": "S060",
+          "matched_sample_fraction": 1.0,
+          "source_map_distance_p95_m": 4.03,
+          "aligned_map_distance_p95_m": 3.53,
+          "registration_scale": 0.179
+        },
+        {
+          "id": "S061",
+          "matched_sample_fraction": 1.0,
+          "source_map_distance_p95_m": 9.17,
+          "aligned_map_distance_p95_m": 2.71,
+          "registration_scale": 1.0
+        },
+        {
+          "id": "S062",
+          "matched_sample_fraction": 1.0,
+          "source_map_distance_p95_m": 3.66,
+          "aligned_map_distance_p95_m": 1.12,
+          "registration_scale": 1.0
+        },
+        {
+          "id": "S063",
+          "matched_sample_fraction": 1.0,
+          "source_map_distance_p95_m": 3.82,
+          "aligned_map_distance_p95_m": 3.37,
+          "registration_scale": 1.0
+        },
+        {
+          "id": "S066",
+          "matched_sample_fraction": 0.0,
+          "source_map_distance_p95_m": 12.21,
+          "aligned_map_distance_p95_m": 11.74,
+          "registration_scale": 1.0
+        },
+        {
+          "id": "S067",
+          "matched_sample_fraction": 0.85,
+          "source_map_distance_p95_m": 11.29,
+          "aligned_map_distance_p95_m": 11.55,
+          "registration_scale": 1.0
+        },
+        {
+          "id": "S068",
+          "matched_sample_fraction": 0.0,
+          "source_map_distance_p95_m": 20.6,
+          "aligned_map_distance_p95_m": 19.53,
+          "registration_scale": 1.0
+        },
+        {
+          "id": "S070",
+          "matched_sample_fraction": 0.0,
+          "source_map_distance_p95_m": 31.13,
+          "aligned_map_distance_p95_m": 31.59,
+          "registration_scale": 1.0
+        },
+        {
+          "id": "S072",
+          "matched_sample_fraction": 0.958,
+          "source_map_distance_p95_m": 11.77,
+          "aligned_map_distance_p95_m": 5.51,
+          "registration_scale": 1.0
+        },
+        {
+          "id": "S073",
+          "matched_sample_fraction": 0.731,
+          "source_map_distance_p95_m": 7.65,
+          "aligned_map_distance_p95_m": 6.39,
+          "registration_scale": 1.0
+        },
+        {
+          "id": "S074",
+          "matched_sample_fraction": 0.815,
+          "source_map_distance_p95_m": 7.72,
+          "aligned_map_distance_p95_m": 6.72,
+          "registration_scale": 0.275
+        },
+        {
+          "id": "S075",
+          "matched_sample_fraction": 0.978,
+          "source_map_distance_p95_m": 5.88,
+          "aligned_map_distance_p95_m": 3.53,
+          "registration_scale": 1.0
+        },
+        {
+          "id": "S076",
+          "matched_sample_fraction": 1.0,
+          "source_map_distance_p95_m": 10.08,
+          "aligned_map_distance_p95_m": 0.88,
+          "registration_scale": 1.0
+        },
+        {
+          "id": "S077",
+          "matched_sample_fraction": 1.0,
+          "source_map_distance_p95_m": 6.05,
+          "aligned_map_distance_p95_m": 5.89,
+          "registration_scale": 0.275
+        },
+        {
+          "id": "S079",
+          "matched_sample_fraction": 0.982,
+          "source_map_distance_p95_m": 8.6,
+          "aligned_map_distance_p95_m": 2.87,
+          "registration_scale": 1.0
+        },
+        {
+          "id": "S080",
+          "matched_sample_fraction": 0.988,
+          "source_map_distance_p95_m": 3.05,
+          "aligned_map_distance_p95_m": 0.38,
+          "registration_scale": 1.0
+        },
+        {
+          "id": "S095",
+          "matched_sample_fraction": 1.0,
+          "source_map_distance_p95_m": 1.37,
+          "aligned_map_distance_p95_m": 1.2,
+          "registration_scale": 1.0
+        },
+        {
+          "id": "S100",
+          "matched_sample_fraction": 1.0,
+          "source_map_distance_p95_m": 5.14,
+          "aligned_map_distance_p95_m": 1.74,
+          "registration_scale": 1.0
+        }
+      ],
+      "topology_limited_segments": [
+        "S023",
+        "S024",
+        "S054",
+        "S060",
+        "S074",
+        "S077"
+      ]
+    }
+  },
+  "historical_audit_scope": "Prior network only; old GPS-fit and crossing statistics do not describe map-corrected geometry.",
+  "independent_local_refinement_review": {
+    "changed_segments": [
+      "S008",
+      "S014",
+      "S016",
+      "S029",
+      "S030",
+      "S050",
+      "S062",
+      "S063",
+      "S070",
+      "S073",
+      "S074",
+      "S075",
+      "S077",
+      "S079",
+      "S080",
+      "S103"
+    ],
+    "unexpected_external_segment_changes": [],
+    "removed_segments": [],
+    "changed_points": [
+      "P008",
+      "P016",
+      "P043",
+      "P044",
+      "P046",
+      "P049",
+      "P066"
+    ],
+    "geometry_errors": [],
+    "backtrack_candidates": [],
+    "max_geodesic_length_rounding_error_m": 0.00497802148392168,
+    "junctions": {
+      "P043": {
+        "degree": 3,
+        "segments": [
+          "S063",
+          "S073",
+          "S074"
+        ]
+      },
+      "P044": {
+        "degree": 3,
+        "segments": [
+          "S050",
+          "S073",
+          "S075"
+        ]
+      },
+      "P046": {
+        "degree": 3,
+        "segments": [
+          "S062",
+          "S070",
+          "S103"
+        ]
+      },
+      "P049": {
+        "degree": 3,
+        "segments": [
+          "S077",
+          "S079",
+          "S080"
+        ]
+      },
+      "P066": {
+        "degree": 3,
+        "segments": [
+          "S074",
+          "S077",
+          "S103"
+        ]
+      }
+    }
+  }
+}
