@@ -10479,188 +10479,32 @@
             40.15041813
           ],
           [
-            116.26474221,
-            40.15033422
+            116.26472511,
+            40.15036778
           ],
           [
-            116.26475079,
-            40.15031745
+            116.26481876,
+            40.15019058
           ],
           [
-            116.26475937,
-            40.15030067
+            116.2649176,
+            40.14999512
           ],
           [
-            116.264768,
-            40.1502839
+            116.26505206,
+            40.1497424
           ],
           [
-            116.26477663,
-            40.15026714
+            116.26509645,
+            40.14966276
           ],
           [
-            116.26478529,
-            40.15025038
+            116.2651161,
+            40.14962055
           ],
           [
-            116.26479396,
-            40.15023363
-          ],
-          [
-            116.26480264,
-            40.15021688
-          ],
-          [
-            116.26481134,
-            40.15020014
-          ],
-          [
-            116.26482006,
-            40.1501834
-          ],
-          [
-            116.26482877,
-            40.15016666
-          ],
-          [
-            116.26483751,
-            40.15014993
-          ],
-          [
-            116.26484625,
-            40.1501332
-          ],
-          [
-            116.264855,
-            40.15011647
-          ],
-          [
-            116.26486375,
-            40.15009974
-          ],
-          [
-            116.26487251,
-            40.15008302
-          ],
-          [
-            116.26488127,
-            40.15006629
-          ],
-          [
-            116.26489003,
-            40.15004956
-          ],
-          [
-            116.26489879,
-            40.15003284
-          ],
-          [
-            116.26490755,
-            40.15001611
-          ],
-          [
-            116.2649163,
-            40.14999938
-          ],
-          [
-            116.26492505,
-            40.14998265
-          ],
-          [
-            116.26493379,
-            40.14996593
-          ],
-          [
-            116.26494251,
-            40.14994919
-          ],
-          [
-            116.26495124,
-            40.14993245
-          ],
-          [
-            116.26495995,
-            40.14991571
-          ],
-          [
-            116.26496864,
-            40.14989897
-          ],
-          [
-            116.26497732,
-            40.14988222
-          ],
-          [
-            116.26498599,
-            40.14986547
-          ],
-          [
-            116.26499463,
-            40.14984871
-          ],
-          [
-            116.26500327,
-            40.14983195
-          ],
-          [
-            116.26501188,
-            40.14981517
-          ],
-          [
-            116.26502047,
-            40.1497984
-          ],
-          [
-            116.26502903,
-            40.14978161
-          ],
-          [
-            116.26503757,
-            40.14976483
-          ],
-          [
-            116.26504608,
-            40.14974802
-          ],
-          [
-            116.26505456,
-            40.14973122
-          ],
-          [
-            116.26506302,
-            40.1497144
-          ],
-          [
-            116.26507144,
-            40.14969758
-          ],
-          [
-            116.26507983,
-            40.14968075
-          ],
-          [
-            116.26508818,
-            40.1496639
-          ],
-          [
-            116.2650965,
-            40.14964705
-          ],
-          [
-            116.26510478,
-            40.14963018
-          ],
-          [
-            116.26511303,
-            40.14961331
-          ],
-          [
-            116.26512123,
-            40.14959641
-          ],
-          [
-            116.26512939,
-            40.14957952
+            116.26514567,
+            40.14954571
           ],
           [
             116.26517008,
@@ -10673,13 +10517,13 @@
         "point_a": "P042",
         "point_b": "P067",
         "directed": false,
-        "length_m": 110.07,
-        "coordinate_count": 48,
-        "geometry_method": "locally_smoothed_road_with_aligned_junction_entries",
+        "length_m": 110.11,
+        "coordinate_count": 9,
+        "geometry_method": "fit_track_shape_registered_to_current_junctions",
         "length_method": "WGS84_geodesic_sum_along_map_corrected_polyline",
         "supporting_gps_sample_count": 47,
-        "median_support_offset_m": 2.74,
-        "max_support_offset_m": 8.24,
+        "median_support_offset_m": 2.93,
+        "max_support_offset_m": 8.11,
         "is_user_corrected": true,
         "connection_confirmed": true,
         "connection_source": "user_map_annotation",
@@ -10688,12 +10532,14 @@
         "source_segment_ids": [
           "S071"
         ],
-        "correction_notes": "smooth_library_side_roads",
+        "correction_notes": "integrate_original_track_on_library_side_roads",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
-          "geometry_basis": "locally_smoothed_road_with_aligned_junction_entries",
+          "geometry_basis": "fit_track_shape_registered_to_current_junctions",
           "registration": {
-            "method": "Smooth local side-road kinks and align entry tangents with the continuing north-south roads while preserving existing junctions.",
+            "method": "Use continuous original coordinate sequences, smooth sampling noise, register endpoints to current junctions, and retain short straight entry tangents.",
+            "straight_entry_length_m": 6,
+            "transition_length_m": 22,
             "junction_topology_preserved": true
           },
           "source_segment_ids": [
@@ -10719,428 +10565,228 @@
             40.15041813
           ],
           [
-            116.26464378,
-            40.15052726
+            116.26467377,
+            40.15046846
           ],
           [
-            116.26463479,
-            40.15054386
+            116.26466607,
+            40.15048544
           ],
           [
-            116.26462996,
-            40.15055202
+            116.26466098,
+            40.15050171
           ],
           [
-            116.26462482,
-            40.15056006
+            116.26465836,
+            40.15051782
           ],
           [
-            116.26461932,
-            40.15056796
+            116.26465781,
+            40.15053387
           ],
           [
-            116.26461344,
-            40.1505757
+            116.26465923,
+            40.15056619
           ],
           [
-            116.26460718,
-            40.15058328
+            116.26465863,
+            40.15058269
           ],
           [
-            116.26460057,
-            40.15059071
+            116.26465507,
+            40.15059955
           ],
           [
-            116.26459369,
-            40.15059804
+            116.26463488,
+            40.15066843
           ],
           [
-            116.26457225,
-            40.15061973
+            116.26462651,
+            40.15070348
           ],
           [
-            116.26456528,
-            40.15062706
+            116.26462005,
+            40.15073897
           ],
           [
-            116.26455865,
-            40.15063451
+            116.26461663,
+            40.15077487
           ],
           [
-            116.26455249,
-            40.15064217
+            116.26461783,
+            40.15081094
           ],
           [
-            116.26454692,
-            40.15065004
+            116.26462075,
+            40.15082885
           ],
           [
-            116.26454202,
-            40.15065819
+            116.26462558,
+            40.15084647
           ],
           [
-            116.26453761,
-            40.15066651
+            116.26463276,
+            40.15086357
           ],
           [
-            116.26453347,
-            40.15067491
+            116.26464241,
+            40.15087993
           ],
           [
-            116.26452956,
-            40.15068338
+            116.2646545,
+            40.1508953
           ],
           [
-            116.26452591,
-            40.15069191
+            116.26466875,
+            40.15090958
           ],
           [
-            116.26452257,
-            40.15070048
+            116.2646849,
+            40.15092263
           ],
           [
-            116.26451961,
-            40.1507091
+            116.26470257,
+            40.15093451
           ],
           [
-            116.26451718,
-            40.15071775
+            116.26472147,
+            40.15094525
           ],
           [
-            116.2645154,
-            40.15072644
+            116.2647619,
+            40.15096376
           ],
           [
-            116.26451439,
-            40.15073516
+            116.26478305,
+            40.15097175
           ],
           [
-            116.26451424,
-            40.15074388
+            116.26482664,
+            40.15098558
           ],
           [
-            116.26451495,
-            40.1507526
+            116.26487137,
+            40.15099712
           ],
           [
-            116.26451651,
-            40.15076129
+            116.26498451,
+            40.151023
           ],
           [
-            116.26451883,
-            40.15076992
+            116.26514037,
+            40.15106522
           ],
           [
-            116.2645218,
-            40.15077849
+            116.26518544,
+            40.15107596
           ],
           [
-            116.26452529,
-            40.15078698
+            116.26520835,
+            40.15108007
           ],
           [
-            116.26452919,
-            40.15079541
+            116.26523137,
+            40.15108254
           ],
           [
-            116.26453778,
-            40.15081213
+            116.26525328,
+            40.15108148
           ],
           [
-            116.26455165,
-            40.15083696
+            116.26527005,
+            40.15107429
           ],
           [
-            116.26456143,
-            40.15085331
+            116.26527687,
+            40.15106086
           ],
           [
-            116.26456659,
-            40.15086136
+            116.26527393,
+            40.15104455
           ],
           [
-            116.26457201,
-            40.15086931
+            116.26526542,
+            40.15102809
           ],
           [
-            116.26457771,
-            40.15087713
+            116.26523132,
+            40.15098058
           ],
           [
-            116.26458371,
-            40.15088482
+            116.26521099,
+            40.15094797
           ],
           [
-            116.26459001,
-            40.15089236
+            116.26520291,
+            40.150931
           ],
           [
-            116.26459657,
-            40.15089977
+            116.26519639,
+            40.15091365
           ],
           [
-            116.26460341,
-            40.15090703
+            116.26519153,
+            40.15089598
           ],
           [
-            116.26461053,
-            40.15091409
+            116.26518829,
+            40.15087809
           ],
           [
-            116.26461797,
-            40.1509209
+            116.26518656,
+            40.150842
           ],
           [
-            116.2646258,
-            40.15092739
+            116.26519005,
+            40.15080592
           ],
           [
-            116.26463406,
-            40.15093349
+            116.26520039,
+            40.15075215
           ],
           [
-            116.26464281,
-            40.15093912
+            116.26520952,
+            40.15071661
           ],
           [
-            116.26465204,
-            40.15094424
+            116.26522106,
+            40.15068149
           ],
           [
-            116.26466176,
-            40.1509488
+            116.26523496,
+            40.15064686
           ],
           [
-            116.26467189,
-            40.15095285
+            116.26528898,
+            40.15052697
           ],
           [
-            116.2646824,
-            40.15095641
+            116.2653336,
+            40.15042378
           ],
           [
-            116.26469319,
-            40.15095958
+            116.26539692,
+            40.15028719
           ],
           [
-            116.26470418,
-            40.15096245
+            116.26549319,
+            40.15008765
           ],
           [
-            116.26474877,
-            40.15097329
+            116.26558814,
+            40.14990308
           ],
           [
-            116.26477085,
-            40.15097932
+            116.26562166,
+            40.14983187
           ],
           [
-            116.26479267,
-            40.15098593
+            116.26565014,
+            40.14976214
           ],
           [
-            116.26483598,
-            40.15099986
-          ],
-          [
-            116.26485772,
-            40.15100669
-          ],
-          [
-            116.26487958,
-            40.15101326
-          ],
-          [
-            116.26490159,
-            40.15101958
-          ],
-          [
-            116.26510065,
-            40.15107439
-          ],
-          [
-            116.26514495,
-            40.15108633
-          ],
-          [
-            116.26515606,
-            40.15108912
-          ],
-          [
-            116.26516722,
-            40.15109171
-          ],
-          [
-            116.26517843,
-            40.15109402
-          ],
-          [
-            116.26518972,
-            40.15109595
-          ],
-          [
-            116.26520108,
-            40.15109741
-          ],
-          [
-            116.26521251,
-            40.15109836
-          ],
-          [
-            116.26522398,
-            40.15109875
-          ],
-          [
-            116.26523548,
-            40.15109859
-          ],
-          [
-            116.26524693,
-            40.15109789
-          ],
-          [
-            116.2652583,
-            40.15109667
-          ],
-          [
-            116.2652695,
-            40.15109491
-          ],
-          [
-            116.26528042,
-            40.1510926
-          ],
-          [
-            116.26529093,
-            40.15108967
-          ],
-          [
-            116.26530089,
-            40.15108604
-          ],
-          [
-            116.26531016,
-            40.15108167
-          ],
-          [
-            116.26531856,
-            40.15107653
-          ],
-          [
-            116.26532593,
-            40.15107064
-          ],
-          [
-            116.26533209,
-            40.15106406
-          ],
-          [
-            116.2653369,
-            40.15105691
-          ],
-          [
-            116.2653402,
-            40.15104933
-          ],
-          [
-            116.2653419,
-            40.15104144
-          ],
-          [
-            116.26534199,
-            40.1510334
-          ],
-          [
-            116.2653405,
-            40.15102535
-          ],
-          [
-            116.26533757,
-            40.15101738
-          ],
-          [
-            116.26533338,
-            40.15100957
-          ],
-          [
-            116.26532815,
-            40.15100196
-          ],
-          [
-            116.26532207,
-            40.15099459
-          ],
-          [
-            116.26531539,
-            40.15098742
-          ],
-          [
-            116.26530829,
-            40.1509804
-          ],
-          [
-            116.2652864,
-            40.1509595
-          ],
-          [
-            116.2652794,
-            40.15095236
-          ],
-          [
-            116.2652728,
-            40.15094508
-          ],
-          [
-            116.26526671,
-            40.15093762
-          ],
-          [
-            116.26526126,
-            40.15092998
-          ],
-          [
-            116.26525666,
-            40.15092214
-          ],
-          [
-            116.26525307,
-            40.15091412
-          ],
-          [
-            116.26525064,
-            40.15090593
-          ],
-          [
-            116.2652494,
-            40.15089758
-          ],
-          [
-            116.26524931,
-            40.1508891
-          ],
-          [
-            116.26525025,
-            40.15088053
-          ],
-          [
-            116.26525198,
-            40.15087189
-          ],
-          [
-            116.26525429,
-            40.15086322
-          ],
-          [
-            116.26525697,
-            40.15085453
-          ],
-          [
-            116.26526291,
-            40.15083715
-          ],
-          [
-            116.2652691,
-            40.15081977
+            116.26567558,
+            40.1496899
           ],
           [
             116.26569433,
@@ -11153,13 +10799,13 @@
         "point_a": "P042",
         "point_b": "P068",
         "directed": false,
-        "length_m": 293.7,
-        "coordinate_count": 108,
-        "geometry_method": "locally_smoothed_road_with_aligned_junction_entries",
+        "length_m": 280.57,
+        "coordinate_count": 58,
+        "geometry_method": "fit_track_shape_registered_to_current_junctions",
         "length_method": "WGS84_geodesic_sum_along_map_corrected_polyline",
         "supporting_gps_sample_count": 67,
-        "median_support_offset_m": 4.87,
-        "max_support_offset_m": 12.46,
+        "median_support_offset_m": 0.12,
+        "max_support_offset_m": 12.5,
         "is_user_corrected": true,
         "connection_confirmed": true,
         "connection_source": "user_map_annotation",
@@ -11168,12 +10814,14 @@
         "source_segment_ids": [
           "S072"
         ],
-        "correction_notes": "smooth_library_side_roads",
+        "correction_notes": "integrate_original_track_on_library_side_roads",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
-          "geometry_basis": "locally_smoothed_road_with_aligned_junction_entries",
+          "geometry_basis": "fit_track_shape_registered_to_current_junctions",
           "registration": {
-            "method": "Smooth local side-road kinks and align entry tangents with the continuing north-south roads while preserving existing junctions.",
+            "method": "Use continuous original coordinate sequences, smooth sampling noise, register endpoints to current junctions, and retain short straight entry tangents.",
+            "straight_entry_length_m": 6,
+            "transition_length_m": 22,
             "junction_topology_preserved": true
           },
           "source_segment_ids": [
@@ -14984,6 +14632,62 @@
             40.14949501
           ],
           [
+            116.2651945,
+            40.1494443
+          ],
+          [
+            116.26520201,
+            40.1494268
+          ],
+          [
+            116.26520801,
+            40.14940867
+          ],
+          [
+            116.26522827,
+            40.1493253
+          ],
+          [
+            116.26523504,
+            40.14930365
+          ],
+          [
+            116.26524325,
+            40.14928325
+          ],
+          [
+            116.26532234,
+            40.14910746
+          ],
+          [
+            116.26538529,
+            40.14897108
+          ],
+          [
+            116.26539593,
+            40.14895141
+          ],
+          [
+            116.26540939,
+            40.14893179
+          ],
+          [
+            116.2654246,
+            40.14891275
+          ],
+          [
+            116.26547008,
+            40.14886079
+          ],
+          [
+            116.26548194,
+            40.14884448
+          ],
+          [
+            116.26549142,
+            40.14882761
+          ],
+          [
             116.26551583,
             40.14877691
           ]
@@ -14999,63 +14703,36 @@
         "connection_source": "user_map_annotation",
         "geometry_is_estimate": true,
         "length_is_estimate": true,
-        "geometry_method": "user_redline_registered_junction_reconstruction",
+        "geometry_method": "fit_track_shape_registered_to_current_junctions",
         "length_method": "WGS84_geodesic_sum_along_map_corrected_polyline",
         "source_segment_ids": [
-          "S072"
+          "S105"
         ],
-        "correction_notes": "restore_two_library_south_crossroads",
+        "correction_notes": "integrate_original_track_on_library_side_roads",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
-          "geometry_basis": "user_redline_registered_junction_reconstruction",
+          "geometry_basis": "fit_track_shape_registered_to_current_junctions",
           "registration": {
-            "method": "Uniform screenshot scale and translation fitted to three existing node markers; intersections computed from red road axes.",
-            "control_point_ids": [
-              "P040",
-              "P044",
-              "P061"
-            ],
-            "control_pixel_xy": [
-              [
-                20.37,
-                146.21
-              ],
-              [
-                448.5,
-                209.8
-              ],
-              [
-                219.0,
-                439.0
-              ]
-            ],
-            "scale_px_per_m": 1.6836060124305428,
-            "origin_pixel": [
-              -934.1996070103754,
-              634.4257766008843
-            ],
-            "fit_rmse_px": 0.0856229137790502,
-            "new_junction_ids": [
-              "P067",
-              "P068"
-            ],
-            "source_image": "codex-clipboard-58e83c7b-1c9a-4f04-a973-63417a689949.png"
+            "method": "Use continuous original coordinate sequences, smooth sampling noise, register endpoints to current junctions, and retain short straight entry tangents.",
+            "straight_entry_length_m": 6,
+            "transition_length_m": 22,
+            "junction_topology_preserved": true
           },
           "source_segment_ids": [
-            "S072"
+            "S105"
           ],
           "actual_route_length_measured": false
         },
-        "coordinate_count": 2,
-        "length_m": 85.0,
+        "coordinate_count": 16,
+        "length_m": 85.47,
         "notes": [
           "Road geometry and junction connectivity corrected from the user annotation.",
           "Distance is a geodesic sum along the corrected map polyline and remains an estimate.",
           "Nearby supporting samples do not prove full traversal of the corrected route."
         ],
         "supporting_gps_sample_count": 18,
-        "median_support_offset_m": 3.68,
-        "max_support_offset_m": 6.05
+        "median_support_offset_m": 5.84,
+        "max_support_offset_m": 6.56
       }
     },
     {
@@ -15158,6 +14835,34 @@
             40.14963779
           ],
           [
+            116.26571307,
+            40.14958569
+          ],
+          [
+            116.26571965,
+            40.14956581
+          ],
+          [
+            116.2657476,
+            40.14946588
+          ],
+          [
+            116.26576658,
+            40.14940839
+          ],
+          [
+            116.26588549,
+            40.14912577
+          ],
+          [
+            116.26590549,
+            40.14906842
+          ],
+          [
+            116.26594219,
+            40.14894883
+          ],
+          [
             116.26596093,
             40.14889672
           ]
@@ -15173,63 +14878,36 @@
         "connection_source": "user_map_annotation",
         "geometry_is_estimate": true,
         "length_is_estimate": true,
-        "geometry_method": "user_redline_registered_junction_reconstruction",
+        "geometry_method": "fit_track_shape_registered_to_current_junctions",
         "length_method": "WGS84_geodesic_sum_along_map_corrected_polyline",
         "source_segment_ids": [
-          "S075"
+          "S107"
         ],
-        "correction_notes": "restore_two_library_south_crossroads",
+        "correction_notes": "integrate_original_track_on_library_side_roads",
         "provenance": {
           "connection_basis": "User supplied actual route annotation.",
-          "geometry_basis": "user_redline_registered_junction_reconstruction",
+          "geometry_basis": "fit_track_shape_registered_to_current_junctions",
           "registration": {
-            "method": "Uniform screenshot scale and translation fitted to three existing node markers; intersections computed from red road axes.",
-            "control_point_ids": [
-              "P040",
-              "P044",
-              "P061"
-            ],
-            "control_pixel_xy": [
-              [
-                20.37,
-                146.21
-              ],
-              [
-                448.5,
-                209.8
-              ],
-              [
-                219.0,
-                439.0
-              ]
-            ],
-            "scale_px_per_m": 1.6836060124305428,
-            "origin_pixel": [
-              -934.1996070103754,
-              634.4257766008843
-            ],
-            "fit_rmse_px": 0.0856229137790502,
-            "new_junction_ids": [
-              "P067",
-              "P068"
-            ],
-            "source_image": "codex-clipboard-58e83c7b-1c9a-4f04-a973-63417a689949.png"
+            "method": "Use continuous original coordinate sequences, smooth sampling noise, register endpoints to current junctions, and retain short straight entry tangents.",
+            "straight_entry_length_m": 6,
+            "transition_length_m": 22,
+            "junction_topology_preserved": true
           },
           "source_segment_ids": [
-            "S075"
+            "S107"
           ],
           "actual_route_length_measured": false
         },
-        "coordinate_count": 2,
-        "length_m": 85.36,
+        "coordinate_count": 9,
+        "length_m": 85.43,
         "notes": [
           "Road geometry and junction connectivity corrected from the user annotation.",
           "Distance is a geodesic sum along the corrected map polyline and remains an estimate.",
           "Nearby supporting samples do not prove full traversal of the corrected route."
         ],
         "supporting_gps_sample_count": 19,
-        "median_support_offset_m": 2.81,
-        "max_support_offset_m": 5.57
+        "median_support_offset_m": 2.79,
+        "max_support_offset_m": 5.6
       }
     },
     {
