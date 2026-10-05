@@ -11,7 +11,7 @@ TEMPLATE = r'''<!doctype html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light dark">
-<title>北京航空航天大学沙河校区线路图</title>
+<title>北京航空航天大学沙河校区骑行线路图</title>
 <style>
 :root{--bg:#f3f5f8;--panel:#fff;--ink:#1b293b;--muted:#718097;--border:#e3e9f0;--blue:#1976d2;--blue-light:#eaf3fe;--red:#cf4963;--orange:#d78c44;--grid:#cdd6e0;--map:#fafcfe;--shadow:0 5px 25px rgba(41,69,99,.04);--raw:#a8b4c4;--purple:#7c4dcc;--land:#f2f1e9;--park:#dfe9d5;--forest:#d4e2c9;--water:#cbdfea;--building:#e7e2d9;--building-edge:#d7d0c6;--road:#fdfcf9;--road-edge:#d7d8d2;--path:#aaa99a;--map-label:#697364;--pitch:#d3e3d4;--landuse:#eae8e2;--planned:#aaa99f}
 @media(prefers-color-scheme:dark){:root{--bg:#101722;--panel:#182331;--ink:#e3ebf5;--muted:#91a1b5;--border:#2a3a4d;--blue:#65b3ff;--blue-light:#1c3550;--red:#ff8096;--orange:#eda663;--grid:#344358;--map:#131d2a;--shadow:none;--raw:#637488;--purple:#bd9dff;--land:#202a2c;--park:#293c31;--forest:#233b2c;--water:#273e50;--building:#39403e;--building-edge:#474d48;--road:#405058;--road-edge:#29373c;--path:#67776b;--map-label:#acb8aa;--pitch:#34483d;--landuse:#2c3234;--planned:#7c8582}}
@@ -26,7 +26,7 @@ TEMPLATE = r'''<!doctype html>
 <body>
 <div class="shell">
 <header class="masthead">
-<div><p class="eyebrow">BUAA SHAHE / CAMPUS MAP</p><h1>北京航空航天大学<wbr>沙河校区线路图</h1><p class="intro">查看沙河校区道路、交叉点与路段距离。</p></div>
+<div><p class="eyebrow">BUAA SHAHE / CYCLING MAP</p><h1>北京航空航天大学<wbr>沙河校区骑行线路图</h1><p class="intro">查看沙河校区骑行路线、交叉点与路段距离。</p></div>
 <div class="summary" aria-label="网络汇总"><div class="stat"><strong id="pointCount">—</strong><span>有效 POINT</span></div><div class="stat"><strong id="segmentCount">—</strong><span>无向 SEGMENT</span></div><div class="stat"><strong id="networkLength">—</strong><span id="networkLengthNote">去重后的路线总长</span></div></div>
 </header>
 <main class="layout">
@@ -42,7 +42,7 @@ TEMPLATE = r'''<!doctype html>
 <section class="card method-card"><p class="section-label">READING THE GRAPH / 读图说明</p><p class="method">每段路线<strong>不区分行进方向</strong>。距离沿合并后的路线折线逐段累计，不是两个端点的直线距离。<br><br>相近轨迹与节点已合并；死路按连接关系迭代剔除。路线总长按每个 Segment 只计算一次，表示当前道路网络的总长度。</p><p class="info-note" id="inferredNote" hidden></p><p class="info-note" id="basemapNote"></p><details><summary>查看处理参数</summary><dl class="param-list" id="parameterList"></dl></details><button id="downloadData" class="download">↓ 下载完整网络 JSON</button></section>
 </aside>
 </main>
-<footer class="bottom"><span>北京航空航天大学沙河校区 · 离线线路图</span><span>按实际道路整理 · 距离沿路线累计</span></footer>
+<footer class="bottom"><span>北京航空航天大学沙河校区 · 离线骑行线路图</span><span>按实际道路整理 · 距离沿路线累计</span></footer>
 </div>
 <script id="networkData" type="application/json">__DATA__</script>
 <script id="basemapData" type="application/json">__BASEMAP__</script>
