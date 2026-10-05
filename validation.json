@@ -18,9 +18,9 @@
   },
   "all_passed": true,
   "summary": {
-    "point_count": 64,
-    "segment_count": 102,
-    "total_network_length_m": 11938.16,
+    "point_count": 65,
+    "segment_count": 103,
+    "total_network_length_m": 11917.92,
     "connected_components": 1,
     "minimum_degree": 3,
     "maximum_degree": 4,
@@ -30,12 +30,12 @@
     "gps_derived_segment_count": 0,
     "gps_derived_network_length_m": 0,
     "inferred_segment_count": 1,
-    "inferred_network_length_m": 104.27,
+    "inferred_network_length_m": 83.34,
     "total_length_includes_inferred_segments": true,
     "user_confirmed_added_segment_count": 2,
-    "estimated_geometry_segment_count": 102,
-    "user_corrected_segment_count": 102,
-    "map_corrected_network_length_m": 11938.16
+    "estimated_geometry_segment_count": 103,
+    "user_corrected_segment_count": 103,
+    "map_corrected_network_length_m": 11917.92
   },
   "crossings": []
 }
