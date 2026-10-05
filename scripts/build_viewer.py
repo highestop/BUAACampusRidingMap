@@ -33,7 +33,7 @@ TEMPLATE = r'''<!doctype html>
 <section class="card map-card" aria-label="交互网络图">
 <div class="toolbar"><span class="toolbar-title"><span class="live-dot"></span> 路线全览</span><div class="toggles"><label class="toggle"><input id="showBasemap" type="checkbox" checked>实际地图</label><label class="toggle"><input id="showRaw" type="checkbox">原始轨迹</label><label class="toggle"><input id="showRemoved" type="checkbox" checked>无效死路</label><label class="toggle"><input id="showLabels" type="checkbox" checked>节点标注</label></div></div>
 <div class="canvas" id="canvas"><svg id="network" aria-label="可缩放拖动的校区道路网络；也可使用右侧下拉列表查看每个路段和节点" role="img" tabindex="0"><g id="basemapLayer" class="basemap"></g><g id="rawLayer"></g><g id="removedLayer"></g><g id="segmentLayer"></g><g id="pointLayer"></g></svg><div class="north">N<div class="arrow"></div></div><div class="scale"><span id="scaleText">100 m</span><div class="scale-line" id="scaleLine"></div></div><div class="map-controls"><button id="zoomIn" aria-label="放大" title="放大">+</button><button id="zoomOut" aria-label="缩小" title="缩小">−</button><button id="resetView" class="home" aria-label="恢复全览" title="恢复全览">⌂</button></div><div class="map-attribution" id="mapAttribution"><a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">© OpenStreetMap contributors</a></div></div>
-<div class="map-footer"><span>点击查看详情 · 拖动平移（限底图范围）· 滚轮缩放</span><span>本地米制投影 / 北向上</span></div>
+<div class="map-footer"><span>点击查看详情 · Esc 取消选中 · 拖动平移（限底图范围）· 滚轮缩放</span><span>本地米制投影 / 北向上</span></div>
 </section>
 <aside class="side">
 <section class="card select-card"><p class="section-label">QUICK FIND / 快速定位</p><div class="select-wrap"><select id="pointSelect" aria-label="选择一个节点"><option value="">选择 Point…</option></select><select id="segmentSelect" aria-label="选择一个路段"><option value="">选择 Segment…</option></select></div></section>
@@ -136,6 +136,27 @@ function clampViewport(v,b,pixelWidth,pixelHeight){
 }
 function constrainView(v){return clampViewport(v,navigationBounds,svg.clientWidth,svg.clientHeight)}
 let view={x:0,y:0,w:100,h:100},initialView,selected=null,drag=null;
+const emptyDetail=$('detail').cloneNode(true);
+let escapeHandled=false;
+function clearSelection(){
+ if(!selected)return;
+ selected=null;
+ document.querySelectorAll('.selected').forEach(n=>n.classList.remove('selected'));
+ $('pointSelect').value='';$('segmentSelect').value='';
+ const panel=$('detail'),restoreFocus=panel.contains(document.activeElement);
+ panel.replaceChildren(...Array.from(emptyDetail.childNodes,n=>n.cloneNode(true)));
+ if(restoreFocus)svg.focus({preventScroll:true});
+}
+window.addEventListener('keydown',e=>{
+ if(e.key!=='Escape'||(!selected&&!escapeHandled))return;
+ e.preventDefault();e.stopImmediatePropagation();
+ escapeHandled=true;clearSelection();
+},{capture:true});
+window.addEventListener('keyup',e=>{
+ if(e.key!=='Escape'||!escapeHandled)return;
+ e.preventDefault();e.stopImmediatePropagation();escapeHandled=false;
+},{capture:true});
+window.addEventListener('blur',()=>{escapeHandled=false});
 function fitBounds(b,padding=.14){const ratio=svg.clientWidth/Math.max(1,svg.clientHeight);let w=Math.max(b.w,20)*(1+padding*2),h=Math.max(b.h,20)*(1+padding*2);if(w/h<ratio)w=h*ratio;else h=w/ratio;return{x:b.x+b.w/2-w/2,y:b.y+b.h/2-h/2,w,h}}
 function renderView(){view=constrainView(view);svg.setAttribute('viewBox',`${view.x} ${view.y} ${view.w} ${view.h}`);const u=view.w/Math.max(1,svg.clientWidth);placeMapLabels(u);document.querySelectorAll('.point-dot').forEach(n=>n.setAttribute('r',3.6*u));document.querySelectorAll('.point-hit').forEach(n=>n.setAttribute('r',10*u));document.querySelectorAll('.point-label').forEach(n=>{n.setAttribute('font-size',10*u);n.setAttribute('dx',7*u);n.setAttribute('dy',-7*u);n.setAttribute('stroke-width',3*u)});const ideal=u*85,pow=10**Math.floor(Math.log10(ideal)),length=[1,2,5,10].map(n=>n*pow).filter(n=>n<=ideal).pop()||pow;$('scaleText').textContent=dist(length);$('scaleLine').style.width=`${length/u}px`;}
 function reset(){initialView=constrainView(fitBounds(bounds));view={...initialView};renderView()}
