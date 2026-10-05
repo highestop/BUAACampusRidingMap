@@ -61,14 +61,14 @@ GitHub 文件页展示 HTML 源码，下载后打开即可使用交互地图。�
 | `points.csv` / `segments.csv` | 节点坐标、连接关系、路段距离与折线 |
 | `map_basemap.json` / `map_basemap.geojson` | 离线底图数据 |
 | `validation.json` | 数据一致性与网络结构检查结果 |
-| `scripts/build_viewer.py` | 根据当前 JSON 数据重新生成页面 |
+| `build_viewer.py` | 根据当前 JSON 数据重新生成页面 |
 
 ## 重新生成页面
 
 需要 Python 3，仅使用标准库：
 
 ```sh
-python3 scripts/build_viewer.py
+python3 build_viewer.py
 ```
 
 脚本读取仓库根目录的 `route_network.json` 和 `map_basemap.json`，生成根目录的 `route_network.html`。它只构建页面，不会修改路网。
