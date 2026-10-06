@@ -84,3 +84,35 @@ test('small position reversals during a return do not erase the turning point',a
  const route=[...along(0,100),...Array.from({length:17},(_,i)=>[{xy:[94-i*6,0]},{xy:[96-i*6,0]}]).flat(),{xy:[0,0]}];
  const r=await match([route]);assert.equal(r.counts.AB,2);assert.equal(r.length_m,240);
 });
+const longRoad={metadata:{local_xy_origin_utm_m:[0,0]},points:[{id:'A'},{id:'B'}],segments:[
+ {id:'AB',point_a:'A',point_b:'B',length_m:245,geometry_xy:[[0,0],[240,0]]}
+]};
+const gradualBias=(maximum=28)=>along(0,240).map(p=>{const x=p.xy[0];return {xy:[x,x<=200?Math.min(maximum,x*.2):maximum-(x-200)*.1]};});
+test('a confirmed continuous pass survives a small lateral bias and counts all three traversals',async()=>{
+ const m=A.createMatcher(longRoad),biased=gradualBias();
+ for(const route of [biased,biased.map(p=>({xy:[240-p.xy[0],p.xy[1]]}))])assert.equal((await m.match([route],{xy:true})).counts.AB,1);
+ const route=[...biased,...along(240,0),...along(0,240)];
+ const r=await m.match([route],{xy:true});assert.equal(r.counts.AB,3);assert.equal(r.length_m,735);
+});
+test('expanded continuation cannot acquire an offset road, exceed its margin, or survive a true break',async()=>{
+ const m=A.createMatcher(longRoad),run=tracks=>m.match(tracks,{xy:true});
+ assert.equal((await run([along(0,240,28)])).counts.AB,0);
+ assert.equal((await run([gradualBias(34)])).counts.AB,0);
+ const insufficient=[...along(0,10),...along(15,240,28)];
+ assert.equal((await run([insufficient])).counts.AB,0);
+ const biased=gradualBias(),cut=biased.findIndex(p=>p.xy[1]>25);
+ assert.equal((await run([biased.slice(0,cut),biased.slice(cut)])).counts.AB,0);
+ const timed=biased.map((p,i)=>({...p,time:i+(i>=cut?130:0)}));
+ assert.equal((await run([timed])).counts.AB,0);
+ const abrupt=[...along(0,120),...along(125,240,28)];
+ assert.equal((await run([abrupt])).counts.AB,0);
+});
+test('continuation margin does not turn a connected parallel return into a second pass',async()=>{
+ const d={...longRoad,points:[...longRoad.points,{id:'C'},{id:'D'}],segments:[...longRoad.segments,
+  {id:'BC',point_a:'B',point_b:'C',length_m:28,geometry_xy:[[240,0],[240,28]]},
+  {id:'CD',point_a:'C',point_b:'D',length_m:240,geometry_xy:[[240,28],[0,28]]},
+  {id:'DA',point_a:'D',point_b:'A',length_m:28,geometry_xy:[[0,28],[0,0]]}
+ ]};
+ const route=[...along(0,240),...Array.from({length:15},(_,i)=>({xy:[240,i*2]})),...along(240,0,28)];
+ const r=await A.createMatcher(d).match([route],{xy:true});assert.equal(r.counts.AB,1);assert.equal(r.counts.BC,1);assert.equal(r.counts.CD,1);assert.equal(r.counts.DA,0);
+});
