@@ -1,6 +1,6 @@
-# BUAA Shahe Campus Map
+# Beihang Campus Riding Map
 
-Repository: `highestop/buaa-shahe-campus-map`.
+Repository: `highestop/beihang-campus-riding-map`.
 
 ## Required contribution and merge workflow
 
