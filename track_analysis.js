@@ -74,33 +74,55 @@ function createMatcher(data){
   for(const [u,from]of[[x.a,0],[x.b,x.total]])for(const [w,to]of[[y.a,0],[y.b,y.total]]){const length=Math.abs(a.at-from)+D[u][w]+Math.abs(b.at-to);if(length<best.length)best={length,pieces:[{edge:a.edge,from:a.at,to:from},...routes[u][w],{edge:b.edge,from:to,to:b.at}]};}return best;
  }
  async function match(tracks,{onProgress=()=>{},cancelled=()=>false,xy=false}={}){
-  const counts=Object.fromEntries(edges.map(e=>[e.id,0])),covered=new Set();let sampleCount=0,matched=0,processed=0,episodes=[],run=[],previous=null;
+  const counts=Object.fromEntries(edges.map(e=>[e.id,0])),covered=new Set();let sampleCount=0,matched=0,processed=0,episodes=[],run=[],previous=null,pendingGap=null;
   const check=()=>{if(cancelled())throw Error('cancelled');};
   // Backtrack the most likely connected route, then count directional passes.
-  function finish(){if(!run.length)return;let state=run.at(-1).reduce((a,b)=>a.cost<b.cost?a:b),states=[];while(state){states.push(state);state=state.prev;}states.reverse();
+  function finish(){if(!run.length){previous=null;pendingGap=null;return;}let state=run.at(-1).reduce((a,b)=>a.cost<b.cost?a:b),states=[];while(state){states.push(state);state=state.prev;}states.reverse();
    for(const state of states){const e=edges[state.edge],tol=Math.min(12,e.total*.2);if(state.at<=tol)covered.add(e.point_a);if(e.total-state.at<=tol)covered.add(e.point_b);}
    let current=null;
-   function close(){if(current){const e=edges[current.edge];if(current.max-current.min>=e.total*.8-1e-6)counts[e.id]++;}current=null;}
+   function close(){if(current){const e=edges[current.edge];let support=0,end=-Infinity;
+    for(const [lo,hi]of current.intervals.sort((a,b)=>a[0]-b[0])){support+=Math.max(0,hi-Math.max(lo,end));end=Math.max(end,hi);}
+    if(support>=e.total*.8-1e-6)counts[e.id]++;
+   }current=null;}
    for(let i=1;i<states.length;i++)for(const p of transition(states[i-1],states[i]).pieces){if(Math.abs(p.to-p.from)<.05)continue;
     const edge=edges[p.edge],tol=Math.min(12,edge.total*.2);if(Math.min(p.from,p.to)<=tol)covered.add(edge.point_a);if(edge.total-Math.max(p.from,p.to)<=tol)covered.add(edge.point_b);
-    const sign=Math.sign(p.to-p.from);
-    if(!current||current.edge!==p.edge){close();current={edge:p.edge,min:Math.min(p.from,p.to),max:Math.max(p.from,p.to),sign,extreme:p.to};}
+    const sign=Math.sign(p.to-p.from);let supportedFrom=p.from;
+    if(!current||current.edge!==p.edge){close();current={edge:p.edge,sign,extreme:p.to,intervals:[]};}
     // Ignore small along-route reversals from stationary GPS jitter.
-    else if(sign!==current.sign&&Math.abs(p.to-current.extreme)>Math.min(8,edges[p.edge].total*.2)){const turning=current.extreme;close();current={edge:p.edge,min:Math.min(turning,p.to),max:Math.max(turning,p.to),sign,extreme:p.to};}
-    else{current.min=Math.min(current.min,p.to);current.max=Math.max(current.max,p.to);if(sign===current.sign)current.extreme=p.to;}
-   }close();episodes.push(states.length);run=[];previous=null;
+    else if(sign!==current.sign&&Math.abs(p.to-current.extreme)>Math.min(8,edges[p.edge].total*.2)){const turning=current.extreme;supportedFrom=turning;close();current={edge:p.edge,sign,extreme:p.to,intervals:[]};}
+    else if(sign===current.sign)current.extreme=sign>0?Math.max(current.extreme,p.to):Math.min(current.extreme,p.to);
+    // Off-network rejoining preserves the pass but adds no unsupported route length.
+    if(!states[i].bridged)current.intervals.push([Math.min(supportedFrom,p.to),Math.max(supportedFrom,p.to)]);
+   }close();episodes.push(states.length);run=[];previous=null;pendingGap=null;
   }
   for(const track of tracks){finish();let retained=null;
    for(let i=0;i<track.length;i++){
     check();const t=track[i],p=xy?t.xy:project(t.lon,t.lat,data.metadata.local_xy_origin_utm_m);sampleCount++;
     if(++processed%250===0){onProgress(processed);await new Promise(resolve=>setTimeout(resolve,0));check();}
     if(retained&&distance(retained,p)<2&&i!==track.length-1)continue;
-    retained=p;const cs=candidates(p);if(!cs.length){finish();continue;}matched++;
+    retained=p;let cs=candidates(p),rejoined=false;
+    if(!cs.length){
+     // A brief off-network excursion must not split a pass through the same road.
+     if(previous){pendingGap ||= {length:0,last:previous.p,count:0};pendingGap.length+=distance(pendingGap.last,p);pendingGap.last=p;pendingGap.count++;
+      const elapsed=t.time!=null&&previous.time!=null?t.time-previous.time:0;
+      if(pendingGap.count>12||pendingGap.length>80||distance(previous.p,p)>40||elapsed>30||elapsed<0)finish();
+     }
+     continue;
+    }
+    if(pendingGap){
+     const elapsed=t.time!=null&&previous.time!=null?t.time-previous.time:0;
+     // Rejoin only a shared interior candidate with little along-road displacement.
+     const joined=cs.filter(b=>(run.at(-1)||[]).some(a=>{const e=edges[a.edge],tol=Math.min(12,e.total*.2);return a.edge===b.edge&&Math.abs(a.at-b.at)<=20&&Math.min(a.at,b.at)>tol&&e.total-Math.max(a.at,b.at)>tol;}));
+     if(!joined.length||pendingGap.length+distance(pendingGap.last,p)>80||distance(previous.p,p)>40||elapsed>30||elapsed<0)finish();
+     else{cs=joined;rejoined=true;}
+     pendingGap=null;
+    }
+    matched++;
     const step=previous?distance(previous.p,p):0,timeGap=previous&&t.time!=null&&previous.time!=null?t.time-previous.time:0;
     if(previous&&(step>100||timeGap>120||timeGap<0))finish();
     const before=run.at(-1);const row=cs.map(c=>{let cost=c.offset*c.offset/72,prev=null;
      if(before){let best=Infinity;for(const a of before){const tr=transition(a,c),penalty=Math.abs(tr.length-step)/5+(tr.length>step*3+30?20:0);if(a.cost+penalty<best){best=a.cost+penalty;prev=a;}}cost+=best;}
-     return {...c,cost,prev};});
+     return {...c,cost,prev,bridged:rejoined};});
     const min=Math.min(...row.map(c=>c.cost));row.forEach(c=>c.cost-=min);run.push(row);previous={p,time:t.time};
    }finish();
   }
