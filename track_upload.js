@@ -33,7 +33,7 @@ function restoreOriginal(){
 $('cancelTrack').addEventListener('click',restoreOriginal);
 $('trackFile').addEventListener('change',async e=>{
  const file=e.target.files?.[0];if(!file)return;
- if(!originalState)originalState={view:{...view},selection:selected?{...selected}:null,layers:Object.fromEntries(['showRemoved','showLabels'].map(id=>[id,$(id).checked]))};
+ if(!originalState)originalState={view:{...view},selection:selected?{...selected}:null,layers:Object.fromEntries(['showLabels'].map(id=>[id,$(id).checked]))};
  const generation=++uploadGeneration;coverage=null;clearUploadedTrack();refreshCoverage();$('trackResults').hidden=true;$('cancelTrack').hidden=false;$('trackFile').disabled=true;$('trackStatus').textContent='正在读取轨迹…';
  try{
   if(file.size>20*1024*1024)throw Error('文件大小不能超过 20 MB');
@@ -51,7 +51,7 @@ $('trackFile').addEventListener('change',async e=>{
   $('coveredDistance').textContent=dist(result.length_m);
   $('traversalTotal').textContent=Object.values(result.counts).reduce((a,b)=>a+b,0)+' 次';
   $('trackStatus').textContent=result.segmentCount?'匹配完成；颜色表示经过次数，3 次及以上显示数字标签。':'没有识别到完整通过的路段，请检查轨迹是否位于本校区。';
-  $('trackResults').hidden=false;$('showRemoved').checked=false;$('removedLayer').style.display='none';clearSelection();refreshCoverage();reset();
+  $('trackResults').hidden=false;clearSelection();refreshCoverage();reset();
  }catch(error){if(generation!==uploadGeneration)return;clearUploadedTrack();$('trackStatus').textContent=`无法分析：${error.message}`;}
  finally{if(generation===uploadGeneration)$('trackFile').disabled=false;}
 });
