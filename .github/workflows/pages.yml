@@ -2,9 +2,8 @@ name: Deploy GitHub Pages
 
 on:
   push:
-    branches: [highestop-add-route-network]
+    branches: [main]
   pull_request:
-    branches: [highestop-add-route-network]
   workflow_dispatch:
 
 permissions:
