@@ -69,13 +69,16 @@ function createMatcher(data){
  for(let i=0;i<n;i++)D[i][i]=0;
  edges.forEach((e,i)=>{if(e.total<D[e.a][e.b]){D[e.a][e.b]=D[e.b][e.a]=e.total;routes[e.a][e.b]=[{edge:i,from:0,to:e.total}];routes[e.b][e.a]=[{edge:i,from:e.total,to:0}];}});
  for(let k=0;k<n;k++)for(let i=0;i<n;i++)for(let j=0;j<n;j++)if(D[i][k]+D[k][j]<D[i][j]){D[i][j]=D[i][k]+D[k][j];routes[i][j]=routes[i][k].concat(routes[k][j]);}
- function candidates(p){const out=[];edges.forEach((e,i)=>{let best=Infinity,at=0;for(const s of e.spans){const dx=s.b[0]-s.a[0],dy=s.b[1]-s.a[1],f=Math.max(0,Math.min(1,((p[0]-s.a[0])*dx+(p[1]-s.a[1])*dy)/(s.length*s.length))),d=Math.hypot(p[0]-s.a[0]-f*dx,p[1]-s.a[1]-f*dy);if(d<best){best=d;at=s.start+f*s.length;}}if(best<=25)out.push({edge:i,at,offset:best});});return out.sort((a,b)=>a.offset-b.offset).slice(0,5);}
+ function candidates(p,radius=25){const out=[];edges.forEach((e,i)=>{let best=Infinity,at=0;for(const s of e.spans){const dx=s.b[0]-s.a[0],dy=s.b[1]-s.a[1],f=Math.max(0,Math.min(1,((p[0]-s.a[0])*dx+(p[1]-s.a[1])*dy)/(s.length*s.length))),d=Math.hypot(p[0]-s.a[0]-f*dx,p[1]-s.a[1]-f*dy);if(d<best){best=d;at=s.start+f*s.length;}}if(best<=radius)out.push({edge:i,at,offset:best});});return out.sort((a,b)=>a.offset-b.offset).slice(0,5);}
  function transition(a,b){const x=edges[a.edge],y=edges[b.edge];let best=a.edge===b.edge?{length:Math.abs(a.at-b.at),pieces:[{edge:a.edge,from:a.at,to:b.at}]}:{length:Infinity,pieces:[]};
   for(const [u,from]of[[x.a,0],[x.b,x.total]])for(const [w,to]of[[y.a,0],[y.b,y.total]]){const length=Math.abs(a.at-from)+D[u][w]+Math.abs(b.at-to);if(length<best.length)best={length,pieces:[{edge:a.edge,from:a.at,to:from},...routes[u][w],{edge:b.edge,from:to,to:b.at}]};}return best;
  }
  async function match(tracks,{onProgress=()=>{},cancelled=()=>false,xy=false}={}){
   const counts=Object.fromEntries(edges.map(e=>[e.id,0])),covered=new Set();let sampleCount=0,matched=0,processed=0,episodes=[],run=[],previous=null,pendingGap=null;
   const check=()=>{if(cancelled())throw Error('cancelled');};
+  // A confirmed road can tolerate slightly larger lateral bias while moving along it.
+  // Expanded candidates must retain their qualifying predecessor during backtracking.
+  function continues(a,b,step,timeGap){const progress=b.at-a.at;return a.edge===b.edge&&a.nearSupport>=Math.min(30,edges[a.edge].total*.2)&&Math.sign(progress)===a.direction&&step>0&&step<=100&&timeGap>=0&&timeGap<=120&&Math.abs(progress)>=step*.85&&Math.abs(progress)<=step*1.15;}
   // Backtrack the most likely connected route, then count directional passes.
   function finish(){if(!run.length){previous=null;pendingGap=null;return;}let state=run.at(-1).reduce((a,b)=>a.cost<b.cost?a:b),states=[];while(state){states.push(state);state=state.prev;}states.reverse();
    for(const state of states){const e=edges[state.edge],tol=Math.min(12,e.total*.2);if(state.at<=tol)covered.add(e.point_a);if(e.total-state.at<=tol)covered.add(e.point_b);}
@@ -100,7 +103,8 @@ function createMatcher(data){
     check();const t=track[i],p=xy?t.xy:project(t.lon,t.lat,data.metadata.local_xy_origin_utm_m);sampleCount++;
     if(++processed%250===0){onProgress(processed);await new Promise(resolve=>setTimeout(resolve,0));check();}
     if(retained&&distance(retained,p)<2&&i!==track.length-1)continue;
-    retained=p;let cs=candidates(p),rejoined=false;
+    retained=p;const continuationStep=previous?distance(previous.p,p):0,continuationTime=previous&&t.time!=null&&previous.time!=null?t.time-previous.time:0;
+    let cs=candidates(p,30).filter(c=>c.offset<=25||(!pendingGap&&(run.at(-1)||[]).some(a=>continues(a,c,continuationStep,continuationTime)))),rejoined=false;
     if(!cs.length){
      // A brief off-network excursion must not split a pass through the same road.
      if(previous){pendingGap ||= {length:0,last:previous.p,count:0};pendingGap.length+=distance(pendingGap.last,p);pendingGap.last=p;pendingGap.count++;
@@ -121,8 +125,10 @@ function createMatcher(data){
     const step=previous?distance(previous.p,p):0,timeGap=previous&&t.time!=null&&previous.time!=null?t.time-previous.time:0;
     if(previous&&(step>100||timeGap>120||timeGap<0))finish();
     const before=run.at(-1);const row=cs.map(c=>{let cost=c.offset*c.offset/72,prev=null;
-     if(before){let best=Infinity;for(const a of before){const tr=transition(a,c),penalty=Math.abs(tr.length-step)/5+(tr.length>step*3+30?20:0);if(a.cost+penalty<best){best=a.cost+penalty;prev=a;}}cost+=best;}
-     return {...c,cost,prev,bridged:rejoined};});
+     if(before){let best=Infinity;for(const a of before){if(c.offset>25&&!continues(a,c,step,timeGap))continue;const tr=transition(a,c),penalty=Math.abs(tr.length-step)/5+(tr.length>step*3+30?20:0);if(a.cost+penalty<best){best=a.cost+penalty;prev=a;}}cost+=best;}
+     const progress=prev&&prev.edge===c.edge?c.at-prev.at:0,direction=Math.sign(progress)||(prev?.edge===c.edge?prev.direction:0);
+     const nearSupport=prev?.edge===c.edge&&!rejoined?(direction===prev.direction?prev.nearSupport:0)+(prev.offset<=25&&c.offset<=25?Math.abs(progress):0):0;
+     return {...c,cost,prev,bridged:rejoined,direction,nearSupport};});
     const min=Math.min(...row.map(c=>c.cost));row.forEach(c=>c.cost-=min);run.push(row);previous={p,time:t.time};
    }finish();
   }
