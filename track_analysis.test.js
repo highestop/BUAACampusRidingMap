@@ -50,7 +50,7 @@ test('FIT endian, developer fields, compressed timestamps, chained files and CRC
 test('projection agrees with stored WGS84 coordinates',()=>{
  const d=JSON.parse(fs.readFileSync(require('node:path').join(__dirname,'route_network.json')));for(const p of d.points){const xy=A.project(p.longitude,p.latitude,d.metadata.local_xy_origin_utm_m);assert.ok(Math.hypot(xy[0]-p.x_m,xy[1]-p.y_m)<.01);}
 });
-test('every current segment can be covered independently without covering adjacent roads',async()=>{
+test('every current segment, including short junction links, supports one or three passes without covering adjacent roads',async()=>{
  const d=JSON.parse(fs.readFileSync(require('node:path').join(__dirname,'route_network.json'))),m=A.createMatcher(d);
- for(const s of d.segments){const track=[];for(let i=1;i<s.geometry_xy.length;i++){const p=s.geometry_xy[i-1],q=s.geometry_xy[i],n=Math.ceil(Math.hypot(p[0]-q[0],p[1]-q[1])/3);for(let j=0;j<n;j++)track.push({xy:[p[0]+(q[0]-p[0])*j/n,p[1]+(q[1]-p[1])*j/n]});}track.push({xy:s.geometry_xy.at(-1)});const r=await m.match([track],{xy:true});assert.equal(r.counts[s.id],1,s.id);assert.equal(r.segmentCount,1,s.id);assert.equal(r.length_m,s.length_m,s.id);}
+ for(const s of d.segments){const track=[];for(let i=1;i<s.geometry_xy.length;i++){const p=s.geometry_xy[i-1],q=s.geometry_xy[i],n=Math.ceil(Math.hypot(p[0]-q[0],p[1]-q[1])/3);for(let j=0;j<n;j++)track.push({xy:[p[0]+(q[0]-p[0])*j/n,p[1]+(q[1]-p[1])*j/n]});}track.push({xy:s.geometry_xy.at(-1)});for(const [passes,route]of [[1,track],[3,track.concat([...track].reverse(),track)]]){const r=await m.match([route],{xy:true});assert.equal(r.counts[s.id],passes,s.id);assert.equal(r.segmentCount,1,s.id);assert.ok(Math.abs(r.length_m-s.length_m*passes)<1e-6,s.id);}}
 });

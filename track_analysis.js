@@ -86,7 +86,7 @@ function createMatcher(data){
     const sign=Math.sign(p.to-p.from);
     if(!current||current.edge!==p.edge){close();current={edge:p.edge,min:Math.min(p.from,p.to),max:Math.max(p.from,p.to),sign,extreme:p.to};}
     // Ignore small along-route reversals from stationary GPS jitter.
-    else if(sign!==current.sign&&Math.abs(p.to-current.extreme)>8){const turning=current.extreme;close();current={edge:p.edge,min:Math.min(turning,p.to),max:Math.max(turning,p.to),sign,extreme:p.to};}
+    else if(sign!==current.sign&&Math.abs(p.to-current.extreme)>Math.min(8,edges[p.edge].total*.2)){const turning=current.extreme;close();current={edge:p.edge,min:Math.min(turning,p.to),max:Math.max(turning,p.to),sign,extreme:p.to};}
     else{current.min=Math.min(current.min,p.to);current.max=Math.max(current.max,p.to);if(sign===current.sign)current.extreme=p.to;}
    }close();episodes.push(states.length);run=[];previous=null;
   }
