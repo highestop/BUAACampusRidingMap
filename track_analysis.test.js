@@ -54,3 +54,33 @@ test('every current segment, including short junction links, supports one or thr
  const d=JSON.parse(fs.readFileSync(require('node:path').join(__dirname,'route_network.json'))),m=A.createMatcher(d);
  for(const s of d.segments){const track=[];for(let i=1;i<s.geometry_xy.length;i++){const p=s.geometry_xy[i-1],q=s.geometry_xy[i],n=Math.ceil(Math.hypot(p[0]-q[0],p[1]-q[1])/3);for(let j=0;j<n;j++)track.push({xy:[p[0]+(q[0]-p[0])*j/n,p[1]+(q[1]-p[1])*j/n]});}track.push({xy:s.geometry_xy.at(-1)});for(const [passes,route]of [[1,track],[3,track.concat([...track].reverse(),track)]]){const r=await m.match([route],{xy:true});assert.equal(r.counts[s.id],passes,s.id);assert.equal(r.segmentCount,1,s.id);assert.ok(Math.abs(r.length_m-s.length_m*passes)<1e-6,s.id);}}
 });
+test('short GPS excursions reconnect supported parts of a pass without counting the excursion',async()=>{
+ const excursion=[{xy:[50,30]},{xy:[50,34]},{xy:[50,30]}];
+ const route=[...along(0,45),...excursion,...along(55,100)];
+ const once=await match([route]);assert.equal(once.counts.AB,1);assert.equal(once.length_m,120);
+ const twice=await match([route.concat([...route].reverse())]);assert.equal(twice.counts.AB,2);assert.equal(twice.length_m,240);
+});
+test('unsupported gaps do not contribute to the required 80 percent',async()=>{
+ const route=[...along(0,30),{xy:[37.5,30]},{xy:[37.5,32]},...along(45,60),{xy:[67.5,30]},{xy:[67.5,32]},...along(75,100)];
+ assert.equal((await match([route])).counts.AB,0);
+});
+test('long drift, elapsed time, separate groups and junction crossings cannot join incomplete passes',async()=>{
+ const start=along(0,45),end=along(55,100);
+ assert.equal((await match([[...start,{xy:[50,70]},...end]])).counts.AB,0);
+ assert.equal((await match([[...start.map(p=>({...p,time:0})),{xy:[50,30],time:31},...end.map(p=>({...p,time:32}))]])).counts.AB,0);
+ assert.equal((await match([start,end])).counts.AB,0);
+ const boundary=[...along(0,70),{xy:[95,30]},...along(95,100)];assert.equal((await match([boundary])).counts.AB,0);
+});
+test('touching both endpoints through an adjacent route does not cover a shortcut',async()=>{
+ const d={metadata:{local_xy_origin_utm_m:[0,0]},points:[{id:'A'},{id:'B'},{id:'C'}],segments:[
+  {id:'shortcut',point_a:'A',point_b:'B',length_m:100,geometry_xy:[[0,0],[100,0]]},
+  {id:'AC',point_a:'A',point_b:'C',length_m:100,geometry_xy:[[0,0],[0,100]]},
+  {id:'CB',point_a:'C',point_b:'B',length_m:150,geometry_xy:[[0,100],[100,0]]}
+ ]};
+ const route=[...along(0,100).map(p=>({xy:[0,p.xy[0]]})),...along(0,100).map(p=>({xy:[p.xy[0],100-p.xy[0]]}))];
+ const r=await A.createMatcher(d).match([route],{xy:true});assert.equal(r.counts.shortcut,0);assert.equal(r.counts.AC,1);assert.equal(r.counts.CB,1);
+});
+test('small position reversals during a return do not erase the turning point',async()=>{
+ const route=[...along(0,100),...Array.from({length:17},(_,i)=>[{xy:[94-i*6,0]},{xy:[96-i*6,0]}]).flat(),{xy:[0,0]}];
+ const r=await match([route]);assert.equal(r.counts.AB,2);assert.equal(r.length_m,240);
+});
