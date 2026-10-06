@@ -1,7 +1,5 @@
 # Beihang Campus Riding Map
 
-Repository: `highestop/beihang-campus-riding-map`.
-
 ## Required contribution and merge workflow
 
 - Every independent modification after repository creation must have its own PR, including code, data, page copy, documentation, and project instructions.
