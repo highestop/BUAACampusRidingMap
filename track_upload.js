@@ -33,7 +33,7 @@ function restoreOriginal(){
 $('cancelTrack').addEventListener('click',restoreOriginal);
 $('trackFile').addEventListener('change',async e=>{
  const file=e.target.files?.[0];if(!file)return;
- if(!originalState)originalState={view:{...view},selection:selected?{...selected}:null,layers:Object.fromEntries(['showRemoved','showBasemap','showLabels'].map(id=>[id,$(id).checked]))};
+ if(!originalState)originalState={view:{...view},selection:selected?{...selected}:null,layers:Object.fromEntries(['showRemoved','showLabels'].map(id=>[id,$(id).checked]))};
  const generation=++uploadGeneration;coverage=null;clearUploadedTrack();refreshCoverage();$('trackResults').hidden=true;$('cancelTrack').hidden=false;$('trackFile').disabled=true;$('trackStatus').textContent='正在读取轨迹…';
  try{
   if(file.size>20*1024*1024)throw Error('文件大小不能超过 20 MB');
