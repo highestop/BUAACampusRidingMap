@@ -110,7 +110,7 @@ node --test track_analysis.test.js
 
 ## 自动发布 GitHub Pages
 
-仓库的 Pages 发布来源为 **GitHub Actions**，工作流位于 [`.github/workflows/pages.yml`](.github/workflows/pages.yml)。PR 会运行轨迹测试并验证页面可构建，PR 中的改动不会直接发布。合并到默认分支 `highestop-add-route-network` 后，工作流自动生成 `_site/index.html` 并发布；只部署自包含 HTML，无需额外数据文件、服务器或密钥。
+仓库的 Pages 发布来源为 **GitHub Actions**，工作流位于 [`.github/workflows/pages.yml`](.github/workflows/pages.yml)。PR 会运行轨迹测试并验证页面可构建，PR 中的改动不会直接发布。合并到默认分支 `main` 后，工作流自动生成 `_site/index.html` 并发布；只部署自包含 HTML，无需额外数据文件、服务器或密钥。
 
 如需重新发布，在仓库 **Actions → Deploy GitHub Pages → Run workflow** 中选择默认分支。发布结果和页面链接可在该次运行的 **Publish map** 任务中查看。首次启用或在其他仓库使用时，需要将 **Settings → Pages → Source** 设置为 **GitHub Actions**。若默认分支改名，应同步更新工作流的分支触发条件。
 
