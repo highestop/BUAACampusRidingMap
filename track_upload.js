@@ -5,7 +5,7 @@ function refreshCoverage(){
  document.querySelectorAll('.seg-group').forEach(g=>{const count=coverage?.counts[g.dataset.id]||0;g.classList.toggle('coverage-active',!!coverage);g.classList.toggle('covered',count>0);g.style.setProperty('--coverage-color',count>=3?'#e34848':count===2?'#d69b00':count===1?'#179c58':'var(--raw)');});
  document.querySelectorAll('.point-group').forEach(g=>{g.classList.toggle('coverage-point',!!coverage?.pointIds.includes(g.dataset.id));});
  coverageLayer.replaceChildren();
- if(coverage)for(const s of segments){const count=coverage.counts[s.id];if(!count)continue;const xy=s.geometry_xy;let total=0;const lengths=xy.slice(1).map((p,i)=>{const d=Math.hypot(p[0]-xy[i][0],p[1]-xy[i][1]);total+=d;return d;});let half=total/2,anchor=xy[0];for(let i=0;i<lengths.length;i++){if(half<=lengths[i]){const f=lengths[i]?half/lengths[i]:0;anchor=[xy[i][0]+(xy[i+1][0]-xy[i][0])*f,xy[i][1]+(xy[i+1][1]-xy[i][1])*f];break;}half-=lengths[i];}el('text',{x:anchor[0],y:-anchor[1],class:'coverage-count'},coverageLayer).textContent=`${count}×`;}
+ if(coverage)for(const s of segments){const count=coverage.counts[s.id];if(count<3)continue;const xy=s.geometry_xy;let total=0;const lengths=xy.slice(1).map((p,i)=>{const d=Math.hypot(p[0]-xy[i][0],p[1]-xy[i][1]);total+=d;return d;});let half=total/2,anchor=xy[0];for(let i=0;i<lengths.length;i++){if(half<=lengths[i]){const f=lengths[i]?half/lengths[i]:0;anchor=[xy[i][0]+(xy[i+1][0]-xy[i][0])*f,xy[i][1]+(xy[i+1][1]-xy[i][1])*f];break;}half-=lengths[i];}el('text',{x:anchor[0],y:-anchor[1],class:'coverage-count'},coverageLayer).textContent=`${count}×`;}
  renderCoverageLabels();if(selected)select(selected.kind,selected.id);
 }
 function renderCoverageLabels(){const u=view.w/Math.max(1,svg.clientWidth);coverageLayer.querySelectorAll('text').forEach(n=>{n.setAttribute('font-size',11*u);n.setAttribute('dy',-7*u);n.setAttribute('stroke-width',3*u);});}
@@ -50,7 +50,7 @@ $('trackFile').addEventListener('change',async e=>{
   $('coveredSegments').textContent=`${result.segmentCount} / ${segments.length}（${(result.segmentCount/segments.length*100).toFixed(1)}%）`;
   $('coveredDistance').textContent=dist(result.length_m);
   $('traversalTotal').textContent=Object.values(result.counts).reduce((a,b)=>a+b,0)+' 次';
-  $('trackStatus').textContent=result.segmentCount?'匹配完成；颜色与数字表示每条路段的经过次数。':'没有识别到完整通过的路段，请检查轨迹是否位于本校区。';
+  $('trackStatus').textContent=result.segmentCount?'匹配完成；颜色表示经过次数，3 次及以上显示数字标签。':'没有识别到完整通过的路段，请检查轨迹是否位于本校区。';
   $('trackResults').hidden=false;$('showRemoved').checked=false;$('removedLayer').style.display='none';clearSelection();refreshCoverage();reset();
  }catch(error){if(generation!==uploadGeneration)return;clearUploadedTrack();$('trackStatus').textContent=`无法分析：${error.message}`;}
  finally{if(generation===uploadGeneration)$('trackFile').disabled=false;}
