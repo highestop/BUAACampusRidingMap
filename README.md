@@ -16,10 +16,6 @@ GitHub 文件页展示 HTML 源码，下载后打开即可使用交互地图。�
 
 ![北京航空航天大学沙河校区骑行线路图界面示例](interface.png)
 
-纯地图示例：
-
-![北京航空航天大学沙河校区骑行路网及底图](map.png)
-
 ## 上传轨迹与覆盖统计
 
 在侧栏选择 `.gpx` 或 `.fit` 文件，将轨迹对应到当前路网。文件仅在浏览器内解析，不上传至服务器，不写入仓库，也不保存在浏览器存储中。支持包含 GPS 坐标的 FIT、GPX 轨迹段及路线；纯航点列表无法分析。坐标应为 WGS84。单个文件上限 20 MB、100,000 个坐标点。
@@ -82,7 +78,7 @@ GitHub 文件页展示 HTML 源码，下载后打开即可使用交互地图。�
 | 文件 | 内容 |
 | --- | --- |
 | `route_network.html` | 完整离线交互页面 |
-| `interface.png` / `map.png` / `coverage.png` | 页面界面、纯地图与上传后覆盖统计的示例图 |
+| `interface.png` / `coverage.png` | 页面界面与上传后覆盖统计的示例图 |
 | `route_network.json` | 路网数据及元数据 |
 | `route_network.geojson` | 可导入 GIS 的交叉点与路段要素 |
 | `points.csv` / `segments.csv` | 节点坐标、连接关系、路段距离与折线 |
