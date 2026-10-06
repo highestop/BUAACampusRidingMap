@@ -16,6 +16,8 @@
 
 ## 打开地图
 
+在线访问：[北京航空航天大学沙河校区骑行线路图](https://highestop.github.io/BeihangCampusRidingMap/)。在线页面也在浏览器内处理上传轨迹，文件不会发送至服务器。
+
 下载或克隆仓库，在浏览器中打开 [`route_network.html`](route_network.html)。也可以在 GitHub 选择 **Code → Download ZIP**，解压后打开该文件。
 
 页面已内嵌底图和路网数据，无需安装依赖、启动服务或申请地图 API Key。支持缩放、拖动、点线选择与详情、图层开关，以及下载完整网络 JSON。地图移动和缩放限制在已有底图范围内。
@@ -105,6 +107,20 @@ python3 build_viewer.py
 ```sh
 node --test track_analysis.test.js
 ```
+
+## 自动发布 GitHub Pages
+
+仓库的 Pages 发布来源为 **GitHub Actions**，工作流位于 [`.github/workflows/pages.yml`](.github/workflows/pages.yml)。PR 会运行轨迹测试并验证页面可构建，PR 中的改动不会直接发布。合并到默认分支 `highestop-add-route-network` 后，工作流自动生成 `_site/index.html` 并发布；只部署自包含 HTML，无需额外数据文件、服务器或密钥。
+
+如需重新发布，在仓库 **Actions → Deploy GitHub Pages → Run workflow** 中选择默认分支。发布结果和页面链接可在该次运行的 **Publish map** 任务中查看。首次启用或在其他仓库使用时，需要将 **Settings → Pages → Source** 设置为 **GitHub Actions**。若默认分支改名，应同步更新工作流的分支触发条件。
+
+本地生成同样的发布文件：
+
+```sh
+python3 build_viewer.py --output _site/index.html
+```
+
+`_site/` 是构建产物，已由 `.gitignore` 忽略，不提交到仓库。
 
 ## 地图署名
 
