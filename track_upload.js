@@ -2,7 +2,7 @@
 let coverage=null,uploadGeneration=0,originalState=null,matcher=null;
 const coverageLayer=el('g',{id:'coverageCountLayer','pointer-events':'none'},svg);
 function refreshCoverage(){
- document.querySelectorAll('.seg-group').forEach(g=>{const count=coverage?.counts[g.dataset.id]||0;g.classList.toggle('coverage-active',!!coverage);g.classList.toggle('covered',count>0);g.style.setProperty('--coverage-color',count>=3?'#e34848':count===2?'#d69b00':count===1?'#179c58':'var(--raw)');});
+ document.querySelectorAll('.seg-group').forEach(g=>{const count=coverage?.counts[g.dataset.id]||0;g.classList.toggle('coverage-active',!!coverage);g.classList.toggle('covered',count>0);g.style.setProperty('--coverage-color',count>=3?'#e34848':count===2?'#d69b00':count===1?'#179c58':'var(--uncovered)');});
  document.querySelectorAll('.point-group').forEach(g=>{g.classList.toggle('coverage-point',!!coverage?.pointIds.includes(g.dataset.id));});
  coverageLayer.replaceChildren();
  if(coverage)for(const s of segments){const count=coverage.counts[s.id];if(count<3)continue;const xy=s.geometry_xy;let total=0;const lengths=xy.slice(1).map((p,i)=>{const d=Math.hypot(p[0]-xy[i][0],p[1]-xy[i][1]);total+=d;return d;});let half=total/2,anchor=xy[0];for(let i=0;i<lengths.length;i++){if(half<=lengths[i]){const f=lengths[i]?half/lengths[i]:0;anchor=[xy[i][0]+(xy[i+1][0]-xy[i][0])*f,xy[i][1]+(xy[i+1][1]-xy[i][1])*f];break;}half-=lengths[i];}el('text',{x:anchor[0],y:-anchor[1],class:'coverage-count'},coverageLayer).textContent=`${count}×`;}
