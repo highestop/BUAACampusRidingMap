@@ -350,7 +350,7 @@ function renderUploadedTrack(tracks){
   }flush();
  }
  const available=$('uploadedTrackLayer').childElementCount>0;
- $('uploadedTrackToggle').hidden=!available;$('uploadedTrackLegend').hidden=!available;$('showUploadedTrack').checked=available;$('uploadedTrackLayer').style.display=available?'':'none';
+ $('uploadedTrackToggle').hidden=!available;$('uploadedTrackLegend').hidden=!available;$('showUploadedTrack').checked=false;$('uploadedTrackLayer').style.display='none';
 }
 function restoreOriginal(){
  uploadGeneration++;coverage=null;clearUploadedTrack();$('trackFile').value='';$('trackResults').hidden=true;$('cancelTrack').hidden=true;$('trackStatus').textContent='支持 GPX / FIT；文件仅在浏览器内处理。';$('trackFile').disabled=false;refreshCoverage();
