@@ -32,7 +32,7 @@ TEMPLATE = r'''<!doctype html>
 </header>
 <main class="layout">
 <section class="card map-card" aria-label="交互网络图">
-<div class="toolbar"><span class="toolbar-title"><span class="live-dot"></span> 路线全览</span><div class="toggles"><label class="toggle" id="uploadedTrackToggle" hidden><input id="showUploadedTrack" type="checkbox">上传轨迹</label><label class="toggle"><input id="showRemoved" type="checkbox" checked>无效死路</label><label class="toggle"><input id="showLabels" type="checkbox" checked>节点标注</label></div></div>
+<div class="toolbar"><span class="toolbar-title"><span class="live-dot"></span> 路线全览</span><div class="toggles"><label class="toggle" id="uploadedTrackToggle" hidden><input id="showUploadedTrack" type="checkbox">上传轨迹</label><label class="toggle"><input id="showLabels" type="checkbox" checked>节点标注</label></div></div>
 <div class="canvas" id="canvas"><svg id="network" aria-label="可缩放拖动的校区道路网络；也可使用右侧下拉列表查看每个路段和节点" role="img" tabindex="0"><g id="basemapLayer" class="basemap"></g><g id="removedLayer"></g><g id="segmentLayer"></g><g id="uploadedTrackLayer" style="display:none" pointer-events="none"></g><g id="pointLayer"></g></svg><div class="north">N<div class="arrow"></div></div><div class="scale"><span id="scaleText">100 m</span><div class="scale-line" id="scaleLine"></div></div><div class="map-controls"><button id="zoomIn" aria-label="放大" title="放大">+</button><button id="zoomOut" aria-label="缩小" title="缩小">−</button><button id="resetView" class="home" aria-label="恢复全览" title="恢复全览">⌂</button></div><div class="map-attribution" id="mapAttribution"><a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">© OpenStreetMap contributors</a></div></div>
 <div class="map-footer"><span>点击查看详情 · Esc 取消选中 · 拖动平移（限底图范围）· 滚轮缩放</span><span>本地米制投影 / 北向上</span></div>
 </section>
@@ -184,7 +184,7 @@ svg.addEventListener('pointercancel',()=>{drag=null;svg.classList.remove('pannin
 svg.addEventListener('wheel',e=>{e.preventDefault();const r=svg.getBoundingClientRect();zoom(Math.exp(Math.max(-.3,Math.min(.3,e.deltaY*.0015))),e.clientX-r.left,e.clientY-r.top)},{passive:false});
 svg.addEventListener('keydown',e=>{if(['+','=','-','0','ArrowUp','ArrowDown','ArrowLeft','ArrowRight'].includes(e.key))e.preventDefault();if(e.key==='+'||e.key==='=')zoom(.8);if(e.key==='-')zoom(1.25);if(e.key==='0')reset();const d=view.w*.08;if(e.key==='ArrowUp')view.y-=d;if(e.key==='ArrowDown')view.y+=d;if(e.key==='ArrowLeft')view.x-=d;if(e.key==='ArrowRight')view.x+=d;renderView()});
 $('zoomIn').onclick=()=>zoom(.75);$('zoomOut').onclick=()=>zoom(1/.75);$('resetView').onclick=reset;
-$('showUploadedTrack').onchange=e=>$('uploadedTrackLayer').style.display=e.target.checked?'':'none';$('showRemoved').onchange=e=>$('removedLayer').style.display=e.target.checked?'':'none';$('showLabels').onchange=e=>{document.querySelectorAll('.point-label').forEach(n=>n.style.display=e.target.checked?'':'none');renderView()};
+$('showUploadedTrack').onchange=e=>$('uploadedTrackLayer').style.display=e.target.checked?'':'none';$('showLabels').onchange=e=>{document.querySelectorAll('.point-label').forEach(n=>n.style.display=e.target.checked?'':'none');renderView()};
 new ResizeObserver(()=>{if(!initialView){reset();return}const centerX=view.x+view.w/2,centerY=view.y+view.h/2;initialView=constrainView(fitBounds(bounds));view.h=view.w*svg.clientHeight/svg.clientWidth;view.x=centerX-view.w/2;view.y=centerY-view.h/2;renderView()}).observe(svg);
 reset();
 const initialId=location.hash.slice(1);
