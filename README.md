@@ -4,7 +4,7 @@
 
 ## 打开地图
 
-在线访问：[北京航空航天大学沙河校区骑行线路图](https://highestop.github.io/BUAACampusRidingMap/)。在线页面也在浏览器内处理上传轨迹，文件不会发送至服务器。
+在线访问：[北京航空航天大学沙河校区骑行线路图](https://highestop.github.io/beihang-campus-riding-map/)。在线页面也在浏览器内处理上传轨迹，文件不会发送至服务器。
 
 下载或克隆仓库，在浏览器中打开 [`route_network.html`](route_network.html)。也可以在 GitHub 选择 **Code → Download ZIP**，解压后打开该文件。
 
