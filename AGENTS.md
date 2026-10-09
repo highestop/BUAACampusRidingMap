@@ -1,4 +1,4 @@
-# Beihang Campus Riding Map
+# BUAA Campus Riding Map
 
 ## Required contribution and merge workflow
 
